@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Skills — M Sohaib Ishaque. Technologies I work with to build scalable, performant and user-friendly web applications." />
+    <title>Skills — M Sohaib Ishaque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg
+			xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23A3FF12'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='14' fill='%23000'%3ESI%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <button class="back-top" aria-label="Back to top">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <div class="customize-panel" id="customizePanel" aria-hidden="true" role="dialog" aria-label="Theme settings">
+      <div class="cp-header">
+        <div class="cp-header-left">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 1l1.5 3.5L13 6l-3.5 1.5L8 11 6.5 7.5 3 6l3.5-1.5z" fill="rgba(180,150,255,0.9)" />
+            <circle cx="13" cy="2" r="1" fill="rgba(180,150,255,0.7)" />
+          </svg>
+          <span>Customization</span>
+        </div>
+        <button class="cp-close" id="customizePanelClose" aria-label="Close customize panel">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <line x1="2" y1="2" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <line x1="12" y1="2" x2="2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="cp-accent-bar" aria-hidden="true"></div>
+      <div class="cp-streak" aria-hidden="true"></div>
+      <p class="cp-section-label"> Theme </p>
+      <div class="cp-theme-grid" id="cpThemeGrid">
+        <div class="cp-theme-card" data-theme="light" role="radio" aria-checked="false" tabindex="0">
+          <div class="cp-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(200,180,255,0.85)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <line x1="12" y1="2" x2="12" y2="4" />
+              <line x1="12" y1="20" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="4" y2="12" />
+              <line x1="20" y1="12" x2="22" y2="12" />
+              <line x1="4.93" y1="4.93" x2="6.34" y2="6.34" />
+              <line x1="17.66" y1="17.66" x2="19.07" y2="19.07" />
+              <line x1="4.93" y1="19.07" x2="6.34" y2="17.66" />
+              <line x1="17.66" y1="6.34" x2="19.07" y2="4.93" />
+            </svg>
+          </div>
+        </div>
+        <div class="cp-theme-card active" data-theme="dark" role="radio" aria-checked="true" tabindex="0">
+          <div class="cp-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(200,180,255,0.95)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </div>
+        </div>
+        <div class="cp-theme-card" data-theme="system" role="radio" aria-checked="false" tabindex="0">
+          <div class="cp-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(200,180,255,0.85)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="cp-presets-header">
+        <div>
+          <p class="cp-section-label" style="margin-bottom:2px">Preset Themes</p>
+        </div>
+      </div>
+      <div class="cp-carousel-wrap">
+        <div class="cp-carousel" id="cpSwatchCarousel">
+          <div class="cp-swatch" data-swatch="deep-violet">
+            <div class="cp-swatch-box active" style="background:linear-gradient(135deg,#A3FF12 0%,#89d313 50%,#6ca116 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Deep Violet</div>
+          </div>
+          <div class="cp-swatch" data-swatch="electric-blue">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#1e40af 0%,#2563eb 50%,#60a5fa 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Electric Blue</div>
+          </div>
+          <div class="cp-swatch" data-swatch="warm-amber">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#b45309 0%,#f59e0b 50%,#fcd34d 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Warm Amber</div>
+          </div>
+          <div class="cp-swatch" data-swatch="soft-rose">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#9f1239 0%,#f43f5e 50%,#fda4af 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#f43f5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Soft Rose</div>
+          </div>
+          <div class="cp-swatch" data-swatch="sunset-orange">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#c2410c 0%,#ea580c 50%,#fb923c 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Sunset Orange</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="customize-overlay" id="customizeOverlay"></div>
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="skills.html" class="mobile-nav-link" style="color:var(--accent)">Skills</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="experience.html" class="mobile-nav-link">Experience</a>
+      <a href="testimonials.html" class="mobile-nav-link">Testimonials</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+    <header class="navbar scrolled" role="banner">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo" aria-label="Home">
+            <div class="logo-box" aria-hidden="true">SI</div>
+            <div class="logo-text">
+              <span class="logo-name">M Sohaib Ishaque</span>
+              <span class="logo-role">Full Stack Web Developer</span>
+            </div>
+          </a>
+          <nav class="nav-menu" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="skills.html" class="nav-link active">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="testimonials.html" class="nav-link">Testimonials</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+          <div class="nav-right-btns">
+            <a href="contact.html" class="nav-cta"> Let's Talk <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </a>
+            <a href="#0" class="btn btn-outline" id="customizeBtn" aria-label="Customize" aria-expanded="false" aria-controls="customizePanel">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.4 15.05L18.3 17.05C18.1 17.4 17.7 17.6 17.3 17.5L15.3 16.95C14.9 17.2 14.5 17.4 14.1 17.55L13.7 19.6C13.6 20 13.3 20.3 12.9 20.3H11.1C10.7 20.3 10.4 20 10.3 19.6L9.9 17.55C9.5 17.4 9.1 17.2 8.7 16.95L6.7 17.5C6.3 17.6 5.9 17.4 5.7 17.05L4.6 15.05C4.4 14.7 4.5 14.3 4.8 14.1L6.4 12.9C6.3 12.6 6.3 12.3 6.3 12C6.3 11.7 6.3 11.4 6.4 11.1L4.8 9.9C4.5 9.7 4.4 9.3 4.6 8.95L5.7 6.95C5.9 6.6 6.3 6.4 6.7 6.5L8.7 7.05C9.1 6.8 9.5 6.6 9.9 6.45L10.3 4.4C10.4 4 10.7 3.7 11.1 3.7H12.9C13.3 3.7 13.6 4 13.7 4.4L14.1 6.45C14.5 6.6 14.9 6.8 15.3 7.05L17.3 6.5C17.7 6.4 18.1 6.6 18.3 6.95L19.4 8.95C19.6 9.3 19.5 9.7 19.2 9.9L17.6 11.1C17.7 11.4 17.7 11.7 17.7 12C17.7 12.3 17.7 12.6 17.6 12.9L19.2 14.1C19.5 14.3 19.6 14.7 19.4 15.05Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="hamburger  btn-outline" aria-label="Toggle menu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="skills-hero" id="skills-hero" aria-label="Skills hero">
+      <div class="skills-hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="skills-hero-inner">
+          <div class="reveal-left">
+            <div class="skills-hero-label">My Expertise</div>
+            <h1 class="skills-hero-heading"> Technologies <br />
+              <span class="accent"> Powering My Work.</span>
+            </h1>
+            <p class="skills-hero-body"> I use modern technologies and best practices to build scalable, performant and user-friendly web applications. </p>
+            <a href="contact.html" class="btn btn-primary"> Let's Work Together <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="skills-hero-visual reveal-right">
+            <div class="skills-img-wrap">
+              <div class="skills-img-bg" aria-hidden="true"></div>
+              <img src="./assets/images/hero-image.png" alt="M Sohaib Ishaque" class="skills-img" loading="eager" />
+              <div class="skills-img-accent" aria-hidden="true"></div>
+              <span class="skills-geo-plus" aria-hidden="true">+</span>
+              <div class="skills-name-card" aria-label="Developer info">
+                <h3>M Sohaib <br />Ishaque </h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-section" id="technical-skills" aria-label="Technical skills">
+      <div class="container">
+                
+        <div class="section-header">
+          <div class="section-title-group reveal-left ">
+            <p class="section-label">Expertise</p>
+            <h2 class="about-heading"> What I Bring  <br />
+              <strong>to the Table</strong>
+            </h2>
+          </div>
+          <p class="section-desc reveal" >A curated stack of tools, languages, and frameworks I wield to build scalable, high-performance digital solutions — from concept to deployment.</p>
+        </div>
+        <div class="tech-skills-grid" id="skillsGrid">
+          <div class="skill-cat-box reveal">
+            <div class="skill-cat-head">
+              <div class="skill-cat-icon-box" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <span class="skill-cat-title">Frontend</span>
+            </div>
+            <div class="skill-row">
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="95"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">CSS3 / SCSS</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="92"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">TypeScript</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="85"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Next.js</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="88"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Tailwind CSS</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="95"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Bootstrap</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cat-box reveal">
+            <div class="skill-cat-head">
+              <div class="skill-cat-icon-box" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
+              </div>
+              <span class="skill-cat-title">Backend</span>
+            </div>
+            <div class="skill-row">
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Express.js</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="88"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">REST APIs</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="92"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">.NET Core</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="75"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">PHP</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="70"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="85"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">SQL Server</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="80"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cat-box reveal">
+            <div class="skill-cat-head">
+              <div class="skill-cat-icon-box" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
+              </div>
+              <span class="skill-cat-title">Tools</span>
+            </div>
+            <div class="skill-row">
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="95"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="95"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Postman</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Docker</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="75"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Vercel</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="85"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Netlify</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="80"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cat-box reveal">
+            <div class="skill-cat-head">
+              <div class="skill-cat-icon-box" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+              </div>
+              <span class="skill-cat-title">Design</span>
+            </div>
+            <div class="skill-row">
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Adobe XD</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="85"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Photoshop</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="80"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">UI/UX Design</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="90"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="95"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Graphic Design</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="75"></div>
+                </div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-top">
+                  <span class="skill-name">Prototyping</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-section bg-2" aria-label="Other skills">
+      <div class="container">        
+        <div class="section-header">
+          <div class="section-title-group reveal-left ">
+            <p class="section-label">Beyond Code</p>
+            <h2 class="about-heading"> The Soft &  <br />
+              <strong>Supporting Skills</strong>
+            </h2>
+          </div>
+          <p class="section-desc reveal" >The human-side capabilities and cross-functional strengths that amplify my technical work — enabling seamless collaboration, clear communication, and smarter problem-solving.</p>
+        </div>
+        <div class="other-skills-grid">
+          <div class="other-skill-card reveal">
+            <div class="other-skill-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div class="other-skill-title">Clean Code</div>
+            <p class="other-skill-desc">Writing maintainable, scalable and efficient code following best practices.</p>
+          </div>
+          <div class="other-skill-card reveal">
+            <div class="other-skill-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <div class="other-skill-title">Performance</div>
+            <p class="other-skill-desc">Building fast, optimized applications with great user experience.</p>
+          </div>
+          <div class="other-skill-card reveal">
+            <div class="other-skill-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <div class="other-skill-title">Responsive Design</div>
+            <p class="other-skill-desc">Creating seamless experiences across all devices and platforms.</p>
+          </div>
+          <div class="other-skill-card reveal">
+            <div class="other-skill-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <circle cx="12" cy="17" r=".5" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="other-skill-title">Problem Solving</div>
+            <p class="other-skill-desc">I love solving complex problems and turning ideas into real-world solutions.</p>
+          </div>
+          <div class="other-skill-card reveal">
+            <div class="other-skill-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="other-skill-title">Collaboration</div>
+            <p class="other-skill-desc">Working effectively in teams and communicating ideas clearly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-section si-ticker-section" aria-label="Tools and technologies">
+      <div class="container">     
+        <div class="section-header">
+          <div class="section-title-group reveal-left ">
+            <p class="section-label">The Toolchain</p>
+            <h2 class="about-heading"> Dev Environment   <br />
+              <strong>& Tooling</strong>
+            </h2>
+          </div>
+          <p class="section-desc reveal" >A carefully selected suite of tools that streamlines my workflow, boosts productivity, and ensures consistency across every project.</p>
+        </div>
+      </div>
+      <div class="si-ticker-track-wrap" aria-label="Development tools">
+        <div class="si-ticker-row-label">Tools</div>
+        <div class="si-ticker-track si-ticker--left" id="ticker-tools" aria-hidden="true"></div>
+      </div>
+      <div class="si-ticker-track-wrap" aria-label="Technologies">
+        <div class="si-ticker-row-label">Technologies</div>
+        <div class="si-ticker-track si-ticker--right" id="ticker-technologies" aria-hidden="true"></div>
+      </div>
+      <div class="si-ticker-track-wrap" aria-label="AI tools">
+        <div class="si-ticker-row-label">AI Tools</div>
+        <div class="si-ticker-track si-ticker--left" id="ticker-ai" aria-hidden="true"></div>
+      </div>
+      <div class="container">
+        <div class="tools-grid" style="display:none !important;">
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z" />
+                <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z" />
+              </svg>
+            </div>
+            <span class="tool-label">HTML5</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                <path fill="#264de4" d="M71.357 460.819 30.272 0h451.456l-41.129 460.746L255.724 512z" />
+                <path fill="#2965f1" d="m405.388 431.408 35.148-393.73H256v435.146z" />
+                <path fill="#ebebeb" d="m124.46 208.59 5.065 56.517H256V208.59zm-5.041-57.875H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z" />
+                <path fill="#fff" d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z" />
+              </svg>
+            </div>
+            <span class="tool-label">CSS3</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="0 0 1052 1052">
+                <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
+                <path d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z" fill="#323330" />
+              </svg>
+            </div>
+            <span class="tool-label">JavaScript</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg viewBox="0 0 256 256" width="256" height="256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                <path d="M20 0h216c11.046 0 20 8.954 20 20v216c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20V20C0 8.954 8.954 0 20 0Z" fill="#3178C6" />
+                <path d="M150.518 200.475v27.62c4.492 2.302 9.805 4.028 15.938 5.179 6.133 1.151 12.597 1.726 19.393 1.726 6.622 0 12.914-.633 18.874-1.899 5.96-1.266 11.187-3.352 15.678-6.257 4.492-2.906 8.048-6.704 10.669-11.394 2.62-4.689 3.93-10.486 3.93-17.391 0-5.006-.749-9.394-2.246-13.163a30.748 30.748 0 0 0-6.479-10.055c-2.821-2.935-6.205-5.567-10.149-7.898-3.945-2.33-8.394-4.531-13.347-6.602-3.628-1.497-6.881-2.949-9.761-4.359-2.879-1.41-5.327-2.848-7.342-4.316-2.016-1.467-3.571-3.021-4.665-4.661-1.094-1.64-1.641-3.495-1.641-5.567 0-1.899.489-3.61 1.468-5.135s2.362-2.834 4.147-3.927c1.785-1.094 3.973-1.942 6.565-2.547 2.591-.604 5.471-.906 8.638-.906 2.304 0 4.737.173 7.299.518 2.563.345 5.14.877 7.732 1.597a53.669 53.669 0 0 1 7.558 2.719 41.7 41.7 0 0 1 6.781 3.797v-25.807c-4.204-1.611-8.797-2.805-13.778-3.582-4.981-.777-10.697-1.165-17.147-1.165-6.565 0-12.784.705-18.658 2.115-5.874 1.409-11.043 3.61-15.506 6.602-4.463 2.993-7.99 6.805-10.582 11.437-2.591 4.632-3.887 10.17-3.887 16.615 0 8.228 2.375 15.248 7.127 21.06 4.751 5.811 11.963 10.731 21.638 14.759a291.458 291.458 0 0 1 10.625 4.575c3.283 1.496 6.119 3.049 8.509 4.66 2.39 1.611 4.276 3.366 5.658 5.265 1.382 1.899 2.073 4.057 2.073 6.474a9.901 9.901 0 0 1-1.296 4.963c-.863 1.524-2.174 2.848-3.93 3.97-1.756 1.122-3.945 1.999-6.565 2.632-2.62.633-5.687.95-9.2.95-5.989 0-11.92-1.05-17.794-3.151-5.875-2.1-11.317-5.25-16.327-9.451Zm-46.036-68.733H140V109H41v22.742h35.345V233h28.137V131.742Z" fill="#FFF" />
+              </svg>
+            </div>
+            <span class="tool-label">TypeScript</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg width="569px" height="512px" viewBox="0 0 569 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(-227, -256)" fill="#58C4DC" fill-rule="nonzero">
+                    <g transform="translate(227, 256)">
+                      <path d="M285.5,201 C255.400481,201 231,225.400481 231,255.5 C231,285.599519 255.400481,310 285.5,310 C315.599519,310 340,285.599519 340,255.5 C340,225.400481 315.599519,201 285.5,201" id="Path"></path>
+                      <path d="M568.959856,255.99437 C568.959856,213.207656 529.337802,175.68144 466.251623,150.985214 C467.094645,145.423543 467.85738,139.922107 468.399323,134.521063 C474.621631,73.0415145 459.808523,28.6686204 426.709856,9.5541429 C389.677085,-11.8291748 337.36955,3.69129898 284.479928,46.0162134 C231.590306,3.69129898 179.282771,-11.8291748 142.25,9.5541429 C109.151333,28.6686204 94.3382249,73.0415145 100.560533,134.521063 C101.102476,139.922107 101.845139,145.443621 102.708233,151.02537 C97.4493791,153.033193 92.2908847,155.161486 87.3331099,157.39017 C31.0111824,182.708821 0,217.765415 0,255.99437 C0,298.781084 39.6220545,336.307301 102.708233,361.003527 C101.845139,366.565197 101.102476,372.066633 100.560533,377.467678 C94.3382249,438.947226 109.151333,483.32012 142.25,502.434597 C153.629683,508.887578 166.52439,512.186771 179.603923,511.991836 C210.956328,511.991836 247.567589,495.487529 284.479928,465.972527 C321.372196,495.487529 358.003528,511.991836 389.396077,511.991836 C402.475265,512.183856 415.36922,508.884856 426.75,502.434597 C459.848667,483.32012 474.661775,438.947226 468.439467,377.467678 C467.897524,372.066633 467.134789,366.565197 466.291767,361.003527 C529.377946,336.347457 569,298.761006 569,255.99437 M389.155214,27.1025182 C397.565154,26.899606 405.877839,28.9368502 413.241569,33.0055186 C436.223966,46.2772304 446.540955,82.2775015 441.522965,131.770345 C441.181741,135.143488 440.780302,138.556788 440.298575,141.990165 C414.066922,134.08804 387.205771,128.452154 360.010724,125.144528 C343.525021,103.224055 325.192524,82.7564475 305.214266,63.9661533 C336.586743,39.7116483 366.032313,27.1025182 389.135142,27.1025182 M378.356498,310.205598 C368.204912,327.830733 357.150626,344.919965 345.237759,361.405091 C325.045049,363.479997 304.758818,364.51205 284.459856,364.497299 C264.167589,364.51136 243.888075,363.479308 223.702025,361.405091 C211.820914,344.919381 200.80007,327.83006 190.683646,310.205598 C180.532593,292.629285 171.306974,274.534187 163.044553,255.99437 C171.306974,237.454554 180.532593,219.359455 190.683646,201.783142 C200.784121,184.229367 211.770999,167.201087 223.601665,150.764353 C243.824636,148.63809 264.145559,147.579168 284.479928,147.591877 C304.772146,147.579725 325.051559,148.611772 345.237759,150.68404 C357.109048,167.14607 368.136094,184.201112 378.27621,201.783142 C388.419418,219.363718 397.644825,237.458403 405.915303,255.99437 C397.644825,274.530337 388.419418,292.625022 378.27621,310.205598 M419.724813,290.127366 C426.09516,307.503536 431.324985,325.277083 435.380944,343.334682 C417.779633,348.823635 399.836793,353.149774 381.668372,356.285142 C388.573127,345.871232 395.263781,335.035679 401.740334,323.778483 C408.143291,312.655143 414.144807,301.431411 419.805101,290.207679 M246.363271,390.377981 C258.848032,391.140954 271.593728,391.582675 284.5,391.582675 C297.406272,391.582675 310.232256,391.140954 322.737089,390.377981 C310.880643,404.583418 298.10766,417.997563 284.5,430.534446 C270.921643,417.999548 258.18192,404.585125 246.363271,390.377981 Z M187.311556,356.244986 C169.137286,353.123646 151.187726,348.810918 133.578912,343.334682 C137.618549,325.305649 142.828222,307.559058 149.174827,290.207679 C154.754833,301.431411 160.736278,312.655143 167.239594,323.778483 C173.74291,334.901824 180.467017,345.864539 187.311556,356.285142 M149.174827,221.760984 C142.850954,204.473938 137.654787,186.794745 133.619056,168.834762 C151.18418,163.352378 169.085653,159.013101 187.211197,155.844146 C180.346585,166.224592 173.622478,176.986525 167.139234,188.210257 C160.65599,199.433989 154.734761,210.517173 149.074467,221.760984 M322.616657,121.590681 C310.131896,120.827708 297.3862,120.385987 284.379568,120.385987 C271.479987,120.385987 258.767744,120.787552 246.242839,121.590681 C258.061488,107.383537 270.801211,93.9691137 284.379568,81.4342157 C297.99241,93.9658277 310.765727,107.380324 322.616657,121.590681 Z M401.70019,188.210257 C395.196875,176.939676 388.472767,166.09743 381.527868,155.68352 C399.744224,158.819049 417.734224,163.151949 435.380944,168.654058 C431.331963,186.680673 426.122466,204.426664 419.785029,221.781062 C414.205023,210.55733 408.203506,199.333598 401.720262,188.230335 M127.517179,131.790423 C122.438973,82.3176579 132.816178,46.2973086 155.778503,33.0255968 C163.144699,28.9632474 171.455651,26.9264282 179.864858,27.1225964 C202.967687,27.1225964 232.413257,39.7317265 263.785734,63.9862316 C243.794133,82.7898734 225.448298,103.270812 208.949132,125.204763 C181.761691,128.528025 154.90355,134.14313 128.661281,141.990165 C128.199626,138.556788 127.778115,135.163566 127.456963,131.790423 M98.4529773,182.106474 C101.54406,180.767925 104.695358,179.429376 107.906872,178.090828 C114.220532,204.735668 122.781793,230.7969 133.498624,255.99437 C122.761529,281.241316 114.193296,307.357063 107.8868,334.058539 C56.7434387,313.076786 27.0971497,284.003505 27.0971497,255.99437 C27.0971497,229.450947 53.1907013,202.526037 98.4529773,182.106474 Z M155.778503,478.963143 C132.816178,465.691432 122.438973,429.671082 127.517179,380.198317 C127.838331,376.825174 128.259842,373.431953 128.721497,369.978497 C154.953686,377.878517 181.814655,383.514365 209.009348,386.824134 C225.500295,408.752719 243.832321,429.233234 263.805806,448.042665 C220.069,481.834331 180.105722,492.97775 155.838719,478.963143 M441.502893,380.198317 C446.520883,429.691161 436.203894,465.691432 413.221497,478.963143 C388.974566,493.017906 348.991216,481.834331 305.274481,448.042665 C325.241364,429.232737 343.566681,408.752215 360.050868,386.824134 C387.245915,383.516508 414.107066,377.880622 440.338719,369.978497 C440.820446,373.431953 441.221885,376.825174 441.563109,380.198317 M461.193488,334.018382 C454.869166,307.332523 446.294494,281.231049 435.561592,255.99437 C446.289797,230.744081 454.857778,204.629101 461.173416,177.930202 C512.216417,198.911955 541.942994,227.985236 541.942994,255.99437 C541.942994,284.003505 512.296705,313.076786 461.153344,334.058539" id="Shape"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span class="tool-label">React</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="5" fill="#000" />
+                <path d="M18.5 22.3L14 15.7V27H11V9h2.5l5.2 8L24 9h2.5v18H24V15.7l-4.2 6.6h-1.3zM8 9H5v18h3V9z" fill="white" />
+              </svg>
+            </div>
+            <span class="tool-label">Next.js</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+                <mask height="180" id=":r8:mask0_408_134" maskUnits="userSpaceOnUse" width="180" x="0" y="0" style="mask-type: alpha;">
+                  <circle cx="90" cy="90" fill="black" r="90"></circle>
+                </mask>
+                <g mask="url(#:r8:mask0_408_134)">
+                  <circle cx="90" cy="90" data-circle="true" fill="black" r="90"></circle>
+                  <path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#:r8:paint0_linear_408_134)"></path>
+                  <rect fill="url(#:r8:paint1_linear_408_134)" height="72" width="12" x="115" y="54"></rect>
+                </g>
+                <defs>
+                  <linearGradient gradientUnits="userSpaceOnUse" id=":r8:paint0_linear_408_134" x1="109" x2="144.5" y1="116.5" y2="160.5">
+                    <stop stop-color="white"></stop>
+                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                  </linearGradient>
+                  <linearGradient gradientUnits="userSpaceOnUse" id=":r8:paint1_linear_408_134" x1="121" x2="120.799" y1="54" y2="106.875">
+                    <stop stop-color="white"></stop>
+                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="tool-label">Node.js</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64">
+                <path fill="#fff" d="M32 24.795c-1.164.296-1.884.013-2.53-.957l-4.594-6.356-.664-.88-5.365 7.257c-.613.873-1.256 1.253-2.4.944l6.87-9.222-6.396-8.33c1.1-.214 1.86-.105 2.535.88l4.765 6.435 4.8-6.4c.615-.873 1.276-1.205 2.38-.883l-2.48 3.288-3.36 4.375c-.4.5-.345.842.023 1.325L32 24.795zM.008 15.427l.562-2.764C2.1 7.193 8.37 4.92 12.694 8.3c2.527 1.988 3.155 4.8 3.03 7.95H1.48c-.214 5.67 3.867 9.092 9.07 7.346 1.825-.613 2.9-2.042 3.438-3.83.273-.896.725-1.036 1.567-.78-.43 2.236-1.4 4.104-3.45 5.273-3.063 1.75-7.435 1.184-9.735-1.248C1 21.6.434 19.812.18 17.9c-.04-.316-.12-.617-.18-.92q.008-.776.008-1.552zm1.498-.38h12.872c-.084-4.1-2.637-7.012-6.126-7.037-3.83-.03-6.58 2.813-6.746 7.037z" />
+              </svg>
+            </div>
+            <span class="tool-label">Express.js</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
+                <g clip-path="url(#a)">
+                  <path fill="#38bdf8" fill-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" clip-rule="evenodd" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="tool-label">Tailwind CSS</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg viewBox="0 0 256 204" xmlns="http://www.w3.org/2000/svg" width="256" height="204" preserveAspectRatio="xMidYMid">
+                <path fill="#7E13F8" d="M53.172 0C38.565 0 27.756 12.785 28.24 26.65c.465 13.32-.139 30.573-4.482 44.642C19.402 85.402 12.034 94.34 0 95.488v12.956c12.034 1.148 19.402 10.086 23.758 24.197 4.343 14.069 4.947 31.32 4.482 44.641-.484 13.863 10.325 26.65 24.934 26.65h149.673c14.608 0 25.414-12.785 24.93-26.65-.464-13.32.139-30.572 4.482-44.641 4.359-14.11 11.707-23.05 23.741-24.197V95.488c-12.034-1.148-19.382-10.086-23.74-24.196-4.344-14.067-4.947-31.321-4.483-44.642C228.261 12.787 217.455 0 202.847 0H53.17h.002ZM173.56 125.533c0 19.092-14.24 30.67-37.872 30.67h-40.23a4.339 4.339 0 0 1-4.338-4.339V52.068a4.339 4.339 0 0 1 4.339-4.34h39.999c19.705 0 32.637 10.675 32.637 27.063 0 11.503-8.7 21.801-19.783 23.604v.601c15.089 1.655 25.248 12.104 25.248 26.537Zm-42.26-64.05h-22.937v32.4h19.32c14.934 0 23.17-6.014 23.17-16.764 0-10.073-7.082-15.636-19.552-15.636Zm-22.937 45.256v35.705h23.782c15.548 0 23.786-6.239 23.786-17.965 0-11.728-8.467-17.742-24.786-17.742h-22.782v.002Z" />
+              </svg>
+            </div>
+            <span class="tool-label">Bootstrap</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
+                <path d="M251.17 116.6 139.4 4.82a16.49 16.49 0 0 0-23.31 0l-23.21 23.2 29.44 29.45a19.57 19.57 0 0 1 24.8 24.96l28.37 28.38a19.61 19.61 0 1 1-11.75 11.06L137.28 95.4v69.64a19.62 19.62 0 1 1-16.13-.57V94.2a19.61 19.61 0 0 1-10.65-25.73L81.46 39.44 4.83 116.08a16.49 16.49 0 0 0 0 23.32L116.6 251.17a16.49 16.49 0 0 0 23.32 0l111.25-111.25a16.5 16.5 0 0 0 0-23.33" fill="#DE4C36" />
+              </svg>
+            </div>
+            <span class="tool-label">Git</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#181717" />
+              </svg>
+            </div>
+            <span class="tool-label">GitHub</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                <mask id="a" width="100" height="100" x="0" y="0" mask-type="alpha" maskUnits="userSpaceOnUse">
+                  <path fill="#fff" fill-rule="evenodd" d="M70.912 99.317a6.223 6.223 0 0 0 4.96-.19l20.589-9.907A6.25 6.25 0 0 0 100 83.587V16.413a6.25 6.25 0 0 0-3.54-5.632L75.874.874a6.226 6.226 0 0 0-7.104 1.21L29.355 38.04 12.187 25.01a4.162 4.162 0 0 0-5.318.236l-5.506 5.009a4.168 4.168 0 0 0-.004 6.162L16.247 50 1.36 63.583a4.168 4.168 0 0 0 .004 6.162l5.506 5.01a4.162 4.162 0 0 0 5.318.236l17.168-13.032L68.77 97.917a6.217 6.217 0 0 0 2.143 1.4ZM75.015 27.3 45.11 50l29.906 22.701V27.3Z" clip-rule="evenodd" />
+                </mask>
+                <g mask="url(#a)">
+                  <path fill="#0065A9" d="M96.461 10.796 75.857.876a6.23 6.23 0 0 0-7.107 1.207l-67.451 61.5a4.167 4.167 0 0 0 .004 6.162l5.51 5.009a4.167 4.167 0 0 0 5.32.236l81.228-61.62c2.725-2.067 6.639-.124 6.639 3.297v-.24a6.25 6.25 0 0 0-3.539-5.63Z" />
+                  <g filter="url(#b)">
+                    <path fill="#007ACC" d="m96.461 89.204-20.604 9.92a6.229 6.229 0 0 1-7.107-1.207l-67.451-61.5a4.167 4.167 0 0 1 .004-6.162l5.51-5.009a4.167 4.167 0 0 1 5.32-.236l81.228 61.62c2.725 2.067 6.639.124 6.639-3.297v.24a6.25 6.25 0 0 1-3.539 5.63Z" />
+                  </g>
+                  <g filter="url(#c)">
+                    <path fill="#1F9CF0" d="M75.858 99.126a6.232 6.232 0 0 1-7.108-1.21c2.306 2.307 6.25.674 6.25-2.588V4.672c0-3.262-3.944-4.895-6.25-2.589a6.232 6.232 0 0 1 7.108-1.21l20.6 9.908A6.25 6.25 0 0 1 100 16.413v67.174a6.25 6.25 0 0 1-3.541 5.633l-20.601 9.906Z" />
+                  </g>
+                  <path fill="url(#d)" fill-rule="evenodd" d="M70.851 99.317a6.224 6.224 0 0 0 4.96-.19L96.4 89.22a6.25 6.25 0 0 0 3.54-5.633V16.413a6.25 6.25 0 0 0-3.54-5.632L75.812.874a6.226 6.226 0 0 0-7.104 1.21L29.294 38.04 12.126 25.01a4.162 4.162 0 0 0-5.317.236l-5.507 5.009a4.168 4.168 0 0 0-.004 6.162L16.186 50 1.298 63.583a4.168 4.168 0 0 0 .004 6.162l5.507 5.009a4.162 4.162 0 0 0 5.317.236L29.294 61.96l39.414 35.958a6.218 6.218 0 0 0 2.143 1.4ZM74.954 27.3 45.048 50l29.906 22.701V27.3Z" clip-rule="evenodd" opacity=".25" style="mix-blend-mode:overlay" />
+                </g>
+                <defs>
+                  <filter id="b" width="116.727" height="92.246" x="-8.394" y="15.829" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="4.167" />
+                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow" />
+                    <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                  </filter>
+                  <filter id="c" width="47.917" height="116.151" x="60.417" y="-8.076" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="4.167" />
+                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow" />
+                    <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                  </filter>
+                  <linearGradient id="d" x1="49.939" x2="49.939" y1=".258" y2="99.742" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff" />
+                    <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="tool-label">VS Code</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg width="54" height="80" viewBox="0 0 54 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_912_3)">
+                  <path d="M13.3333 80.0002C20.6933 80.0002 26.6667 74.0268 26.6667 66.6668V53.3335H13.3333C5.97333 53.3335 0 59.3068 0 66.6668C0 74.0268 5.97333 80.0002 13.3333 80.0002Z" fill="#0ACF83" />
+                  <path d="M0 39.9998C0 32.6398 5.97333 26.6665 13.3333 26.6665H26.6667V53.3332H13.3333C5.97333 53.3332 0 47.3598 0 39.9998Z" fill="#A259FF" />
+                  <path d="M0 13.3333C0 5.97333 5.97333 0 13.3333 0H26.6667V26.6667H13.3333C5.97333 26.6667 0 20.6933 0 13.3333Z" fill="#F24E1E" />
+                  <path d="M26.6667 0H40.0001C47.3601 0 53.3334 5.97333 53.3334 13.3333C53.3334 20.6933 47.3601 26.6667 40.0001 26.6667H26.6667V0Z" fill="#FF7262" />
+                  <path d="M53.3334 39.9998C53.3334 47.3598 47.3601 53.3332 40.0001 53.3332C32.6401 53.3332 26.6667 47.3598 26.6667 39.9998C26.6667 32.6398 32.6401 26.6665 40.0001 26.6665C47.3601 26.6665 53.3334 32.6398 53.3334 39.9998Z" fill="#1ABCFE" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_912_3">
+                    <rect width="53.3333" height="80" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="tool-label">Figma</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 120 257">
+                <path fill="#00ED64" d="M82.323 28.55C71.537 15.795 62.249 2.84 60.35.15c-.2-.2-.5-.2-.7 0-1.897 2.69-11.185 15.645-21.971 28.4C-54.902 146.238 52.26 225.661 52.26 225.661l.9.597c.798 12.258 2.795 29.896 2.795 29.896h7.99s1.998-17.539 2.797-29.896l.899-.697c.1 0 107.263-79.323 14.68-197.01ZM59.95 223.867s-4.793-4.086-6.092-6.179v-.199l5.793-128.151c0-.4.6-.4.6 0l5.792 128.151v.199c-1.299 2.093-6.093 6.179-6.093 6.179Z" />
+              </svg>
+            </div>
+            <span class="tool-label">MongoDB</span>
+          </div>
+          <div class="tool-item reveal">
+            <div class="tool-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 252">
+                <path fill="#FFF" d="M236 194c-14 0-25 1-34 5-3 1-7 1-7 4l3 6c2 3 5 8 9 11l11 8 21 10 11 9 6 4-3-6-5-5c-5-7-11-13-18-18-6-3-18-9-20-15h-1l12-3 18-3 8-2v-2l-9-10c-8-8-18-15-28-22l-18-8c-2-1-6-2-7-4l-7-13-15-30-8-20c-18-30-38-48-68-65-6-4-14-5-22-7l-13-1-8-6C34 5 8-9 1 9c-5 11 7 22 11 28l9 13 3 9c3 8 5 17 9 24l6 10c2 2 4 3 5 6-3 4-3 9-4 13-7 20-4 44 5 59 2 4 9 14 18 10 8-3 6-13 8-22l1-4 8 14c5 9 14 18 22 24 4 3 8 8 13 10l-4-4-9-10c-8-10-14-21-20-32l-7-17-3-6c-3 4-7 7-9 12-3 7-3 17-4 26h-1c-6-1-8-7-10-12-5-12-6-32-1-46 1-4 6-15 4-19-1-3-4-5-6-7l-7-12-10-30-9-13c-3-5-7-8-10-14-1-2-2-5 0-7l2-2c2-2 9 0 11 1 6 3 12 5 17 9l8 6h4c6 1 12 0 17 2 9 3 18 7 25 12 23 14 42 35 54 59 3 4 3 8 5 12l12 26c4 8 7 16 12 23 3 4 14 6 18 8l12 4 18 12c2 2 11 7 12 10Z" />
+                <path fill="#FFF" d="m58 43-7 1 6 7 4 9v-1c3-1 4-4 4-8l-2-4-5-4Z" />
+              </svg>
+            </div>
+            <span class="tool-label">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-section bg" aria-label="Continuous learning">
+      <div class="container">  
+        <div class="learning-inner">
+          <div class="reveal-left">
+            <div class="section-header">
+              <div class="section-title-group reveal-left ">
+                <p class="section-label">Always Evolving</p>
+                <h2 class="about-heading"> What I'm  <br />
+                  <strong>Exploring Next</strong>
+                </h2>
+                <p class=" reveal" >I'm always learning new technologies and improving my skills to stay up-to-date in the fast-evolving web development landscape.</p>
+              </div>
+            </div>
+          </div>
+          <div class="learning-cards reveal">
+            <div class="learning-card">
+              <div class="learning-card-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <span class="learning-card-text">Explore modern frameworks and libraries</span>
+            </div>
+            <div class="learning-card">
+              <div class="learning-card-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <span class="learning-card-text">Build real-world projects and solve challenges</span>
+            </div>
+            <div class="learning-card">
+              <div class="learning-card-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </div>
+              <span class="learning-card-text">Read, learn and grow everyday</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-bg" aria-hidden="true">
+        <svg class="footer-bg-grid-dots" preserveAspectRatio="none" viewBox="0 0 100 100">
+          <defs>
+            <radialGradient id="FooterDotGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="var(--accent)" stop-opacity="1" />
+              <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <circle r="0.55" fill="url(#FooterDotGlow)">
+            <animateMotion dur="9s" repeatCount="indefinite" path="M -5,18 H 105" rotate="auto" />
+          </circle>
+          <circle r="0.5" fill="url(#FooterDotGlow)">
+            <animateMotion dur="13s" begin="2s" repeatCount="indefinite" path="M 105,46 H -5" rotate="auto" />
+          </circle>
+          <circle r="0.55" fill="url(#FooterDotGlow)">
+            <animateMotion dur="11s" begin="4.5s" repeatCount="indefinite" path="M -5,74 H 105" rotate="auto" />
+          </circle>
+          <circle r="0.5" fill="url(#FooterDotGlow)">
+            <animateMotion dur="10s" begin="1s" repeatCount="indefinite" path="M 24,-5 V 105" rotate="auto" />
+          </circle>
+          <circle r="0.55" fill="url(#FooterDotGlow)">
+            <animateMotion dur="14s" begin="6s" repeatCount="indefinite" path="M 62,105 V -5" rotate="auto" />
+          </circle>
+          <circle r="0.5" fill="url(#FooterDotGlow)">
+            <animateMotion dur="12s" begin="3s" repeatCount="indefinite" path="M 88,-5 V 105" rotate="auto" />
+          </circle>
+        </svg>
+        <div class="footer-bg-glow-blob"></div>
+        <div class="footer-bg-radar"></div>
+        <div class="footer-bg-globe">
+          <svg viewBox="0 0 400 400" class="footer-globe-svg">
+            <defs>
+              <radialGradient id="FooterGlobeFade" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.055" />
+                <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.006" />
+              </radialGradient>
+            </defs>
+            <g stroke="var(--accent)" stroke-width="0.75" fill="none" opacity="0.055">
+              <ellipse cx="200" cy="200" rx="180" ry="180" />
+              <ellipse cx="200" cy="200" rx="180" ry="70" />
+              <ellipse cx="200" cy="200" rx="180" ry="130" />
+              <ellipse cx="200" cy="200" rx="180" ry="178" transform="rotate(0 200 200)" />
+              <ellipse cx="200" cy="200" rx="70" ry="180" />
+              <ellipse cx="200" cy="200" rx="130" ry="180" />
+              <ellipse cx="200" cy="200" rx="40" ry="180" />
+              <line x1="20" y1="200" x2="380" y2="200" />
+              <line x1="30" y1="130" x2="370" y2="130" />
+              <line x1="30" y1="270" x2="370" y2="270" />
+              <line x1="55" y1="80" x2="345" y2="80" />
+              <line x1="55" y1="320" x2="345" y2="320" />
+            </g>
+            <circle cx="200" cy="200" r="180" fill="url(#FooterGlobeFade)" />
+          </svg>
+        </div>
+        <div class="footer-bg-noise"></div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <a href="#" class="nav-logo" aria-label="Home">
+              <div class="logo-box" aria-hidden="true">SI</div>
+              <div class="logo-text">
+                <span class="logo-name">M Sohaib Ishaque</span>
+                <span class="logo-role">Full Stack Web Developer</span>
+              </div>
+            </a>
+            <p class="brand-tagline">Building digital experiences that make an impact. Clean code, modern design, scalable solutions.</p>
+            <div class="brand-rule" aria-hidden="true"></div>
+            <div class="footer-cta-card">
+              <div class="footer-cta-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 11l18-8-8 18-2-8-8-2z" />
+                </svg>
+              </div>
+              <h3 class="footer-cta-title">Let's work together</h3>
+              <p class="footer-cta-text">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+              <a href="contact.html" class="footer-cta-button"> Get In Touch <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <nav class="footer-col footer-col--nav" aria-labelledby="footer-nav-heading">
+            <h3 class="footer-col-heading" id="footer-nav-heading">
+              <span class="dot" aria-hidden="true"></span>Quick Links
+            </h3>
+            <ul class="footer-link-list">
+              <li>
+                <a href="index.htnl" class="footer-link-active">
+                  <span class="dot dot--small" aria-hidden="true"></span>Home </a>
+              </li>
+              <li>
+                <a href="about.htnl">About</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Skills</a>
+              </li>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="experience.html">Experience</a>
+              </li>
+              <li>
+                <a href="testimonials.html">Testimonials</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-col footer-col--services" aria-labelledby="footer-services-heading">
+            <h3 class="footer-col-heading" id="footer-services-heading">
+              <span class="dot" aria-hidden="true"></span>Technologies
+            </h3>
+            <ul class="footer-link-list">
+              <li>
+                <a href="skills.htnl">Angular &amp; React</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Next.js</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Node.js</a>
+              </li>
+              <li>
+                <a href="skills.htnl">TypeScript</a>
+              </li>
+              <li>
+                <a href="skills.htnl">MongoDB</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Tailwind CSS</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-col footer-col--contact" id="FooterContact">
+            <h3 class="footer-col-heading">
+              <span class="dot" aria-hidden="true"></span>Let's Connect
+            </h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
+                <span class="footer-contact-text">
+                  <a href="tel:+15551234567">+92 3038464315</a>
+                  <span class="footer-contact-sub">Mon - Fri, 9AM - 6PM EST</span>
+                </span>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </span>
+                <span class="footer-contact-text">
+                  <a href="mailto:engineer.sohaibishaque@gmail.com">engineer.sohaibishaque@gmail.com</a>
+                  <span class="footer-contact-sub">I'll get back to you soon</span>
+                </span>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span class="footer-contact-text">
+                  <span class="contact-static">Rawalpindi, Pakistan</span>
+                  <span class="footer-contact-sub">Available for remote work</span>
+                </span>
+              </li>
+            </ul>
+            <ul class="footer-social-list" aria-label="Social media links">
+              <li>
+                <a href="https://github.com/Sohaib-Ishaque" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/engineer-sohaib-ishaque-765b34171/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://sohaibishaque.com" class="social-icon" aria-label="Website" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:engineer.sohaibishaque@gmail.com" class="social-icon" aria-label="Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="freelance-note">
+              <strong>Available</strong> for freelance work <br />and exciting opportunities.
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="bottom-left">
+            <span class="code-icon" aria-hidden="true">&lt;/&gt;</span>
+            <span>Designed &amp; Built by <span class="accent">M Sohaib Ishaque</span>
+            </span>
+            <svg class="heart-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 21s-7.5-4.6-10-9.1C.5 8.4 2 4.8 5.6 4.1c2-.4 4 .5 6.4 2.9 2.4-2.4 4.4-3.3 6.4-2.9C22 4.8 23.5 8.4 22 11.9 19.5 16.4 12 21 12 21z" />
+            </svg>
+          </div>
+          <div class="bottom-center"> &copy; 2025 <span class="accent">M Sohaib Ishaque</span>. All rights reserved. </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/constants.js"></script>
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/textures.js"></script>
+    <script src="./assets/js/interactions.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
