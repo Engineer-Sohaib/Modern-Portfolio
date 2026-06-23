@@ -774,7 +774,13 @@ footer {
 }
 .hero-img:hover {
   filter: grayscale(0%);
+  transform: scale(1.2);
 }
+
+.project-image-wrp .hero-img{
+  clip-path: none;
+}
+
 
 .hero-name-card {
   position: absolute;
