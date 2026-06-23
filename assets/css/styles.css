@@ -984,7 +984,6 @@ footer {
   color: var(--gray);
   font-size: 0.88rem;
   max-width: 320px;
-  text-align: right;
   line-height: 1.7;
 }
 /* CTA BANNER */
@@ -1247,10 +1246,7 @@ footer {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#skills .section-desc {
-  padding-left: 1.1rem;
-  border-left: 2px solid var(--accent-dim);
-}
+
 
 /* ---------- grid ---------- */
 #skills .skills-grid {
