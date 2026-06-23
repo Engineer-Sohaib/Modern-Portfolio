@@ -773,7 +773,7 @@ footer {
   filter: grayscale(20%);
   transition: filter var(--transition),transform var(--transition);
 }
-.pd2-screenshot-thumb.hero-img:hover {
+.pd2-screenshot-thumb .hero-img:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
 }
