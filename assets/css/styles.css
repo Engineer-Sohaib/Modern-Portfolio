@@ -959,7 +959,7 @@ footer {
 
 .section-header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 3rem;
   gap: 2rem;
