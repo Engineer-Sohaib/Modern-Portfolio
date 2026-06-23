@@ -770,7 +770,7 @@ footer {
   object-position: top center;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
   filter: grayscale(20%);
-  transition: filter var(--transition);
+  transition: filter var(--transition),transform var(--transition);
 }
 .hero-img:hover {
   filter: grayscale(0%);
