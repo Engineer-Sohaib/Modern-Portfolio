@@ -2050,43 +2050,8 @@ footer {
         line-height: 1.6;
       }
 
-      /* ════════════════════════════════════════════
-         SCREENSHOTS CAROUSEL
-         ════════════════════════════════════════════ */
       .pd2-screenshots-wrap {
         position: relative;
-      }
-      .pd2-screenshots-header {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      .pd2-nav-arrows {
-        display: flex;
-        gap: 0.5rem;
-        flex-shrink: 0;
-      }
-      .pd2-arrow-btn {
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--white);
-        cursor: pointer;
-        transition: var(--transition);
-        flex-shrink: 0;
-      }
-      .pd2-arrow-btn:hover {
-        background: var(--accent);
-        color: var(--bg);
-        border-color: var(--accent);
       }
       .pd2-screenshots-carousel {
         display: grid;
@@ -2112,63 +2077,6 @@ footer {
         display: flex;
         flex-direction: column;
       }
-      .pd2-shot-bar {
-        background: #0a0a0a;
-        border-bottom: 1px solid #1a1a1a;
-        padding: 0.25rem 0.5rem;
-        display: flex;
-        gap: 0.2rem;
-        flex-shrink: 0;
-      }
-      .pd2-shot-dot { width: 5px; height: 5px; border-radius: 50%; }
-      .pd2-shot-dot:nth-child(1) { background: #ff5f57; }
-      .pd2-shot-dot:nth-child(2) { background: #febc2e; }
-      .pd2-shot-dot:nth-child(3) { background: #28c840; }
-      .pd2-shot-content {
-        flex: 1;
-        display: grid;
-        grid-template-columns: 40px 1fr;
-        gap: 0;
-      }
-      .pd2-shot-sidebar {
-        background: var(--bg-card);
-        border-right: 1px solid var(--border);
-        display: flex;
-        flex-direction: column;
-        padding: 0.3rem 0;
-        gap: 0.15rem;
-        align-items: center;
-      }
-      .pd2-shot-nav-dot {
-        width: 18px;
-        height: 3px;
-        background: var(--bg);
-        border-radius: 2px;
-      }
-      .pd2-shot-nav-dot.active { background: var(--overlay); }
-      .pd2-shot-main {
-        background: var(--bg-2);
-        padding: 0.4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-      }
-      .pd2-shot-row {
-        display: flex;
-        gap: 0.25rem;
-      }
-      .pd2-shot-block {
-        background: #1a1a1a;
-        border-radius: 1px;
-        flex: 1;
-        height: 12px;
-      }
-      .pd2-shot-block.tall { height: 40px; }
-      .pd2-shot-block.accent { background: var(--overlay); }
-
-      /* ════════════════════════════════════════════
-         PERFORMANCE METRICS
-         ════════════════════════════════════════════ */
       .pd2-metrics-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
