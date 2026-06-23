@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact M Sohaib Ishaque — Full Stack Web Developer. Let's build something great together." />
+    <title>Contact — M Sohaib Ishaque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg
+			xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23A3FF12'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='14' fill='%23000'%3ESI%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <div class="preloader-logo">SI</div>
+      <div class="preloader-bar"></div>
+    </div>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <button class="back-top" aria-label="Back to top">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <div class="customize-panel" id="customizePanel" aria-hidden="true" role="dialog" aria-label="Theme settings">
+      <div class="cp-header">
+        <div class="cp-header-left">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 1l1.5 3.5L13 6l-3.5 1.5L8 11 6.5 7.5 3 6l3.5-1.5z" fill="rgba(180,150,255,0.9)" />
+            <circle cx="13" cy="2" r="1" fill="rgba(180,150,255,0.7)" />
+          </svg>
+          <span>Customization</span>
+        </div>
+        <button class="cp-close" id="customizePanelClose" aria-label="Close customize panel">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <line x1="2" y1="2" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <line x1="12" y1="2" x2="2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="cp-accent-bar" aria-hidden="true"></div>
+      <div class="cp-streak" aria-hidden="true"></div>
+      <p class="cp-section-label"> Theme </p>
+      <div class="cp-theme-grid" id="cpThemeGrid">
+        <div class="cp-theme-card" data-theme="light" role="radio" aria-checked="false" tabindex="0">
+          <div class="cp-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(200,180,255,0.85)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <line x1="12" y1="2" x2="12" y2="4" />
+              <line x1="12" y1="20" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="4" y2="12" />
+              <line x1="20" y1="12" x2="22" y2="12" />
+              <line x1="4.93" y1="4.93" x2="6.34" y2="6.34" />
+              <line x1="17.66" y1="17.66" x2="19.07" y2="19.07" />
+              <line x1="4.93" y1="19.07" x2="6.34" y2="17.66" />
+              <line x1="17.66" y1="6.34" x2="19.07" y2="4.93" />
+            </svg>
+          </div>
+        </div>
+        <div class="cp-theme-card active" data-theme="dark" role="radio" aria-checked="true" tabindex="0">
+          <div class="cp-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(200,180,255,0.95)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </div>
+        </div>
+        <div class="cp-theme-card" data-theme="system" role="radio" aria-checked="false" tabindex="0">
+          <div class="cp-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(200,180,255,0.85)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="cp-presets-header">
+        <div>
+          <p class="cp-section-label" style="margin-bottom:2px">Preset Themes</p>
+        </div>
+      </div>
+      <div class="cp-carousel-wrap">
+        <div class="cp-carousel" id="cpSwatchCarousel">
+          <div class="cp-swatch" data-swatch="deep-violet">
+            <div class="cp-swatch-box active" style="background:linear-gradient(135deg,#A3FF12 0%,#89d313 50%,#6ca116 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Deep Violet</div>
+          </div>
+          <div class="cp-swatch" data-swatch="electric-blue">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#1e40af 0%,#2563eb 50%,#60a5fa 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Electric Blue</div>
+          </div>
+          <div class="cp-swatch" data-swatch="warm-amber">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#b45309 0%,#f59e0b 50%,#fcd34d 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Warm Amber</div>
+          </div>
+          <div class="cp-swatch" data-swatch="soft-rose">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#9f1239 0%,#f43f5e 50%,#fda4af 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#f43f5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Soft Rose</div>
+          </div>
+          <div class="cp-swatch" data-swatch="sunset-orange">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#c2410c 0%,#ea580c 50%,#fb923c 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Sunset Orange</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="customize-overlay" id="customizeOverlay"></div>
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="skills.html" class="mobile-nav-link">Skills</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="experience.html" class="mobile-nav-link">Experience</a>
+      <a href="testimonials.html" class="mobile-nav-link">Testimonials</a>
+      <a href="contact.html" class="mobile-nav-link" style="color:var(--accent)">Contact</a>
+    </nav>
+    <header class="navbar scrolled" role="banner">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo" aria-label="Home">
+            <div class="logo-box" aria-hidden="true">SI</div>
+            <div class="logo-text">
+              <span class="logo-name">M Sohaib Ishaque</span>
+              <span class="logo-role">Full Stack Web Developer</span>
+            </div>
+          </a>
+          <nav class="nav-menu" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="testimonials.html" class="nav-link">Testimonials</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </nav>
+          <div class="nav-right-btns">
+            <a href="contact.html" class="nav-cta"> Let's Talk <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </a>
+            <a href="#0" class="btn btn-outline" id="customizeBtn" aria-label="Customize" aria-expanded="false" aria-controls="customizePanel">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.4 15.05L18.3 17.05C18.1 17.4 17.7 17.6 17.3 17.5L15.3 16.95C14.9 17.2 14.5 17.4 14.1 17.55L13.7 19.6C13.6 20 13.3 20.3 12.9 20.3H11.1C10.7 20.3 10.4 20 10.3 19.6L9.9 17.55C9.5 17.4 9.1 17.2 8.7 16.95L6.7 17.5C6.3 17.6 5.9 17.4 5.7 17.05L4.6 15.05C4.4 14.7 4.5 14.3 4.8 14.1L6.4 12.9C6.3 12.6 6.3 12.3 6.3 12C6.3 11.7 6.3 11.4 6.4 11.1L4.8 9.9C4.5 9.7 4.4 9.3 4.6 8.95L5.7 6.95C5.9 6.6 6.3 6.4 6.7 6.5L8.7 7.05C9.1 6.8 9.5 6.6 9.9 6.45L10.3 4.4C10.4 4 10.7 3.7 11.1 3.7H12.9C13.3 3.7 13.6 4 13.7 4.4L14.1 6.45C14.5 6.6 14.9 6.8 15.3 7.05L17.3 6.5C17.7 6.4 18.1 6.6 18.3 6.95L19.4 8.95C19.6 9.3 19.5 9.7 19.2 9.9L17.6 11.1C17.7 11.4 17.7 11.7 17.7 12C17.7 12.3 17.7 12.6 17.6 12.9L19.2 14.1C19.5 14.3 19.6 14.7 19.4 15.05Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <button class="hamburger  btn-outline" aria-label="Toggle menu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="home" class="contact-hero" aria-label="Hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="contact-hero-content">
+            <div class="contact-hero-label reveal">Get In Touch</div>
+            <h1 class="contact-hero-heading reveal"> Let's Create <span class="accent-line">Together Today.</span>
+            </h1>
+            <p class="contact-hero-desc reveal"> Have a project in mind or want to collaborate? <br> I'm always open to discussing new opportunities and <br> bringing ideas to life. </p>
+            <div class="contact-quick-info reveal">
+              <div class="cqi-item">
+                <span class="cqi-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </span>
+                <span>engineer.sohaibishaque@gmail.com</span>
+              </div>
+              <div class="cqi-item">
+                <span class="cqi-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" />
+                  </svg>
+                </span>
+                <span>+92 303-8464315</span>
+              </div>
+              <div class="cqi-item">
+                <span class="cqi-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                  </svg>
+                </span>
+                <span>Based in Pakistan</span>
+              </div>
+              <div class="cqi-item">
+                <span class="cqi-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </span>
+                <span>Available for freelance work</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-img-wrap">
+              <div class="hero-img-bg" aria-hidden="true"></div>
+              <img src="./assets/images/hero-image.png" alt="M Sohaib Ishaque — Full Stack Web Developer" class="hero-img" loading="eager" />
+              <div class="hero-img-accent" aria-hidden="true"></div>
+              <div class="hero-name-card" aria-label="Developer info">
+                <h3>M Sohaib <br />Ishaque </h3>
+                <p>Web Developer</p>
+              </div>
+              <div class="geo-tri geo-tri-1" aria-hidden="true"></div>
+              <div class="geo-tri geo-tri-2" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-main" id="contact-form-section" aria-label="Contact information and form">
+      <div class="container">
+        <div class="contact-main-grid">
+          <div class="contact-info-col">
+            <div class="section-header">
+              <div class="section-title-group reveal-left ">
+                <p class="section-label"> Reach Out</p>
+                <h2 class="about-heading">Let's <br />
+                  <strong> Talk</strong>
+                </h2>
+              </div>
+              <p class="section-desc reveal" >Ready to bring your next idea to life? Let's chat. No strings attached, just good conversation.</p>
+            </div>
+            <div class="ci-underline reveal"></div>
+            <div class="ci-cards">
+              <div class="ci-card reveal">
+                <div class="ci-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-card-label">Email</div>
+                  <div class="ci-card-value">engineer.sohaibishaque@gmail.com</div>
+                  <div class="ci-card-sub">I'll respond as soon as possible</div>
+                </div>
+              </div>
+              <div class="ci-card reveal">
+                <div class="ci-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-card-label">Phone</div>
+                  <div class="ci-card-value">+92 303-8464315</div>
+                  <div class="ci-card-sub">Mon – Sat, 9:00 AM – 8:00 PM PKT</div>
+                </div>
+              </div>
+              <div class="ci-card reveal">
+                <div class="ci-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-card-label">Location</div>
+                  <div class="ci-card-value">Pakistan</div>
+                  <div class="ci-card-sub"> Available Worldwide <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:inline;vertical-align:middle;margin-left:4px;">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="ci-card reveal">
+                <div class="ci-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-card-label">Freelance</div>
+                  <div class="ci-card-value">Available for freelance projects</div>
+                  <div class="ci-card-sub">Full-time &amp; Part-time</div>
+                </div>
+              </div>
+            </div>
+            <div class="ci-connect-heading reveal">Let's Connect</div>
+            <p class="ci-connect-sub reveal">Find me on these platforms</p>
+            <div class="ci-socials reveal">
+              <a href="https://github.com" target="_blank" rel="noopener" class="ci-social-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.58 9.58 0 012.504.338c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="ci-social-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="ci-social-btn" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.732-8.853L1.887 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <a href="https://codepen.io" target="_blank" rel="noopener" class="ci-social-btn" aria-label="CodePen">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 8.182l-.018-.087-.017-.05c-.01-.024-.018-.05-.03-.075l-.012-.03a.96.96 0 00-.065-.115l-.007-.013c-.013-.017-.025-.03-.04-.045l-.006-.006-.008-.008-9.853-6.554a1.04 1.04 0 00-1.12 0L3.03 7.752l-.008.008-.006.005-.04.045-.007.013a.96.96 0 00-.066.115l-.012.03a1.2 1.2 0 00-.03.075l-.017.05L0 8.182v7.636l.018.087.017.05c.01.024.018.05.03.075l.012.03a.97.97 0 00.066.115l.007.013c.013.018.025.03.04.045l.006.006.008.008 9.853 6.554a1.04 1.04 0 001.12 0l9.853-6.554.008-.008.006-.006.04-.045.007-.013a.97.97 0 00.066-.115l.012-.03c.012-.025.02-.05.03-.075l.017-.05.018-.087V8.182zM12 2.766l7.5 4.988-3.354 2.226-4.146-2.757V2.766zm-1 0v4.457L6.854 9.98 3.5 7.754 11 2.766zM1.5 9.42l2.38 1.58-2.38 1.58V9.42zm10.5 12.814l-7.5-4.988 3.354-2.226 4.146 2.757v4.457zm1-6.237L9.354 13.8 12 12l2.646 1.8L12 15.997zm1 6.237v-4.457l4.146-2.757L20.5 17.246l-7.5 4.988zm7.5-7.23l-2.38-1.58 2.38-1.58v3.16zm-6.854-2.766L12 10.997 9.854 12.24 12 13.5l2.146-1.26z" />
+                </svg>
+              </a>
+              <a href="mailto:engineer.sohaibishaque@gmail.com" class="ci-social-btn" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-col">
+            <h2 class="cf-heading reveal">Send Me A Message</h2>
+            <div class="cf-underline reveal"></div>
+            <form id="contactForm" novalidate aria-label="Contact form">
+              <div class="cf-row">
+                <div class="cf-field reveal">
+                  <input type="text" name="name" id="name" class="cf-input" placeholder="Your Name" required aria-required="true" aria-label="Your name" />
+                </div>
+                <div class="cf-field reveal">
+                  <input type="email" name="email" id="email" class="cf-input" placeholder="Your Email" required aria-required="true" aria-label="Your email address" />
+                </div>
+              </div>
+              <div class="cf-field reveal">
+                <input type="text" name="subject" id="subject" class="cf-input" placeholder="Subject" required aria-required="true" aria-label="Message subject" />
+              </div>
+              <div class="cf-field reveal">
+                <textarea name="message" id="message" class="cf-textarea" placeholder="Your Message" required aria-required="true" aria-label="Your message"></textarea>
+              </div>
+              <button type="submit" class="cf-submit reveal" aria-label="Send message">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+              <p class="cf-secure reveal" aria-live="polite">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0110 0v4" />
+                </svg> Your information is 100% secure and will never be shared.
+              </p>
+              <div class="form-success" role="alert" aria-live="polite"> ✓ Message sent successfully! I'll get back to you soon. </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-map-section" aria-label="Location">
+      <div class="contact-map-inner">
+        <div class="cmap-info">
+          <div class="cmap-badge">Based In Pakistan</div>
+          <h2 class="cmap-title">Working with clients <br>worldwide to create <br>amazing digital experiences. </h2>
+          <p class="cmap-desc"></p>
+          <div class="cmap-city">Rawalpindi, Pakistan</div>
+          <div class="cmap-city-name">Available for meetings</div>
+          <div class="cmap-triangle" aria-hidden="true"></div>
+        </div>
+        <div class="cmap-visual" aria-label="Rawalpindi, Pakistan location map">
+          <div id="leaflet-map"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-bg" aria-hidden="true">
+        <svg class="footer-bg-grid-dots" preserveAspectRatio="none" viewBox="0 0 100 100">
+          <defs>
+            <radialGradient id="FooterDotGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="var(--accent)" stop-opacity="1" />
+              <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <circle r="0.55" fill="url(#FooterDotGlow)">
+            <animateMotion dur="9s" repeatCount="indefinite" path="M -5,18 H 105" rotate="auto" />
+          </circle>
+          <circle r="0.5" fill="url(#FooterDotGlow)">
+            <animateMotion dur="13s" begin="2s" repeatCount="indefinite" path="M 105,46 H -5" rotate="auto" />
+          </circle>
+          <circle r="0.55" fill="url(#FooterDotGlow)">
+            <animateMotion dur="11s" begin="4.5s" repeatCount="indefinite" path="M -5,74 H 105" rotate="auto" />
+          </circle>
+          <circle r="0.5" fill="url(#FooterDotGlow)">
+            <animateMotion dur="10s" begin="1s" repeatCount="indefinite" path="M 24,-5 V 105" rotate="auto" />
+          </circle>
+          <circle r="0.55" fill="url(#FooterDotGlow)">
+            <animateMotion dur="14s" begin="6s" repeatCount="indefinite" path="M 62,105 V -5" rotate="auto" />
+          </circle>
+          <circle r="0.5" fill="url(#FooterDotGlow)">
+            <animateMotion dur="12s" begin="3s" repeatCount="indefinite" path="M 88,-5 V 105" rotate="auto" />
+          </circle>
+        </svg>
+        <div class="footer-bg-glow-blob"></div>
+        <div class="footer-bg-radar"></div>
+        <div class="footer-bg-globe">
+          <svg viewBox="0 0 400 400" class="footer-globe-svg">
+            <defs>
+              <radialGradient id="FooterGlobeFade" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.055" />
+                <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.006" />
+              </radialGradient>
+            </defs>
+            <g stroke="var(--accent)" stroke-width="0.75" fill="none" opacity="0.055">
+              <ellipse cx="200" cy="200" rx="180" ry="180" />
+              <ellipse cx="200" cy="200" rx="180" ry="70" />
+              <ellipse cx="200" cy="200" rx="180" ry="130" />
+              <ellipse cx="200" cy="200" rx="180" ry="178" transform="rotate(0 200 200)" />
+              <ellipse cx="200" cy="200" rx="70" ry="180" />
+              <ellipse cx="200" cy="200" rx="130" ry="180" />
+              <ellipse cx="200" cy="200" rx="40" ry="180" />
+              <line x1="20" y1="200" x2="380" y2="200" />
+              <line x1="30" y1="130" x2="370" y2="130" />
+              <line x1="30" y1="270" x2="370" y2="270" />
+              <line x1="55" y1="80" x2="345" y2="80" />
+              <line x1="55" y1="320" x2="345" y2="320" />
+            </g>
+            <circle cx="200" cy="200" r="180" fill="url(#FooterGlobeFade)" />
+          </svg>
+        </div>
+        <div class="footer-bg-noise"></div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <a href="#" class="nav-logo" aria-label="Home">
+              <div class="logo-box" aria-hidden="true">SI</div>
+              <div class="logo-text">
+                <span class="logo-name">M Sohaib Ishaque</span>
+                <span class="logo-role">Full Stack Web Developer</span>
+              </div>
+            </a>
+            <p class="brand-tagline">Building digital experiences that make an impact. Clean code, modern design, scalable solutions.</p>
+            <div class="brand-rule" aria-hidden="true"></div>
+            <div class="footer-cta-card">
+              <div class="footer-cta-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 11l18-8-8 18-2-8-8-2z" />
+                </svg>
+              </div>
+              <h3 class="footer-cta-title">Let's work together</h3>
+              <p class="footer-cta-text">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+              <a href="contact.html" class="footer-cta-button"> Get In Touch <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <nav class="footer-col footer-col--nav" aria-labelledby="footer-nav-heading">
+            <h3 class="footer-col-heading" id="footer-nav-heading">
+              <span class="dot" aria-hidden="true"></span>Quick Links
+            </h3>
+            <ul class="footer-link-list">
+              <li>
+                <a href="index.htnl" class="footer-link-active">
+                  <span class="dot dot--small" aria-hidden="true"></span>Home </a>
+              </li>
+              <li>
+                <a href="about.htnl">About</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Skills</a>
+              </li>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="experience.html">Experience</a>
+              </li>
+              <li>
+                <a href="testimonials.html">Testimonials</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-col footer-col--services" aria-labelledby="footer-services-heading">
+            <h3 class="footer-col-heading" id="footer-services-heading">
+              <span class="dot" aria-hidden="true"></span>Technologies
+            </h3>
+            <ul class="footer-link-list">
+              <li>
+                <a href="skills.htnl">Angular &amp; React</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Next.js</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Node.js</a>
+              </li>
+              <li>
+                <a href="skills.htnl">TypeScript</a>
+              </li>
+              <li>
+                <a href="skills.htnl">MongoDB</a>
+              </li>
+              <li>
+                <a href="skills.htnl">Tailwind CSS</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-col footer-col--contact" id="FooterContact">
+            <h3 class="footer-col-heading">
+              <span class="dot" aria-hidden="true"></span>Let's Connect
+            </h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
+                <span class="footer-contact-text">
+                  <a href="tel:+15551234567">+92 3038464315</a>
+                  <span class="footer-contact-sub">Mon - Fri, 9AM - 6PM EST</span>
+                </span>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </span>
+                <span class="footer-contact-text">
+                  <a href="mailto:engineer.sohaibishaque@gmail.com">engineer.sohaibishaque@gmail.com</a>
+                  <span class="footer-contact-sub">I'll get back to you soon</span>
+                </span>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span class="footer-contact-text">
+                  <span class="contact-static">Rawalpindi, Pakistan</span>
+                  <span class="footer-contact-sub">Available for remote work</span>
+                </span>
+              </li>
+            </ul>
+            <ul class="footer-social-list" aria-label="Social media links">
+              <li>
+                <a href="https://github.com/Sohaib-Ishaque" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/engineer-sohaib-ishaque-765b34171/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://sohaibishaque.com" class="social-icon" aria-label="Website" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:engineer.sohaibishaque@gmail.com" class="social-icon" aria-label="Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="freelance-note">
+              <strong>Available</strong> for freelance work <br />and exciting opportunities.
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="bottom-left">
+            <span class="code-icon" aria-hidden="true">&lt;/&gt;</span>
+            <span>Designed &amp; Built by <span class="accent">M Sohaib Ishaque</span>
+            </span>
+            <svg class="heart-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 21s-7.5-4.6-10-9.1C.5 8.4 2 4.8 5.6 4.1c2-.4 4 .5 6.4 2.9 2.4-2.4 4.4-3.3 6.4-2.9C22 4.8 23.5 8.4 22 11.9 19.5 16.4 12 21 12 21z" />
+            </svg>
+          </div>
+          <div class="bottom-center"> &copy; 2025 <span class="accent">M Sohaib Ishaque</span>. All rights reserved. </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/constants.js"></script>
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/textures.js"></script>
+    <script src="./assets/js/interactions.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script>
+      (function initLeafletMap() {
+        const LAT = 33.6007,
+          LNG = 73.0679;
+        const map = L.map('leaflet-map', {
+          center: [LAT, LNG],
+          zoom: 13,
+          zoomControl: true,
+          scrollWheelZoom: false,
+          attributionControl: true,
+        });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy;  < a href = "https://www.openstreetmap.org/copyright" > OpenStreetMap < /a> &copy;  < a href = "https://carto.com/" > CARTO < /a>',
+          subdomains: 'abcd',
+          maxZoom: 19,
+        }).addTo(map);
+        const svgIcon = L.divIcon({
+          className: '',
+          html: `
+      
+								<div class="lf-marker-wrap">
+									<div class="lf-marker-pulse"></div>
+									<div class="lf-marker-dot"></div>
+									<div class="lf-marker-label">Rawalpindi, PK</div>
+								</div>`,
+          iconSize: [160, 60],
+          iconAnchor: [80, 16],
+          popupAnchor: [0, -20],
+        });
+        const marker = L.marker([LAT, LNG], {
+          icon: svgIcon
+        }).addTo(map);
+        marker.bindPopup(`
+    
+								<div class="lf-popup">
+									<div class="lf-popup-name">M Sohaib Ishaque</div>
+									<div class="lf-popup-role">Full Stack Web Developer</div>
+									<div class="lf-popup-loc">
+										<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+											<circle cx="12" cy="10" r="3"/>
+										</svg>
+        Rawalpindi, Punjab, Pakistan
+      
+									</div>
+									<div class="lf-popup-avail">&#x25CF; Available for remote &amp; on-site work</div>
+								</div>
+  `);
+        marker.openPopup();
+        if (window.innerWidth < 768) map.dragging.disable();
+      })();
+    </script>
+  </body>
+</html>
