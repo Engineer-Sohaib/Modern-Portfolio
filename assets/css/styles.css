@@ -735,6 +735,7 @@ footer {
   position: relative;
   width: 420px;
   height: 520px;
+  overflow: hidden;
 }
 .hero-img-wrap.project-image-wrp{
   width: 600px;
@@ -779,6 +780,7 @@ footer {
 
 .project-image-wrp .hero-img{
   clip-path: none;
+  cursor: pointer;
 }
 
 
