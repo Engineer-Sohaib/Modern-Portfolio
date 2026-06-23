@@ -1,0 +1,365 @@
+/* ===================================================
+   CAROUSEL.CSS — Swiper Carousel Styles
+   M SOHAIB ISHAQUE — Portfolio
+   =================================================== */
+
+.si-swiper {
+  width: 100%;
+  padding-bottom: 52px !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 1100px) {
+  .si-swiper {
+    overflow: visible;
+  }
+}
+
+.si-swiper .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.si-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.si-swiper .swiper-slide > * {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.si-swiper .project-card,
+.si-swiper .testimonial-card {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: transform var(--si-transition), box-shadow var(--si-transition) !important;
+  width: 100% !important;
+}
+
+.si-swiper-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(calc(-50% - 26px));
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid var(--si-border);
+  border-radius: 0;
+  color: var(--gray-muted);
+  cursor: pointer;
+  transition: border-color var(--si-transition), color var(--si-transition),
+    background var(--si-transition), box-shadow var(--si-transition),
+    opacity 0.3s var(--si-ease);
+  padding: 0;
+  outline: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.si-swiper-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--sh-accent);
+  background: var(--accent-dim-5);
+}
+
+.si-swiper-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.si-swiper-btn.swiper-button-disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.si-swiper-prev {
+  left: -15px;
+}
+.si-swiper-next {
+  right: -15px;
+}
+
+@media (max-width: 1099px) {
+  .si-swiper-prev {
+    left: 0;
+  }
+  .si-swiper-next {
+    right: 0;
+  }
+
+  .si-swiper-btn {
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+
+  .si-swiper-prev {
+    left: auto;
+    right: 56px;
+    bottom: 0;
+  }
+  .si-swiper-next {
+    right: 0;
+    bottom: 0;
+  }
+}
+.si-swiper-pagination {
+  bottom: 0 !important;
+  left: 0 !important;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 !important;
+}
+
+.si-swiper-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gray-dim);
+  opacity: 1;
+  margin: 0 !important;
+  transition: background var(--si-transition), transform var(--si-transition),
+    width var(--si-transition);
+  cursor: pointer;
+}
+
+.si-swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--accent);
+  width: 24px;
+  border-radius: 3px;
+  box-shadow: var(--sh-accent-xs);
+}
+@media (max-width: 540px) {
+  .si-swiper {
+    padding-bottom: 56px !important;
+  }
+
+  .si-swiper-pagination {
+    bottom: 8px !important;
+  }
+
+  .si-swiper-prev {
+    right: 56px;
+    bottom: 4px;
+  }
+  .si-swiper-next {
+    right: 4px;
+    bottom: 4px;
+  }
+}
+#projects-swiper .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.85;
+  transition: opacity var(--si-transition);
+}
+
+#projects-swiper .swiper-slide:hover {
+  opacity: 1;
+}
+
+#testimonials-swiper .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.8;
+  transition: opacity var(--si-transition);
+}
+
+#testimonials-swiper .swiper-slide:hover {
+  opacity: 1;
+}
+
+.si-swiper .testimonial-card {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.si-swiper .projects-grid,
+.si-swiper .testimonials-grid {
+  display: block !important;
+  grid-template-columns: unset !important;
+  gap: unset !important;
+}
+.si-ticker-section {
+  overflow: hidden;
+}
+
+.si-ticker-track-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.si-ticker-row-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+}
+.si-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  will-change: transform;
+  padding: 8px 0;
+}
+
+.si-ticker--left {
+  animation: siTickerLeft var(--si-ticker-dur, 40s) linear infinite;
+}
+
+.si-ticker--right {
+  animation: siTickerRight var(--si-ticker-dur, 40s) linear infinite;
+}
+
+.si-ticker-track-wrap:hover .si-ticker-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .si-ticker-track {
+    animation: none !important;
+  }
+}
+
+@keyframes siTickerLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes siTickerRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.si-ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  margin: 0 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--si-border);
+  border-radius: 0;
+  white-space: nowrap;
+  cursor: default;
+  transition: border-color var(--si-transition), background var(--si-transition),
+    box-shadow var(--si-transition);
+}
+
+.si-ticker-item:hover {
+  border-color: var(--accent);
+  background: var(--accent-dim-4);
+  box-shadow: var(--sh-accent-sm);
+}
+
+.si-ticker-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.si-ticker-icon svg,
+.si-ticker-icon img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.si-ticker-label {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gray-muted);
+  transition: color var(--si-transition);
+}
+
+.si-ticker-item:hover .si-ticker-label {
+  color: var(--white);
+}
+
+.si-ticker-sep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  color: var(--accent);
+  opacity: 0.35;
+  font-size: 1rem;
+  flex-shrink: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+#ticker-tools {
+  --si-ticker-dur: 38s;
+}
+#ticker-technologies {
+  --si-ticker-dur: 44s;
+}
+#ticker-ai {
+  --si-ticker-dur: 32s;
+}
+
+@media (max-width: 600px) {
+  .si-ticker-item {
+    padding: 8px 14px;
+    margin: 0 4px;
+  }
+  .si-ticker-icon,
+  .si-ticker-icon svg,
+  .si-ticker-icon img {
+    width: 22px;
+    height: 22px;
+  }
+  .si-ticker-label {
+    font-size: 0.72rem;
+  }
+}
