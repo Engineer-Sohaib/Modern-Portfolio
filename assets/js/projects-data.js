@@ -21,6 +21,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['Angular', '.NET Core', 'SQL Server', 'Entity Framework', 'RxJS'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254073/al-tahaluf-banner_p0ltyp.png',
 		meta: [{
 				label: 'Client',
 				value: "Al Tahaluf's Group",
@@ -230,6 +231,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['WordPress', 'PHP', 'JavaScript', 'MySQL'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/nsric-banner_ggseqj.png',
 		meta: [{
 				label: 'Client',
 				value: 'NSRIC',
@@ -438,6 +440,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['.NET', 'WinForms', 'SQL Server', 'C#'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/banner-sm_sn5z7g.png',
 		meta: [{
 				label: 'Client',
 				value: 'Internal / Business Client',
@@ -636,6 +639,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
 		meta: [{
 				label: 'Client',
 				value: 'QRMF — Quick Reaction Medical',
@@ -688,15 +692,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: '.https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
 				label: 'QRMF Home Page'
 			},
 			{
-				src: '.https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
 				label: 'Admin Panel Dashboard'
 			},
 			{
-				src: '.https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
 				label: 'Patient Records'
 			},
 		],
@@ -834,6 +838,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['WordPress', 'Elementor', 'PHP', 'WooCommerce'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254092/simplicity-banner_warjhz.png',
 		meta: [{
 				label: 'Client',
 				value: 'Simplicity Trading Academy',
@@ -1032,6 +1037,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['React', 'Node.js', 'MongoDB', 'REST API'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/traveler-banner_yk8ndo.png',
 		meta: [{
 				label: 'Client',
 				value: 'Internal Project',
@@ -1240,6 +1246,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['.NET', 'C#', 'SQL Server', 'Admin Panel'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
 		meta: [{
 				label: 'Client',
 				value: 'Academic Institution',
@@ -1438,6 +1445,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['WooCommerce', 'WordPress', 'PHP', 'MySQL'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254089/mila-banner_p2wdvm.png',
 		meta: [{
 				label: 'Client',
 				value: 'Mila Lifestyle',
@@ -1636,6 +1644,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['WordPress', 'Custom Theme', 'ACF/CPT', 'PHP'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/kfm-banner_cbicqy.png',
 		meta: [{
 				label: 'Client',
 				value: 'KF Movement',
@@ -1839,6 +1848,7 @@ window.Portfolio.PROJECTS = {
 		tags: ['WordPress', 'Custom Theme', 'ACF/CPT', 'PHP'],
 		liveUrl: '#',
 		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254079/jkjaac-banner_aa9qtd.png',
 		meta: [{
 				label: 'Client',
 				value: 'JKJAAC — Civil Society',
@@ -2044,7 +2054,6 @@ const _ICONS = {
 	zap: `<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>`,
 	database: `<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/>`,
 	clock: `<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>`,
-	/* — added for the v3 (reference-matched) layout — */
 	briefcase: `<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>`,
 	calendar: `<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>`,
 	user: `<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>`,
@@ -2060,10 +2069,8 @@ function _svg(key, size) {
 	return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">${_ICONS[key] || ''}</svg>`;
 }
 
-/* Sequence of icons used to decorate the horizontal process timeline nodes. */
 const _PROCESS_ICONS = ['search', 'layers', 'code', 'check-sq', 'rocket'];
 
-/* Maps a meta-row label (e.g. "Client", "Timeline") to an icon key for the meta bar. */
 function _metaIcon(label) {
 	const l = (label || '').toLowerCase();
 	if (l.indexOf('client') > -1) return 'briefcase';
@@ -2075,27 +2082,13 @@ function _metaIcon(label) {
 	return 'grid';
 }
 
-
-
-/* ===================================================
-   ROUTING HELPERS
-   Returns the correct template filename for a project.
-   'v2' → 'project-details (2).html'
-   'v1' (default) → 'project-details.html'
-   =================================================== */
 function _templateUrl(projectId) {
 	var p = window.Portfolio.PROJECTS[projectId];
-	if (p && p.template === 'v2') return 'project-details (2).html';
+	if (p && p.template === 'v2') return 'project-details.html';
 	return 'project-details.html';
 }
 
 
-/* ===================================================
-   PROJECT_DETAILS — populates project-details.html  (template v1)
-   Unchanged from the original, except populateNav now
-   uses _templateUrl() so prev/next links point to the
-   correct template for each neighbour project.
-   =================================================== */
 window.Portfolio.PROJECT_DETAILS = (function() {
 
 	function populateHero(p) {
@@ -2129,11 +2122,15 @@ window.Portfolio.PROJECT_DETAILS = (function() {
 	}
 
 	function populateMockup(p) {
-		const shot = (p.screenshots && p.screenshots[0]) || {};
 		const img = document.getElementById('pd-mockup-img');
 		if (img) {
-			img.src = shot.src || '';
-			img.alt = shot.label || p.name;
+			if (p.heroImage) {
+				img.src = p.heroImage;
+			} else {
+				const shot = (p.screenshots && p.screenshots[0]) || {};
+				img.src = shot.src || '';
+			}
+			img.alt = `${p.name} banner image`;
 		}
 
 		const urlEl = document.getElementById('pd-mockup-url');
@@ -2296,9 +2293,6 @@ window.Portfolio.PROJECT_DETAILS = (function() {
         <p class="pd-tl-text">${item.text}</p>
       </div>`).join('');
 	}
-
-	/* populateNav — uses _templateUrl() so prev/next links always land
-	   on the correct template for each neighbouring project.            */
 	function populateNav(p) {
 		const grid = document.getElementById('pd-nav-grid');
 		if (!grid) return;
@@ -2376,62 +2370,9 @@ window.Portfolio.PROJECT_DETAILS = (function() {
 })();
 
 
-/* ===================================================
-   PROJECT_DETAILS_V2 — populates project-details (2).html
-   
-   Element-ID mapping  (template v2 → data field):
-   ─────────────────────────────────────────────────
-   HERO
-     pd2-hero-title        ← p.name
-     pd2-hero-subtitle     ← p.subtitle
-     pd2-hero-desc         ← p.desc
-     pd2-meta-client       ← meta[label=Client].value
-     pd2-meta-category     ← meta[label=Category].value
-     pd2-meta-status       ← meta[label=Status].value
-     pd2-meta-timeline     ← meta[label=Timeline].value
-     pd2-hero-img          ← screenshots[0].src
-     pd2-btn-live          ← p.liveUrl
-     pd2-btn-github        ← p.githubUrl
-
-   TECH STACK section
-     pd2-tech-grid         ← p.techStack[] {abbr, name, role}
-
-   FEATURES section
-     pd2-features-grid     ← p.features[] {icon, title, desc}
-
-   TIMELINE section
-     pd2-timeline-grid     ← p.timeline[] {phase, heading, text}
-                             (uses numeric dot labels 01/02/…;
-                              item.heading used as phase label,
-                              item.text as description;
-                              duration derived from meta Timeline)
-
-   GALLERY section
-     pd2-screenshots-carousel ← p.screenshots[] {src, label}
-
-   METRICS section
-     pd2-metrics-grid      ← p.stats[] {num, suffix, label}
-
-   OUTCOMES section
-     pd2-outcomes-list     ← p.outcomes[] (checkmark items,
-                             title + desc joined)
-
-   CHALLENGES section
-     pd2-challenges-list   ← p.outcomes[] where title starts
-                             with "Challenge" {title, desc}
-
-   NAVIGATION
-     pd2-prev-link         ← p.prevProject → _templateUrl()
-     pd2-prev-title        ← p.prevProject.name
-     pd2-prev-sub          ← p.prevProject.cat
-     pd2-next-link         ← p.nextProject → _templateUrl()
-     pd2-next-title        ← p.nextProject.name
-     pd2-next-sub          ← p.nextProject.cat
-   =================================================== */
 window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 
-	/* ── Shared icon SVG paths (same set as v1) ── */
-	const _I = _ICONS; // reference the global _ICONS object defined above
+	const _I = _ICONS;
 
 	function _set(id, text) {
 		const el = document.getElementById(id);
@@ -2443,19 +2384,16 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 		if (el) el.innerHTML = html;
 	}
 
-	/* ── Hero section ── */
 	function populateHero(p) {
 		document.title = `${p.name} — M Sohaib Ishaque`;
 		const metaEl = document.querySelector('meta[name="description"]');
 		if (metaEl) metaEl.setAttribute('content', `${p.name} — ${p.subtitle} | M Sohaib Ishaque Portfolio`);
 
-		// Title & desc
 		const titleEl = document.getElementById('pd2-hero-title');
 		if (titleEl) titleEl.innerHTML = `<strong>${p.name}</strong>`;
 		_set('pd2-hero-subtitle', p.subtitle || p.badgeType || '');
 		_set('pd2-hero-desc', p.desc);
 
-		// Meta items
 		const metaRows = p.meta || [];
 		const find = label => {
 			const row = metaRows.find(m => m.label && m.label.toLowerCase() === label.toLowerCase());
@@ -2466,29 +2404,25 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 		_set('pd2-meta-status',   find('Status'));
 		_set('pd2-meta-timeline', find('Timeline'));
 
-		// Hero image
-		const shot = (p.screenshots && p.screenshots[0]) || {};
 		const img = document.getElementById('pd2-hero-img');
 		if (img) {
-			img.src = shot.src || '';
-			img.alt = shot.label || p.name;
+			if (p.heroImage) {
+				img.src = p.heroImage;
+			} else {
+				const shot = (p.screenshots && p.screenshots[0]) || {};
+				img.src = shot.src || '';
+			}
+			img.alt = `${p.name} banner image`;
 		}
 
-		// CTA buttons
 		const liveBtn = document.getElementById('pd2-btn-live');
 		if (liveBtn) liveBtn.href = p.liveUrl || '#';
 		const ghBtn = document.getElementById('pd2-btn-github');
 		if (ghBtn) ghBtn.href = p.githubUrl || '#';
 	}
-
-	/* ── Technology stack ── */
 	function populateTech(p) {
 		const grid = document.getElementById('pd2-tech-grid');
 		if (!grid) return;
-
-		/* Each card uses .pd2-tech-card-name / .pd2-tech-card-sub.
-		   The icon slot (.pd2-tech-card-icon) is filled with the abbr
-		   text so it always has content even without SVG assets.       */
 		grid.innerHTML = (p.techStack || []).map(t => `
       <div class="pd2-tech-card reveal">
         <div class="pd2-tech-card-icon" aria-hidden="true">${t.abbr}</div>
@@ -2497,7 +2431,6 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
       </div>`).join('');
 	}
 
-	/* ── Key features ── */
 	function populateFeatures(p) {
 		const grid = document.getElementById('pd2-features-grid');
 		if (!grid) return;
@@ -2511,7 +2444,6 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
       </div>`).join('');
 	}
 
-	/* ── Project timeline ── */
 	function populateTimeline(p) {
 		const wrap = document.getElementById('pd2-timeline-grid');
 		if (!wrap) return;
@@ -2525,8 +2457,6 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
         </div>
       </div>`).join('');
 	}
-
-	/* ── Screenshot gallery (simple scrollable carousel) ── */
 	function populateGallery(p) {
 		const carousel = document.getElementById('pd2-screenshots-carousel');
 		if (!carousel) return;
@@ -2537,12 +2467,10 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
       </div>`).join('');
 	}
 
-	/* ── Performance metrics (animated counters) ── */
 	function populateMetrics(p) {
 		const grid = document.getElementById('pd2-metrics-grid');
 		if (!grid) return;
 
-		/* Icon SVG paths keyed by rough metric meaning */
 		const metricIcons = [
 			`<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>`,
 			`<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>`,
@@ -2564,7 +2492,6 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
         </div>
       </div>`).join('');
 
-		/* Animate counters on scroll-into-view */
 		const nums = grid.querySelectorAll('.pd2-metric-val[data-target]');
 		const obs = new IntersectionObserver(entries => {
 			entries.forEach(entry => {
@@ -2587,12 +2514,9 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 		nums.forEach(el => obs.observe(el));
 	}
 
-	/* ── Outcomes list ── */
 	function populateOutcomes(p) {
 		const list = document.getElementById('pd2-outcomes-list');
 		if (!list) return;
-
-		/* Show only outcome items (those whose title does NOT start with "Challenge") */
 		const outcomes = (p.outcomes || []).filter(o => !o.title.toLowerCase().startsWith('challenge'));
 		list.innerHTML = outcomes.map(o => `
       <li class="pd2-oc-item">
@@ -2606,7 +2530,6 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
       </li>`).join('');
 	}
 
-	/* ── Challenges list ── */
 	function populateChallenges(p) {
 		const list = document.getElementById('pd2-challenges-list');
 		if (!list) return;
@@ -2624,9 +2547,7 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
       </li>`).join('');
 	}
 
-	/* ── Prev / Next project navigation ── */
 	function populateNav(p) {
-		/* Previous */
 		const prevLink  = document.getElementById('pd2-prev-link');
 		const prevTitle = document.getElementById('pd2-prev-title');
 		const prevSub   = document.getElementById('pd2-prev-sub');
@@ -2637,12 +2558,10 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 			if (prevTitle) prevTitle.textContent = p.prevProject.name;
 			if (prevSub)   prevSub.textContent   = p.prevProject.cat;
 		} else {
-			/* Hide the prev side gracefully */
 			const prevSide = document.querySelector('.pd2-proj-nav-side:not(.right)');
 			if (prevSide) prevSide.style.visibility = 'hidden';
 		}
 
-		/* Next */
 		const nextLink  = document.getElementById('pd2-next-link');
 		const nextTitle = document.getElementById('pd2-next-title');
 		const nextSub   = document.getElementById('pd2-next-sub');
@@ -2659,11 +2578,8 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 	}
 
 	function init() {
-		/* Only run on project-details (2).html.
-		   getActivePage() strips the filename from the path, so we match
-		   the encoded form that browsers produce for the space.          */
 		const page = window.Portfolio.UTILS.getActivePage();
-		if (page !== 'project-details (2)' && page !== 'project-details%20(2)') return;
+		if (page !== 'project-details' && page !== 'project-details%20(2)') return;
 
 		const params    = new URLSearchParams(window.location.search);
 		const projectId = params.get('id');
@@ -2697,18 +2613,6 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 })();
 
 
-/* ===================================================
-   PROJECT_LINKS — generates hrefs on projects.html
-   
-   Routing logic:
-     • Each project in window.Portfolio.PROJECTS carries a
-       template field: 'v1' or 'v2'.
-     • _templateUrl(id) maps 'v2' → 'project-details (2).html'
-       and anything else → 'project-details.html'.
-     • This makes every card on the grid link to the
-       correct template automatically, with no changes
-       required to the HTML markup of projects.html.
-   =================================================== */
 window.Portfolio.PROJECT_LINKS = (function() {
 
 	const NAME_TO_ID = {
@@ -2735,7 +2639,6 @@ window.Portfolio.PROJECT_LINKS = (function() {
 
 			const id = NAME_TO_ID[nameEl.textContent.trim().toLowerCase()];
 			if (id) {
-				/* Use _templateUrl() so each card points to the right template */
 				linkEl.href = `${_templateUrl(id)}?id=${id}`;
 			}
 		});
@@ -2756,10 +2659,6 @@ window.Portfolio.PROJECT_LINKS = (function() {
 
 })();
 
-
-/* ===================================================
-   BOOTSTRAP
-   =================================================== */
 document.addEventListener('DOMContentLoaded', () => {
 	window.Portfolio.PROJECT_DETAILS.init();
 	window.Portfolio.PROJECT_DETAILS_V2.init();

@@ -3,862 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Project Details — M Sohaib Ishaque Full Stack Web Developer Portfolio." />
-    <title>Project Details | M Sohaib Ishaque</title>
+    <meta name="description" content="Al Tahaluf Enterprise Admin Platform — M Sohaib Ishaque. Full Stack Web Developer. Case study of a robust enterprise platform built with Angular and .NET Core." />
+    <title>Al Tahaluf's Enterprise Admin — M Sohaib Ishaque</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900&family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet" />
+    
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg
-			xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23A3FF12'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='14' fill='%23000'%3ESI%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23A3FF12'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='14' fill='%23000'%3ESI%3C/text%3E%3C/svg%3E" />
+
     <style>
-      /* PROJECT DETAILS — merged v1 + v2 */
-      .pd-hero {
-        position: relative;
-        padding-top: calc(var(--nav-h) + 4rem);
-        padding-bottom: 5rem;
-        overflow: hidden;
-      }
-
-      .pd-hero-canvas {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        z-index: 0;
-      }
-
-      .pd-hero-glow {
-        position: absolute;
-        top: -120px;
-        right: -100px;
-        width: 600px;
-        height: 600px;
-        background: radial-gradient(circle, rgba(163, 255, 18, 0.06) 0%, transparent 70%);
-        pointer-events: none;
-        z-index: 0;
-      }
-
-      /* Breadcrumb */
-      .pd-breadcrumb {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-family: var(--font-mono);
-        font-size: 0.68rem;
-        color: var(--gray);
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        margin-bottom: 2.5rem;
-      }
-
-      .pd-breadcrumb a {
-        transition: color var(--transition);
-      }
-
-      .pd-breadcrumb a:hover {
-        color: var(--accent);
-      }
-
-      .pd-breadcrumb span {
-        color: var(--border);
-      }
-
-      .pd-breadcrumb .current {
-        color: var(--gray-light);
-      }
-
-      /* Hero grid */
-      .pd-hero-grid {
-        display: grid;
-        grid-template-columns: 1fr 340px;
-        gap: 4rem;
-        align-items: start;
-      }
-
-      @media (max-width: 960px) {
-        .pd-hero-grid {
-          grid-template-columns: 1fr;
-          gap: 2.5rem;
-        }
-      }
-
-      /* Badges */
-      .pd-status-row {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1.25rem;
-        flex-wrap: wrap;
-      }
-
-      .pd-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.3rem 0.8rem;
-        font-family: var(--font-mono);
-        font-size: 0.65rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        border: 1px solid;
-      }
-
-      .pd-badge--live {
-        border-color: var(--accent);
-        color: var(--accent);
-        background: var(--accent-dim);
-      }
-
-      .pd-badge--live::before {
-        content: '';
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: var(--accent);
-        animation: pdBlink 1.4s ease-in-out infinite;
-      }
-
-      @keyframes pdBlink {
-
-        0%,
-        100% {
-          opacity: 1
-        }
-
-        50% {
-          opacity: 0.2
-        }
-      }
-
-      .pd-badge--type,
-      .pd-badge--year {
-        border-color: var(--border);
-        color: var(--gray);
-      }
-
-      /* Hero text */
-      .pd-hero-title {
-        font-family: var(--font-head);
-        font-size: clamp(3rem, 8vw, 6.5rem);
-        line-height: 0.9;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        color: var(--white);
-        margin-bottom: 1.25rem;
-      }
-
-      .pd-hero-subtitle {
-        font-family: var(--font-mono);
-        font-size: 0.78rem;
-        color: var(--accent);
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
-      }
-
-      .pd-hero-desc {
-        font-size: 1.05rem;
-        color: var(--gray-muted);
-        line-height: 1.75;
-        max-width: 600px;
-        margin-bottom: 2.5rem;
-      }
-
-      .pd-hero-actions {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      /* Meta card */
-      .pd-meta-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        padding: 2rem;
-        position: sticky;
-        top: calc(var(--nav-h) + 1.5rem);
-      }
-
-      .pd-meta-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: var(--accent);
-      }
-
-      .pd-meta-title {
-        font-family: var(--font-mono);
-        font-size: 0.65rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--gray);
-        margin-bottom: 1.5rem;
-      }
-
-      .pd-meta-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.1rem;
-      }
-
-      .pd-meta-item {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        padding-bottom: 1.1rem;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .pd-meta-item:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-
-      .pd-meta-label {
-        font-family: var(--font-mono);
-        font-size: 0.6rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gray);
-      }
-
-      .pd-meta-value {
-        font-family: var(--font-body);
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--white);
-      }
-
-      .pd-meta-value.accent {
-        color: var(--accent);
-      }
-
-      .pd-meta-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.4rem;
-        margin-top: 0.25rem;
-      }
-
-      .pd-meta-tag {
-        padding: 0.2rem 0.55rem;
-        font-family: var(--font-mono);
-        font-size: 0.6rem;
-        letter-spacing: 0.08em;
-        border: 1px solid var(--border);
-        color: var(--gray-muted);
-        transition: border-color var(--transition), color var(--transition);
-      }
-
-      .pd-meta-tag:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-      }
-
-      /* Stats bar */
-      .pd-stats {
-        padding: 4rem 0;
-        background: var(--bg-2);
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-      }
-
-      .pd-stats-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0;
-      }
-
-      @media (max-width: 700px) {
-        .pd-stats-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-
-      .pd-stat {
-        padding: 2rem 1.5rem;
-        border-right: 1px solid var(--border);
-        text-align: center;
-        transition: background var(--transition);
-      }
-
-      .pd-stat:last-child {
-        border-right: none;
-      }
-
-      @media (max-width: 700px) {
-        .pd-stat:nth-child(2) {
-          border-right: none;
-        }
-
-        .pd-stat:nth-child(3),
-        .pd-stat:nth-child(4) {
-          border-top: 1px solid var(--border);
-        }
-
-        .pd-stat:nth-child(4) {
-          border-right: none;
-        }
-      }
-
-      .pd-stat:hover {
-        background: var(--bg-card);
-      }
-
-      .pd-stat-num {
-        font-family: var(--font-head);
-        font-size: clamp(2.2rem, 5vw, 3.5rem);
-        color: var(--accent);
-        letter-spacing: 0.02em;
-        line-height: 1;
-        margin-bottom: 0.4rem;
-      }
-
-      .pd-stat-label {
-        font-family: var(--font-mono);
-        font-size: 0.65rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gray);
-      }
-
-      /* Screenshots */
-      .pd-screenshots {
-        padding: 6rem 0;
-        background: var(--bg-2);
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-        overflow: hidden;
-      }
-
-      .pd-screenshots-label {
-        font-family: var(--font-mono);
-        font-size: 0.65rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin-bottom: 0.75rem;
-      }
-
-      .pd-screenshots-heading {
-        font-family: var(--font-head);
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--white);
-        margin-bottom: 3rem;
-      }
-
-      .pd-screenshot-main {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 16/9;
-        overflow: hidden;
-        border: 1px solid var(--border);
-        background: var(--bg-card);
-        cursor: zoom-in;
-        transition: border-color var(--transition);
-      }
-
-      .pd-screenshot-main:hover {
-        border-color: var(--accent);
-      }
-
-      .pd-screenshot-main img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        transition: transform 0.6s ease, opacity 0.2s ease;
-      }
-
-      .pd-screenshot-main:hover img {
-        transform: scale(1.02);
-      }
-
-      .pd-screenshot-main .pd-ss-label {
-        position: absolute;
-        bottom: 1rem;
-        left: 1rem;
-        padding: 0.3rem 0.8rem;
-        background: rgba(8, 8, 8, 0.85);
-        border: 1px solid var(--border);
-        font-family: var(--font-mono);
-        font-size: 0.6rem;
-        letter-spacing: 0.12em;
-        color: var(--gray-muted);
-        backdrop-filter: blur(8px);
-      }
-
-      .pd-screenshot-strip {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin-top: 1rem;
-      }
-
-      @media (max-width: 600px) {
-        .pd-screenshot-strip {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-
-      .pd-screenshot-thumb {
-        position: relative;
-        aspect-ratio: 16/9;
-        overflow: hidden;
-        border: 1px solid var(--border);
-        background: var(--bg-card);
-        cursor: pointer;
-        transition: border-color var(--transition), transform var(--transition);
-      }
-
-      .pd-screenshot-thumb:hover {
-        border-color: var(--accent);
-        transform: translateY(-3px);
-      }
-
-      .pd-screenshot-thumb.active {
-        border-color: var(--accent);
-        box-shadow: var(--sh-accent);
-      }
-
-      .pd-screenshot-thumb img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        transition: transform 0.5s ease;
-      }
-
-      .pd-screenshot-thumb:hover img {
-        transform: scale(1.05);
-      }
-
-      /* Overview */
-      .pd-overview {
-        padding: 7rem 0;
-      }
-
-      .pd-section-label {
-        font-family: var(--font-mono);
-        font-size: 0.65rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin-bottom: 0.75rem;
-      }
-
-      .pd-section-heading {
-        font-family: var(--font-head);
-        font-size: clamp(2rem, 4vw, 3rem);
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--white);
-        margin-bottom: 2.5rem;
-      }
-
-      .pd-overview-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        align-items: start;
-      }
-
-      @media (max-width: 860px) {
-        .pd-overview-grid {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-      }
-
-      .pd-body-text {
-        font-size: 0.975rem;
-        color: var(--gray-muted);
-        line-height: 1.85;
-        margin-bottom: 1.5rem;
-      }
-
-      .pd-features-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-
-      .pd-feature-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.85rem;
-        padding: 1rem 1.25rem;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        transition: border-color var(--transition), background var(--transition);
-      }
-
-      .pd-feature-item:hover {
-        border-color: var(--accent);
-        background: var(--bg-card-hover);
-      }
-
-      .pd-feature-icon {
-        flex-shrink: 0;
-        width: 20px;
-        height: 20px;
-        color: var(--accent);
-        margin-top: 1px;
-      }
-
-      .pd-feature-text {
-        font-size: 0.875rem;
-        color: var(--gray-muted);
-        line-height: 1.6;
-      }
-
-      .pd-feature-text strong {
-        color: var(--white);
-        font-weight: 600;
-      }
-
-      /* Tech Stack */
-      .pd-tech-stack {
-        padding: 5rem 0 7rem;
-        background: var(--bg-2);
-        border-top: 1px solid var(--border);
-      }
-
-      .pd-tech-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 1rem;
-        margin-top: 2.5rem;
-      }
-
-      .pd-tech-pill {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        padding: 1rem 1.25rem;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        transition: border-color var(--transition), background var(--transition), transform var(--transition);
-      }
-
-      .pd-tech-pill:hover {
-        border-color: var(--accent);
-        background: var(--bg-card-hover);
-        transform: translateY(-3px);
-      }
-
-      .pd-tech-icon {
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        font-family: var(--font-mono);
-        font-size: 0.6rem;
-        font-weight: 700;
-        color: var(--accent);
-        border: 1px solid var(--border);
-        background: var(--bg);
-      }
-
-      .pd-tech-info {
-        flex: 1;
-        min-width: 0;
-      }
-
-      .pd-tech-name {
-        font-family: var(--font-body);
-        font-size: 0.82rem;
-        font-weight: 600;
-        color: var(--white);
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .pd-tech-role {
-        font-family: var(--font-mono);
-        font-size: 0.58rem;
-        color: var(--gray);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        margin-top: 1px;
-      }
-
-      /* Timeline / Process */
-      .pd-process {
-        padding: 7rem 0;
-      }
-
-      .pd-process-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        align-items: start;
-      }
-
-      @media (max-width: 860px) {
-        .pd-process-grid {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-      }
-
-      .pd-timeline {
-        position: relative;
-        margin-top: 3rem;
-        padding-left: 2.5rem;
-      }
-
-      .pd-timeline::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        width: 1px;
-        bottom: 8px;
-        background: linear-gradient(to bottom, var(--accent), transparent);
-      }
-
-      .pd-timeline-item {
-        position: relative;
-        margin-bottom: 2.5rem;
-      }
-
-      .pd-timeline-item:last-child {
-        margin-bottom: 0;
-      }
-
-      .pd-timeline-dot {
-        position: absolute;
-        left: -2.5rem;
-        top: 6px;
-        width: 9px;
-        height: 9px;
-        background: var(--accent);
-        transform: translateX(-4px);
-        transition: transform var(--transition);
-      }
-
-      .pd-timeline-item:hover .pd-timeline-dot {
-        transform: translateX(-4px) scale(1.6);
-      }
-
-      .pd-timeline-phase {
-        font-family: var(--font-mono);
-        font-size: 0.6rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin-bottom: 0.3rem;
-      }
-
-      .pd-timeline-heading {
-        font-family: var(--font-head);
-        font-size: 1.4rem;
-        letter-spacing: 0.04em;
-        color: var(--white);
-        margin-bottom: 0.6rem;
-      }
-
-      .pd-timeline-text {
-        font-size: 0.9rem;
-        color: var(--gray-muted);
-        line-height: 1.75;
-        max-width: 560px;
-      }
-
-      /* Prev / Next */
-      .pd-nav-projects {
-        padding: 5rem 0;
-        border-top: 1px solid var(--border);
-      }
-
-      .pd-nav-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-      }
-
-      @media (max-width: 640px) {
-        .pd-nav-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      .pd-nav-card {
-        display: flex;
-        align-items: center;
-        gap: 1.25rem;
-        padding: 1.5rem 1.75rem;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        transition: border-color var(--transition), background var(--transition), transform var(--transition);
-      }
-
-      .pd-nav-card:hover {
-        border-color: var(--accent);
-        transform: translateY(-3px);
-        background: var(--bg-card-hover);
-      }
-
-      .pd-nav-card--next {
-        text-align: right;
-        flex-direction: row-reverse;
-      }
-
-      .pd-nav-arrow {
-        width: 40px;
-        height: 40px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--border);
-        color: var(--gray);
-        transition: border-color var(--transition), color var(--transition);
-      }
-
-      .pd-nav-card:hover .pd-nav-arrow {
-        border-color: var(--accent);
-        color: var(--accent);
-      }
-
-      .pd-nav-dir {
-        font-family: var(--font-mono);
-        font-size: 0.6rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gray);
-        margin-bottom: 0.3rem;
-      }
-
-      .pd-nav-name {
-        font-family: var(--font-head);
-        font-size: 1.2rem;
-        letter-spacing: 0.04em;
-        color: var(--white);
-      }
-
-      .pd-nav-cat {
-        font-family: var(--font-mono);
-        font-size: 0.62rem;
-        color: var(--gray);
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin-top: 0.2rem;
-      }
-
-      /* Lightbox */
-      .pd-lightbox {
-        position: fixed;
-        inset: 0;
-        background: rgba(8, 8, 8, 0.95);
-        z-index: 9000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-        backdrop-filter: blur(8px);
-      }
-
-      .pd-lightbox.active {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .pd-lightbox-inner {
-        position: relative;
-        max-width: 90vw;
-        max-height: 90vh;
-      }
-
-      .pd-lightbox-inner img {
-        max-width: 90vw;
-        max-height: 80vh;
-        object-fit: contain;
-        border: 1px solid var(--border);
-      }
-
-      .pd-lightbox-close {
-        position: absolute;
-        top: -2.5rem;
-        right: 0;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--border);
-        color: var(--gray);
-        cursor: pointer;
-        transition: border-color var(--transition), color var(--transition);
-      }
-
-      .pd-lightbox-close:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-      }
-
-      .pd-lightbox-caption {
-        margin-top: 1rem;
-        font-family: var(--font-mono);
-        font-size: 0.65rem;
-        letter-spacing: 0.12em;
-        color: var(--gray);
-        text-align: center;
-      }
-
-      /* Corners */
-      .pd-corner-accent {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        pointer-events: none;
-      }
-
-      .pd-corner-accent--tl {
-        top: -1px;
-        left: -1px;
-        border-top: 2px solid var(--accent);
-        border-left: 2px solid var(--accent);
-      }
-
-      .pd-corner-accent--br {
-        bottom: -1px;
-        right: -1px;
-        border-bottom: 2px solid var(--accent);
-        border-right: 2px solid var(--accent);
-      }
-
-      @media (max-width: 640px) {
-        .pd-hero {
-          padding-top: calc(var(--nav-h) + 2rem);
-          padding-bottom: 3rem;
-        }
-
-        .pd-meta-card {
-          position: static;
-        }
-      }
     </style>
   </head>
   <body>
-    <div id="preloader" aria-hidden="true">
-      <div class="preloader-logo">SI</div>
-      <div class="preloader-bar"></div>
-    </div>
     <div class="cursor" aria-hidden="true"></div>
     <div class="cursor-ring" aria-hidden="true"></div>
     <button class="back-top" aria-label="Back to top">
@@ -866,7 +25,7 @@
         <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </button>
-    <!-- CUSTOMIZE PANEL -->
+
     <div class="customize-panel" id="customizePanel" aria-hidden="true" role="dialog" aria-label="Theme settings">
       <div class="cp-header">
         <div class="cp-header-left">
@@ -885,7 +44,7 @@
       </div>
       <div class="cp-accent-bar" aria-hidden="true"></div>
       <div class="cp-streak" aria-hidden="true"></div>
-      <p class="cp-section-label">Theme</p>
+      <p class="cp-section-label"> Theme </p>
       <div class="cp-theme-grid" id="cpThemeGrid">
         <div class="cp-theme-card" data-theme="light" role="radio" aria-checked="false" tabindex="0">
           <div class="cp-icon-wrap">
@@ -895,6 +54,10 @@
               <line x1="12" y1="20" x2="12" y2="22" />
               <line x1="2" y1="12" x2="4" y2="12" />
               <line x1="20" y1="12" x2="22" y2="12" />
+              <line x1="4.93" y1="4.93" x2="6.34" y2="6.34" />
+              <line x1="17.66" y1="17.66" x2="19.07" y2="19.07" />
+              <line x1="4.93" y1="19.07" x2="6.34" y2="17.66" />
+              <line x1="17.66" y1="6.34" x2="19.07" y2="4.93" />
             </svg>
           </div>
         </div>
@@ -954,21 +117,54 @@
             </div>
             <div class="cp-swatch-label">Warm Amber</div>
           </div>
+          <div class="cp-swatch" data-swatch="soft-rose">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#9f1239 0%,#f43f5e 50%,#fda4af 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#f43f5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Soft Rose</div>
+          </div>
+          <div class="cp-swatch" data-swatch="sunset-orange">
+            <div class="cp-swatch-box" style="background:linear-gradient(135deg,#c2410c 0%,#ea580c 50%,#fb923c 100%)">
+              <div class="cp-check" aria-hidden="true">
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none">
+                  <polyline points="2,5 4,7.5 8,3" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="cp-swatch-radio" aria-hidden="true"></div>
+            </div>
+            <div class="cp-swatch-label">Sunset Orange</div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="customize-overlay" id="customizeOverlay"></div>
+
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="skills.html" class="mobile-nav-link">Skills</a>
+      <a href="projects.html" class="mobile-nav-link" style="color:var(--accent)">Projects</a>
+      <a href="experience.html" class="mobile-nav-link">Experience</a>
+      <a href="testimonials.html" class="mobile-nav-link">Testimonials</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+
+    <header class="navbar scrolled" role="banner">
       <div class="container">
         <div class="nav-inner">
-          <a href="index.html" class="nav-logo" aria-label="M Sohaib Ishaque Home">
+          <a href="index.html" class="nav-logo" aria-label="Home">
             <div class="logo-box" aria-hidden="true">SI</div>
             <div class="logo-text">
               <span class="logo-name">M Sohaib Ishaque</span>
               <span class="logo-role">Full Stack Web Developer</span>
             </div>
           </a>
-          <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+          <nav class="nav-menu" aria-label="Main navigation">
             <a href="index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link">About</a>
             <a href="skills.html" class="nav-link">Skills</a>
@@ -978,191 +174,574 @@
             <a href="contact.html" class="nav-link">Contact</a>
           </nav>
           <div class="nav-right-btns">
-            <button class="btn btn-outline" id="customizePanelTrigger" aria-label="Open theme settings" aria-expanded="false" aria-controls="customizePanel">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="3" />
-                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-              </svg>
-            </button>
-            <a href="contact.html" class="nav-cta btn" aria-label="Hire Sohaib Ishaque">Hire Me <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <a href="contact.html" class="nav-cta">
+              Let's Talk
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
               </svg>
             </a>
-            <button class="btn btn-outline hamburger" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="navMenu">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <line x1="2" y1="5" x2="16" y2="5" />
-                <line x1="2" y1="9" x2="16" y2="9" />
-                <line x1="2" y1="13" x2="16" y2="13" />
+            <a href="#0" class="btn btn-outline" id="customizeBtn" aria-label="Customize" aria-expanded="false" aria-controls="customizePanel">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.4 15.05L18.3 17.05C18.1 17.4 17.7 17.6 17.3 17.5L15.3 16.95C14.9 17.2 14.5 17.4 14.1 17.55L13.7 19.6C13.6 20 13.3 20.3 12.9 20.3H11.1C10.7 20.3 10.4 20 10.3 19.6L9.9 17.55C9.5 17.4 9.1 17.2 8.7 16.95L6.7 17.5C6.3 17.6 5.9 17.4 5.7 17.05L4.6 15.05C4.4 14.7 4.5 14.3 4.8 14.1L6.4 12.9C6.3 12.6 6.3 12.3 6.3 12C6.3 11.7 6.3 11.4 6.4 11.1L4.8 9.9C4.5 9.7 4.4 9.3 4.6 8.95L5.7 6.95C5.9 6.6 6.3 6.4 6.7 6.5L8.7 7.05C9.1 6.8 9.5 6.6 9.9 6.45L10.3 4.4C10.4 4 10.7 3.7 11.1 3.7H12.9C13.3 3.7 13.6 4 13.7 4.4L14.1 6.45C14.5 6.6 14.9 6.8 15.3 7.05L17.3 6.5C17.7 6.4 18.1 6.6 18.3 6.95L19.4 8.95C19.6 9.3 19.5 9.7 19.2 9.9L17.6 11.1C17.7 11.4 17.7 11.7 17.7 12C17.7 12.3 17.7 12.6 17.6 12.9L19.2 14.1C19.5 14.3 19.6 14.7 19.4 15.05Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
+            </a>
+            <button class="hamburger btn-outline" aria-label="Toggle menu" aria-expanded="false">
+              <span></span><span></span><span></span>
             </button>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- ═══ HERO ═══ -->
-    <section class="pd-hero" aria-label="Project hero">
-      <div class="pd-hero-glow" aria-hidden="true"></div>
-      <canvas class="pd-hero-canvas" id="pdHeroCanvas" aria-hidden="true"></canvas>
+    </header>
+
+    <section class="project-details-hero" aria-label="Project hero">
+      <svg class="pdh-wave-bg" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="var(--accent)" stop-opacity="0" />
+            <stop offset="50%" stop-color="var(--accent)" stop-opacity="1" />
+            <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <g stroke="url(#waveGrad1)" stroke-width="1" fill="none" opacity="0.6">
+          <path d="M-100 80 Q200 30 500 80 Q800 130 1100 80 Q1300 50 1540 80" />
+          <path d="M-100 130 Q200 80 500 130 Q800 180 1100 130 Q1300 100 1540 130" />
+          <path d="M-100 180 Q250 130 550 180 Q850 230 1150 180 Q1350 150 1540 180" />
+          <path d="M-100 250 Q200 200 520 255 Q820 305 1120 255 Q1330 225 1540 255" />
+          <path d="M-100 320 Q250 270 550 325 Q850 375 1150 325 Q1350 295 1540 325" />
+          <path d="M-100 400 Q200 350 520 405 Q820 455 1120 405 Q1330 375 1540 405" />
+          <path d="M-100 480 Q250 430 550 485 Q850 535 1150 485 Q1350 455 1540 485" />
+          <path d="M-100 560 Q200 510 520 565 Q820 615 1120 565 Q1330 535 1540 565" />
+        </g>
+      </svg>
+      <div class="pdh-glow" aria-hidden="true"></div>
+
       <div class="container">
-        <nav class="pd-breadcrumb reveal" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span aria-hidden="true">—</span>
-          <a href="projects.html">Projects</a>
-          <span aria-hidden="true">—</span>
-          <span class="current" id="pd-breadcrumb-name">Project</span>
-        </nav>
-        <div class="pd-hero-grid">
-          <!-- Left -->
-          <div>
-            <div class="pd-status-row reveal">
-              <span class="pd-badge pd-badge--live">Live</span>
-              <span class="pd-badge pd-badge--type" id="pd-badge-type">Web Project</span>
-              <span class="pd-badge pd-badge--year" id="pd-badge-year">2024</span>
-            </div>
-            <h1 class="pd-hero-title reveal" id="pd-hero-title">Project Name</h1>
-            <p class="pd-hero-subtitle reveal" id="pd-hero-subtitle">Subtitle</p>
-            <p class="pd-hero-desc reveal" id="pd-hero-desc">Description.</p>
-            <div class="pd-hero-actions reveal">
-              <a href="#" id="pd-btn-live" target="_blank" rel="noopener noreferrer" class="btn btn-primary"> View Live Site <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-              </a>
-              <a href="projects.html" class="btn btn-outline"> All Projects <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- Meta Card -->
-          <aside class="pd-meta-card reveal-right" aria-label="Project metadata">
-            <div class="pd-corner-accent pd-corner-accent--tl" aria-hidden="true"></div>
-            <div class="pd-corner-accent pd-corner-accent--br" aria-hidden="true"></div>
-            <p class="pd-meta-title">Project Info</p>
-            <div class="pd-meta-list" id="pd-meta-list"></div>
-          </aside>
-        </div>
-      </div>
-    </section>
-    <!-- ═══ STATS BAR ═══ -->
-    <div class="pd-stats" aria-label="Project statistics">
-      <div class="container">
-        <div class="pd-stats-grid" id="pd-stats-grid"></div>
-      </div>
-    </div>
-    <!-- ═══ SCREENSHOTS ═══ -->
-    <section class="pd-screenshots" id="screenshots" aria-label="Project screenshots">
-      <div class="container">
-        <p class="pd-screenshots-label reveal">Visual Showcase</p>
-        <h2 class="pd-screenshots-heading reveal">Screenshots</h2>
-        <div class="pd-screenshot-main reveal" id="mainScreenshot" role="img" aria-label="Main project screenshot" tabindex="0">
-          <img src="" alt="" id="mainScreenshotImg" loading="lazy" />
-          <span class="pd-ss-label" id="mainScreenshotLabel"></span>
-          <div class="pd-corner-accent pd-corner-accent--tl" aria-hidden="true"></div>
-          <div class="pd-corner-accent pd-corner-accent--br" aria-hidden="true"></div>
-        </div>
-        <div class="pd-screenshot-strip reveal" id="pd-screenshot-strip" role="list" aria-label="Additional screenshots"></div>
-      </div>
-    </section>
-    <!-- ═══ OVERVIEW ═══ -->
-    <section class="pd-overview" id="overview" aria-label="Project overview">
-      <div class="container">
-        <div class="pd-overview-grid">
-          <div>
-            <p class="pd-section-label reveal">About the Project</p>
-            <h2 class="pd-section-heading reveal">Project Overview</h2>
-            <div id="pd-overview-body"></div>
-          </div>
-          <div>
-            <p class="pd-section-label reveal">What Was Built</p>
-            <h2 class="pd-section-heading reveal">Key Features</h2>
-            <div class="pd-features-list" id="pd-features-list"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ═══ TECH STACK ═══ -->
-    <section class="pd-tech-stack" id="tech" aria-label="Technologies used">
-      <div class="container">
-        <p class="pd-section-label reveal">Built With</p>
-        <h2 class="pd-section-heading reveal">Tech Stack</h2>
-        <div class="pd-tech-grid" id="pd-tech-grid"></div>
-      </div>
-    </section>
-    <!-- ═══ DEV PROCESS ═══ -->
-    <section class="pd-process" id="process" aria-label="Development process">
-      <div class="container">
-        <div class="pd-process-grid">
-          <div>
-            <p class="pd-section-label reveal">How It Was Built</p>
-            <h2 class="pd-section-heading reveal">Dev Process</h2>
-            <div class="pd-timeline reveal" id="pd-timeline"></div>
-          </div>
-          <div>
-            <p class="pd-section-label reveal">Results</p>
-            <h2 class="pd-section-heading reveal">Challenges &amp; Outcomes</h2>
-            <div class="pd-features-list" id="pd-outcomes-list"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ═══ CTA ═══ -->
-    <section class="cta-banner" aria-label="Call to action">
-      <div class="cta-geo" aria-hidden="true"></div>
-      <div class="container">
-        <div class="cta-inner">
+        <div class="pdh-inner">
           <div class="reveal-left">
-            <h2 class="cta-heading">Have a Similar Project?</h2>
-            <p class="cta-sub">Let's collaborate and build something impactful together.</p>
+            <a href="projects.html" class="pdh-breadcrumb" aria-label="Back to projects">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Back to Projects
+            </a>
+            <h1 id="pd2-hero-title" class="pdh-title about-heading"><strong>Al Tahaluf's</strong></h1>
+            <p id="pd2-hero-subtitle" class="pdh-subtitle">Enterprise Admin Platform</p>
+            <p id="pd2-hero-desc" class="pdh-desc">
+              A robust enterprise admin platform built with Angular and .NET Core to streamline operations, manage workflows, and deliver actionable insights through a secure and scalable solution.
+            </p>
+
+            <div class="pdh-meta">
+              <div class="pdh-meta-row">
+                <div class="pdh-meta-item">
+                  <span class="pdh-meta-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </span>
+                  Client: <strong id="pd2-meta-client">Al Tahaluf's</strong>
+                </div>
+                <div class="pdh-meta-item">
+                  <span class="pdh-meta-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  </span>
+                  Category: <strong id="pd2-meta-category">Enterprise Software</strong>
+                </div>
+                <div class="pdh-meta-item">
+                  <span style="color:#28c840; display:flex; align-items:center;">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="#28c840"><circle cx="5" cy="5" r="5"/></svg>
+                  </span>&nbsp;
+                  Status: <strong id="pd2-meta-status">Completed</strong>
+                </div>
+              </div>
+              <div class="pdh-meta-row">
+                <div class="pdh-meta-item">
+                  <span class="pdh-meta-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </span>
+                  Timeline: <strong id="pd2-meta-timeline">8 Weeks (Mar 2024 – May 2024)</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdh-btns">
+              <a id="pd2-btn-live" href="#" class="pdh-btn-primary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                View Live
+              </a>
+              <a id="pd2-btn-github" href="#" class="pdh-btn-outline">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                View Code
+              </a>
+            </div>
           </div>
-          <a href="contact.html" class="btn btn-primary reveal-right" style="font-size:0.85rem;padding:1rem 2.25rem;">Let's Talk <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+          <div class="pdh-mockup reveal-right">
+            <div class="hero-visual">
+              <div class="hero-img-wrap project-image-wrp">
+                <div class="hero-img-bg" aria-hidden="true"></div>
+                <img id="pd2-hero-img" src="https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254073/al-tahaluf-banner_p0ltyp.png" alt="project name" class="hero-img" loading="eager" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pd2-section pd2-section-dark" aria-label="Technology stack">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group reveal-left ">
+            <p class="section-label">The Build</p>
+            <h2 class="about-heading"> Cutting-Edge Tech,<br />
+              <strong>  Solid Foundation.</strong>
+            </h2>
+          </div>
+          <p class="section-desc reveal" >Modern, battle-tested technologies chosen for scalability, performance, and maintainability.</p>
+        </div>
+        <p class="pd2-subtext"></p>
+        <div id="pd2-tech-grid" class="pd2-tech-grid">
+          <div class="pd2-tech-card reveal" >
+            <div class="pd2-tech-card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M12 2.5L1.5 6.6l1.6 13.9L12 24l8.9-3.5 1.6-13.9L12 2.5zm0 2.1l7.5 3.3-1.4 12.1L12 22.2l-6.1-2.1-1.4-12.1L12 4.6zm0 3L7.6 19.1h1.9l1-2.6h2.8l.4 1 .6 1.6h1.9L12 7.6zm.7 7.3h-1.4l.7-1.8.7 1.8z"/></svg>
+            </div>
+            <div class="pd2-tech-card-name">Angular 17</div>
+            <div class="pd2-tech-card-sub">Frontend Framework</div>
+          </div>
+          <div class="pd2-tech-card reveal" >
+            <div class="pd2-tech-card-icon" >
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M3.1 7.1l-.1.4v9l.1.4.3.3h.4l.4-.1 8.6-5 .3-.3.1-.4-.1-.4-.3-.3L4.2 6.9l-.4-.1-.3.1-.4.2zm15.5 2.1L12 12l6.6 2.8V9.2zm1 5.1l-7.3-3.1L5.8 14.3l7.3 3.1 6.5-1.2z"/></svg>
+            </div>
+            <div class="pd2-tech-card-name">.NET Core 8</div>
+            <div class="pd2-tech-card-sub">Backend Framework</div>
+          </div>
+          <div class="pd2-tech-card reveal">
+            <div class="pd2-tech-card-icon" >
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><ellipse cx="12" cy="7" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12V7c0 1.66 4.03 3 9 3s9-1.34 9-3"/><path d="M21 17c0 1.66-4.03 3-9 3S3 18.66 3 17v-5c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+            </div>
+            <div class="pd2-tech-card-name">SQL Server</div>
+            <div class="pd2-tech-card-sub">Database</div>
+          </div>
+          <div class="pd2-tech-card reveal" >
+            <div class="pd2-tech-card-icon" >
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>
+            </div>
+            <div class="pd2-tech-card-name">TypeScript</div>
+            <div class="pd2-tech-card-sub">Programming Language</div>
+          </div>
+          <div class="pd2-tech-card reveal" >
+            <div class="pd2-tech-card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+            </div>
+            <div class="pd2-tech-card-name">Tailwind CSS</div>
+            <div class="pd2-tech-card-sub">Styling</div>
+          </div>
+          <div class="pd2-tech-card reveal" >
+            <div class="pd2-tech-card-icon" >
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M23.546 10.93L13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.648-2.181L13.128 8.57v6.797a1.837 1.837 0 0 1 .49 3.575 1.838 1.838 0 0 1-2.329-1.755 1.837 1.837 0 0 1 1-1.647V8.806a1.841 1.841 0 0 1-1-1.648 1.837 1.837 0 0 1 3.69-.002l.004.002v-.012L12.337 4.49 1.45 15.38a1.55 1.55 0 0 0 0 2.188l10.48 10.478a1.55 1.55 0 0 0 2.187 0l9.428-9.428a1.55 1.55 0 0 0 0-2.188z"/></svg>
+            </div>
+            <div class="pd2-tech-card-name">Git &amp; GitHub</div>
+            <div class="pd2-tech-card-sub">Version Control</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pd2-section pd2-section-black" aria-label="Key features">
+      <div class="container">
+         <div class="section-header">
+          <div class="section-title-group reveal-left ">
+            <p class="section-label">Functionality</p>
+            <h2 class="about-heading"> Core Modules <br />
+              <strong>& System Logic.</strong>
+            </h2>
+          </div>
+          <p class="section-desc reveal" >Built to handle complex enterprise requirements with a clean, modular architecture.</p>
+        </div>
+        <div id="pd2-features-grid" class="pd2-features-grid">
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="pd2-feature-title">User Management</div>
+            <p class="pd2-feature-desc">Role-based access control with permissions and user hierarchy.</p>
+          </div>
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <div class="pd2-feature-title">Module Management</div>
+            <p class="pd2-feature-desc">Create, update, and manage system modules and functionalities.</p>
+          </div>
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 9h.01M15 9h.01M9 15h6"/></svg>
+            </div>
+            <div class="pd2-feature-title">Workflow Automation</div>
+            <p class="pd2-feature-desc">Automated workflows to streamline business processes.</p>
+          </div>
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div class="pd2-feature-title">Reports &amp; Analytics</div>
+            <p class="pd2-feature-desc">Real-time reports and analytics for data-driven decisions.</p>
+          </div>
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <div class="pd2-feature-title">Secure Authentication</div>
+            <p class="pd2-feature-desc">JWT-based authentication with refresh tokens and 2FA support.</p>
+          </div>
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="pd2-feature-title">Audit Logs</div>
+            <p class="pd2-feature-desc">Track all system activities with detailed audit logs.</p>
+          </div>
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <div class="pd2-feature-title">Responsive UI</div>
+            <p class="pd2-feature-desc">Fully responsive design optimized for all devices.</p>
+          </div>
+          <div class="pd2-feature-card reveal">
+            <div class="pd2-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <div class="pd2-feature-title">Notifications</div>
+            <p class="pd2-feature-desc">Real-time alerts and notifications for important updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pd2-section pd2-section-dark" aria-label="Project timeline">
+      <div class="container">
+         <div class="section-header">
+          <div class="section-title-group reveal-left ">
+            <p class="section-label">Project Timeline</p>
+            <h2 class="about-heading"> How It Was<br />
+              <strong> Built.</strong>
+            </h2>
+          </div>
+          <p class="section-desc reveal" >From setting up the environment to deploying in production—chronicling the architecture decisions, debugging sessions, and optimizations along the way.</p>
+        </div>
+        <div class="pd2-timeline-wrap">
+          <div class="pd2-timeline-track" aria-hidden="true">
+            <div class="pd2-timeline-fill"></div>
+          </div>
+          <div id="pd2-timeline-grid" class="pd2-timeline-grid">
+            <div class="pd2-tl-node reveal">
+              <div class="pd2-tl-dot">01</div>
+              <div class="pd2-tl-content">
+                <div class="pd2-tl-phase">Discovery &amp; Planning</div>
+                <div class="pd2-tl-duration">1 Week</div>
+                <p class="pd2-tl-desc">Requirement gathering, analysis, and system architecture planning.</p>
+              </div>
+            </div>
+            <div class="pd2-tl-node reveal">
+              <div class="pd2-tl-dot">02</div>
+              <div class="pd2-tl-content">
+                <div class="pd2-tl-phase">API Development</div>
+                <div class="pd2-tl-duration">2 Weeks</div>
+                <p class="pd2-tl-desc">Building secure and scalable APIs using .NET Core with clean architecture.</p>
+              </div>
+            </div>
+            <div class="pd2-tl-node reveal">
+              <div class="pd2-tl-dot">03</div>
+              <div class="pd2-tl-content">
+                <div class="pd2-tl-phase">Frontend Development</div>
+                <div class="pd2-tl-duration">3 Weeks</div>
+                <p class="pd2-tl-desc">Developing responsive UI with Angular, integrating APIs and state management.</p>
+              </div>
+            </div>
+            <div class="pd2-tl-node reveal">
+              <div class="pd2-tl-dot">04</div>
+              <div class="pd2-tl-content">
+                <div class="pd2-tl-phase">Testing &amp; Deployment</div>
+                <div class="pd2-tl-duration">2 Weeks</div>
+                <p class="pd2-tl-desc">Testing, bug fixes, performance optimization, and production deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pd2-section pd2-section-black" aria-label="Project screenshots">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group reveal-left ">
+              <p class="section-label">Project Gallery</p>
+              <h2 class="about-heading">UI & Interface<br />
+                <strong>  Previews.</strong>
+              </h2>
+            </div>
+            <p class="section-desc reveal" >Visual references showcasing the layout, responsiveness, and design language implemented across the application..</p>
+        </div>
+        <div class="pd2-screenshots-wrap">
+          <div id="pd2-screenshots-carousel" class="pd2-screenshots-carousel reveal">
+            <div class="pd2-screenshot-thumb">
+                <img src="https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254073/al-tahaluf-banner_p0ltyp.png" alt="project screenshot" class="hero-img" loading="eager" />
+            </div>
+            <div class="pd2-screenshot-thumb">
+                <img src="https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254073/al-tahaluf-banner_p0ltyp.png" alt="project screenshot" class="hero-img" loading="eager" />
+            </div>
+            <div class="pd2-screenshot-thumb">
+                <img src="https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254073/al-tahaluf-banner_p0ltyp.png" alt="project screenshot" class="hero-img" loading="eager" />
+            </div>
+            <div class="pd2-screenshot-thumb">
+                <img src="https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254073/al-tahaluf-banner_p0ltyp.png" alt="project screenshot" class="hero-img" loading="eager" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pd2-section pd2-section-dark" aria-label="Performance metrics">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group reveal-left ">
+              <p class="section-label">The Impact</p>
+              <h2 class="about-heading">Measurable Results,<br />
+                <strong>Tangible Outcomes.</strong>
+              </h2>
+            </div>
+            <p class="section-desc reveal" >Data-driven insights that validate our approach—showcasing speed, reliability, and efficiency gains that directly translate to real-world value.</p>
+        </div>
+        <div id="pd2-metrics-grid" class="pd2-metrics-grid">
+          <div class="pd2-metric-item reveal">
+            <div class="pd2-metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <div class="pd2-metric-val">8 wk</div>
+              <div class="pd2-metric-label">Delivery Time</div>
+              <div class="pd2-metric-desc">On-time Delivery</div>
+            </div>
+          </div>
+          <div class="pd2-metric-item reveal">
+            <div class="pd2-metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/><path d="M5 3l2 2M19 3l-2 2M5 21l2-2M19 21l-2-2"/></svg>
+            </div>
+            <div>
+              <div class="pd2-metric-val">97/100</div>
+              <div class="pd2-metric-label">Performance Score</div>
+              <div class="pd2-metric-desc">Lighthouse Score</div>
+            </div>
+          </div>
+          <div class="pd2-metric-item reveal">
+            <div class="pd2-metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="9" height="9" rx="1"/><rect x="13" y="3" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg>
+            </div>
+            <div>
+              <div class="pd2-metric-val">18+</div>
+              <div class="pd2-metric-label">Custom Modules</div>
+              <div class="pd2-metric-desc">Built &amp; Integrated</div>
+            </div>
+          </div>
+          <div class="pd2-metric-item reveal">
+            <div class="pd2-metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <div>
+              <div class="pd2-metric-val">100%</div>
+              <div class="pd2-metric-label">Client Satisfaction</div>
+              <div class="pd2-metric-desc">Positive Feedback</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="border-top:1px solid var(--border);" aria-label="Outcomes and challenges">
+      <div class="pd2-oc-grid">
+        <div class="pd2-oc-col">
+          <div class="pd2-oc-geo" aria-hidden="true">
+            <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+              <circle cx="80" cy="80" r="70" stroke="var(--accent)" stroke-width="0.5" opacity="0.4"/>
+              <circle cx="80" cy="80" r="45" stroke="var(--accent)" stroke-width="0.5" opacity="0.4"/>
+              <line x1="80" y1="10" x2="80" y2="150" stroke="var(--accent)" stroke-width="0.5" opacity="0.3"/>
+              <line x1="10" y1="80" x2="150" y2="80" stroke="var(--accent)" stroke-width="0.5" opacity="0.3"/>
+              <line x1="30" y1="30" x2="130" y2="130" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+              <line x1="130" y1="30" x2="30" y2="130" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+              <polygon points="80,40 90,75 80,90 70,75" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.3"/>
+              <polygon points="80,120 90,85 80,70 70,85" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.3"/>
             </svg>
+          </div>
+          <div class="section-header">
+            <div class="section-title-group reveal-left ">
+                <p class="section-label">Outcomes</p>
+                <h2 class="about-heading">Project<br />
+                  <strong>Outcomes</strong>
+                </h2>
+              </div>
+          </div>
+          <ul id="pd2-outcomes-list" class="pd2-oc-list">
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Streamlined operations and improved efficiency.
+            </li>
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Centralized management of users, roles, and modules.
+            </li>
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Real-time insights through advanced analytics.
+            </li>
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Scalable architecture for future enhancements.
+            </li>
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Enhanced security with role-based access control.
+            </li>
+          </ul>
+        </div>
+
+        <div class="pd2-oc-col">
+          <div class="pd2-oc-geo" aria-hidden="true" style="opacity:0.3; right:2rem; bottom:2rem;">
+            <svg width="180" height="180" viewBox="0 0 180 180" fill="none">
+              <rect x="40" y="40" width="100" height="100" stroke="var(--accent)" stroke-width="0.8"/>
+              <rect x="60" y="60" width="60" height="60" stroke="var(--accent)" stroke-width="0.8"/>
+              <line x1="40" y1="40" x2="60" y2="60" stroke="var(--accent)" stroke-width="0.8"/>
+              <line x1="140" y1="40" x2="120" y2="60" stroke="var(--accent)" stroke-width="0.8"/>
+              <line x1="40" y1="140" x2="60" y2="120" stroke="var(--accent)" stroke-width="0.8"/>
+              <line x1="140" y1="140" x2="120" y2="120" stroke="var(--accent)" stroke-width="0.8"/>
+              <line x1="40" y1="90" x2="60" y2="90" stroke="var(--accent)" stroke-width="0.5" opacity="0.6"/>
+              <line x1="120" y1="90" x2="140" y2="90" stroke="var(--accent)" stroke-width="0.5" opacity="0.6"/>
+              <line x1="90" y1="40" x2="90" y2="60" stroke="var(--accent)" stroke-width="0.5" opacity="0.6"/>
+              <line x1="90" y1="120" x2="90" y2="140" stroke="var(--accent)" stroke-width="0.5" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="section-header">
+            <div class="section-title-group reveal-left ">
+                <p class="section-label">Challenges</p>
+                <h2 class="about-heading">Challenges &amp;<br />
+                  <strong>Solutions</strong>
+                </h2>
+              </div>
+          </div>
+          <ul id="pd2-challenges-list" class="pd2-oc-list">
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon" style="color: var(--gray-light);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+              <div>
+                <div style="color:var(--white); font-size:0.88rem; font-weight:500; margin-bottom:0.2rem;">Complex business logic and workflows</div>
+                <div style="color:var(--gray); font-size:0.78rem;">Solved with modular architecture and clean code practices.</div>
+              </div>
+            </li>
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon" style="color: var(--gray-light);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+              <div>
+                <div style="color:var(--white); font-size:0.88rem; font-weight:500; margin-bottom:0.2rem;">Performance optimization for large datasets</div>
+                <div style="color:var(--gray); font-size:0.78rem;">Implemented caching and query optimization.</div>
+              </div>
+            </li>
+            <li class="pd2-oc-item">
+              <span class="pd2-oc-item-icon" style="color: var(--gray-light);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+              <div>
+                <div style="color:var(--white); font-size:0.88rem; font-weight:500; margin-bottom:0.2rem;">Ensuring data security and access control</div>
+                <div style="color:var(--gray); font-size:0.78rem;">Applied JWT, role-based permissions, and audit logs.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="pd2-proj-nav" aria-label="Navigate between projects">
+      <div class="container">
+        <div class="pd2-proj-nav-inner">
+          <a id="pd2-prev-link" href="#" class="pd2-proj-nav-side">
+            <div class="pd2-proj-nav-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="pd2-proj-nav-thumb">
+              <div class="pd2-proj-nav-thumb-inner">
+                <svg width="20" height="14" viewBox="0 0 40 28" fill="none">
+                  <rect x="1" y="1" width="38" height="22" rx="2" stroke="#333" stroke-width="1"/>
+                  <rect x="4" y="4" width="32" height="16" fill="#111"/>
+                  <rect x="6" y="6" width="10" height="10" fill="#1a1a1a"/>
+                  <rect x="18" y="6" width="18" height="4" fill="#222"/>
+                  <rect x="18" y="12" width="14" height="4" fill="#1a1a1a"/>
+                  <line x1="15" y1="26" x2="25" y2="26" stroke="#333" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="pd2-proj-nav-label">Previous Project</div>
+              <div id="pd2-prev-title" class="pd2-proj-nav-title">M Square</div>
+              <div id="pd2-prev-sub" class="pd2-proj-nav-sub">Real Estate Platform</div>
+            </div>
+          </a>
+          <a href="projects.html" class="pd2-proj-nav-center" aria-label="All projects">
+            <div class="pd2-proj-nav-grid">
+              <div class="pd2-proj-nav-grid-dot"></div><div class="pd2-proj-nav-grid-dot"></div><div class="pd2-proj-nav-grid-dot"></div>
+              <div class="pd2-proj-nav-grid-dot"></div><div class="pd2-proj-nav-grid-dot"></div><div class="pd2-proj-nav-grid-dot"></div>
+              <div class="pd2-proj-nav-grid-dot"></div><div class="pd2-proj-nav-grid-dot"></div><div class="pd2-proj-nav-grid-dot"></div>
+            </div>
+          </a>
+          <a id="pd2-next-link" href="#" class="pd2-proj-nav-side right">
+            <div class="pd2-proj-nav-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="pd2-proj-nav-thumb">
+              <div class="pd2-proj-nav-thumb-inner">
+                <svg width="20" height="14" viewBox="0 0 40 28" fill="none">
+                  <rect x="1" y="1" width="38" height="22" rx="2" stroke="#333" stroke-width="1"/>
+                  <rect x="4" y="4" width="32" height="16" fill="#111"/>
+                  <rect x="6" y="6" width="28" height="6" fill="#1a1a1a"/>
+                  <rect x="6" y="14" width="18" height="4" fill="#222"/>
+                  <rect x="26" y="14" width="8" height="4" fill="rgba(163,255,18,0.2)"/>
+                  <line x1="15" y1="26" x2="25" y2="26" stroke="#333" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="pd2-proj-nav-label">Next Project</div>
+              <div id="pd2-next-title" class="pd2-proj-nav-title">Vision Advertising</div>
+              <div id="pd2-next-sub" class="pd2-proj-nav-sub">Creative Agency Website</div>
+            </div>
           </a>
         </div>
       </div>
-    </section>
-    <!-- ═══ PREV / NEXT ═══ -->
-    <section class="pd-nav-projects" aria-label="Adjacent projects navigation">
-      <div class="container">
-        <div class="pd-nav-grid" id="pd-nav-grid"></div>
-      </div>
-    </section>
+    </div>
     <footer class="site-footer" id="site-footer">
       <div class="footer-bg" aria-hidden="true">
         <svg class="footer-bg-grid-dots" preserveAspectRatio="none" viewBox="0 0 100 100">
           <defs>
-            <radialGradient id="FooterDotGlow" cx="50%" cy="50%" r="50%">
+            <radialGradient id="PDFooterDotGlow" cx="50%" cy="50%" r="50%">
               <stop offset="0%" stop-color="var(--accent)" stop-opacity="1" />
               <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
             </radialGradient>
           </defs>
-          <circle r="0.55" fill="url(#FooterDotGlow)">
-            <animateMotion dur="9s" repeatCount="indefinite" path="M -5,18 H 105" rotate="auto" />
-          </circle>
-          <circle r="0.5" fill="url(#FooterDotGlow)">
-            <animateMotion dur="13s" begin="2s" repeatCount="indefinite" path="M 105,46 H -5" rotate="auto" />
-          </circle>
-          <circle r="0.55" fill="url(#FooterDotGlow)">
-            <animateMotion dur="11s" begin="4.5s" repeatCount="indefinite" path="M -5,74 H 105" rotate="auto" />
-          </circle>
-          <circle r="0.5" fill="url(#FooterDotGlow)">
-            <animateMotion dur="10s" begin="1s" repeatCount="indefinite" path="M 24,-5 V 105" rotate="auto" />
-          </circle>
-          <circle r="0.55" fill="url(#FooterDotGlow)">
-            <animateMotion dur="14s" begin="6s" repeatCount="indefinite" path="M 62,105 V -5" rotate="auto" />
-          </circle>
-          <circle r="0.5" fill="url(#FooterDotGlow)">
-            <animateMotion dur="12s" begin="3s" repeatCount="indefinite" path="M 88,-5 V 105" rotate="auto" />
-          </circle>
+          <circle r="0.55" fill="url(#PDFooterDotGlow)"><animateMotion dur="9s" repeatCount="indefinite" path="M -5,18 H 105" rotate="auto" /></circle>
+          <circle r="0.5" fill="url(#PDFooterDotGlow)"><animateMotion dur="13s" begin="2s" repeatCount="indefinite" path="M 105,46 H -5" rotate="auto" /></circle>
+          <circle r="0.55" fill="url(#PDFooterDotGlow)"><animateMotion dur="11s" begin="4.5s" repeatCount="indefinite" path="M -5,74 H 105" rotate="auto" /></circle>
         </svg>
         <div class="footer-bg-glow-blob"></div>
         <div class="footer-bg-radar"></div>
         <div class="footer-bg-globe">
           <svg viewBox="0 0 400 400" class="footer-globe-svg">
             <defs>
-              <radialGradient id="FooterGlobeFade" cx="50%" cy="50%" r="60%">
+              <radialGradient id="PDFooterGlobeFade" cx="50%" cy="50%" r="60%">
                 <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.055" />
                 <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.006" />
               </radialGradient>
@@ -1171,17 +750,13 @@
               <ellipse cx="200" cy="200" rx="180" ry="180" />
               <ellipse cx="200" cy="200" rx="180" ry="70" />
               <ellipse cx="200" cy="200" rx="180" ry="130" />
-              <ellipse cx="200" cy="200" rx="180" ry="178" transform="rotate(0 200 200)" />
               <ellipse cx="200" cy="200" rx="70" ry="180" />
               <ellipse cx="200" cy="200" rx="130" ry="180" />
-              <ellipse cx="200" cy="200" rx="40" ry="180" />
               <line x1="20" y1="200" x2="380" y2="200" />
               <line x1="30" y1="130" x2="370" y2="130" />
               <line x1="30" y1="270" x2="370" y2="270" />
-              <line x1="55" y1="80" x2="345" y2="80" />
-              <line x1="55" y1="320" x2="345" y2="320" />
             </g>
-            <circle cx="200" cy="200" r="180" fill="url(#FooterGlobeFade)" />
+            <circle cx="200" cy="200" r="180" fill="url(#PDFooterGlobeFade)" />
           </svg>
         </div>
         <div class="footer-bg-noise"></div>
@@ -1189,7 +764,7 @@
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-col footer-col--brand">
-            <a href="#" class="nav-logo" aria-label="Home">
+            <a href="index.html" class="nav-logo" aria-label="Home">
               <div class="logo-box" aria-hidden="true">SI</div>
               <div class="logo-text">
                 <span class="logo-name">M Sohaib Ishaque</span>
@@ -1200,95 +775,45 @@
             <div class="brand-rule" aria-hidden="true"></div>
             <div class="footer-cta-card">
               <div class="footer-cta-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 11l18-8-8 18-2-8-8-2z" />
-                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8-8-2z" /></svg>
               </div>
               <h3 class="footer-cta-title">Let's work together</h3>
               <p class="footer-cta-text">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
-              <a href="contact.html" class="footer-cta-button"> Get In Touch <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
+              <a href="contact.html" class="footer-cta-button">
+                Get In Touch
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg>
               </a>
             </div>
           </div>
-          <nav class="footer-col footer-col--nav" aria-labelledby="main-heading">
-            <h3 class="main-heading" id="main-heading">
-              <span class="dot" aria-hidden="true"></span>Quick Links
-            </h3>
+          <nav class="footer-col footer-col--nav" aria-labelledby="pd-footer-nav-heading">
+            <h3 class="footer-col-heading" id="pd-footer-nav-heading"><span class="dot" aria-hidden="true"></span>Quick Links</h3>
             <ul class="footer-link-list">
-              <li>
-                <a href="index.htnl" class="footer-link-active">
-                  <span class="dot dot--small" aria-hidden="true"></span>Home </a>
-              </li>
-              <li>
-                <a href="about.htnl">About</a>
-              </li>
-              <li>
-                <a href="skills.htnl">Skills</a>
-              </li>
-              <li>
-                <a href="projects.html">Projects</a>
-              </li>
-              <li>
-                <a href="experience.html">Experience</a>
-              </li>
-              <li>
-                <a href="testimonials.html">Testimonials</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="projects.html" class="footer-link-active"><span class="dot dot--small" aria-hidden="true"></span>Projects</a></li>
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
-          <nav class="footer-col footer-col--services" aria-labelledby="footer-services-heading">
-            <h3 class="main-heading" id="footer-services-heading">
-              <span class="dot" aria-hidden="true"></span>Technologies
-            </h3>
+          <nav class="footer-col footer-col--services" aria-labelledby="pd-footer-tech-heading">
+            <h3 class="footer-col-heading" id="pd-footer-tech-heading"><span class="dot" aria-hidden="true"></span>Technologies</h3>
             <ul class="footer-link-list">
-              <li>
-                <a href="skills.htnl">Angular &amp; React</a>
-              </li>
-              <li>
-                <a href="skills.htnl">Next.js</a>
-              </li>
-              <li>
-                <a href="skills.htnl">Node.js</a>
-              </li>
-              <li>
-                <a href="skills.htnl">TypeScript</a>
-              </li>
-              <li>
-                <a href="skills.htnl">MongoDB</a>
-              </li>
-              <li>
-                <a href="skills.htnl">Tailwind CSS</a>
-              </li>
+              <li><a href="skills.html">Angular &amp; React</a></li>
+              <li><a href="skills.html">.NET Core</a></li>
+              <li><a href="skills.html">TypeScript</a></li>
+              <li><a href="skills.html">SQL Server</a></li>
+              <li><a href="skills.html">Tailwind CSS</a></li>
+              <li><a href="skills.html">Git &amp; GitHub</a></li>
             </ul>
           </nav>
-          <div class="footer-col footer-col--contact" id="FooterContact">
-            <h3 class="main-heading">
-              <span class="dot" aria-hidden="true"></span>Let's Connect
-            </h3>
+          <div class="footer-col footer-col--contact">
+            <h3 class="footer-col-heading"><span class="dot" aria-hidden="true"></span>Let's Connect</h3>
             <ul class="footer-contact-list">
               <li class="footer-contact-item">
                 <span class="footer-contact-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                </span>
-                <span class="footer-contact-text">
-                  <a href="tel:+15551234567">+92 3038464315</a>
-                  <span class="footer-contact-sub">Mon - Fri, 9AM - 6PM EST</span>
-                </span>
-              </li>
-              <li class="footer-contact-item">
-                <span class="footer-contact-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </span>
                 <span class="footer-contact-text">
                   <a href="mailto:engineer.sohaibishaque@gmail.com">engineer.sohaibishaque@gmail.com</a>
@@ -1297,10 +822,7 @@
               </li>
               <li class="footer-contact-item">
                 <span class="footer-contact-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </span>
                 <span class="footer-contact-text">
                   <span class="contact-static">Rawalpindi, Pakistan</span>
@@ -1311,69 +833,34 @@
             <ul class="footer-social-list" aria-label="Social media links">
               <li>
                 <a href="https://github.com/Sohaib-Ishaque" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                  </svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/engineer-sohaib-ishaque-765b34171/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                    <rect x="2" y="9" width="4" height="12" />
-                    <circle cx="4" cy="4" r="2" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://sohaibishaque.com" class="social-icon" aria-label="Website" target="_blank" rel="noopener noreferrer">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                  </svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                 </a>
               </li>
               <li>
                 <a href="mailto:engineer.sohaibishaque@gmail.com" class="social-icon" aria-label="Email">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </a>
               </li>
             </ul>
-            <p class="freelance-note">
-              <strong>Available</strong> for freelance work <br />and exciting opportunities.
-            </p>
+            <p class="freelance-note"><strong>Available</strong> for freelance work <br/>and exciting opportunities.</p>
           </div>
         </div>
         <div class="footer-bottom">
           <div class="bottom-left">
             <span class="code-icon" aria-hidden="true">&lt;/&gt;</span>
-            <span>Designed &amp; Built by <span class="accent">M Sohaib Ishaque</span>
-            </span>
-            <svg class="heart-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 21s-7.5-4.6-10-9.1C.5 8.4 2 4.8 5.6 4.1c2-.4 4 .5 6.4 2.9 2.4-2.4 4.4-3.3 6.4-2.9C22 4.8 23.5 8.4 22 11.9 19.5 16.4 12 21 12 21z" />
-            </svg>
+            <span>Designed &amp; Built by <span class="accent">M Sohaib Ishaque</span></span>
+            <svg class="heart-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-10-9.1C.5 8.4 2 4.8 5.6 4.1c2-.4 4 .5 6.4 2.9 2.4-2.4 4.4-3.3 6.4-2.9C22 4.8 23.5 8.4 22 11.9 19.5 16.4 12 21 12 21z"/></svg>
           </div>
-          <div class="bottom-center"> &copy; 2025 <span class="accent">M Sohaib Ishaque</span>. All rights reserved. </div>
+          <div class="bottom-center">&copy; 2025 <span class="accent">M Sohaib Ishaque</span>. All rights reserved.</div>
         </div>
       </div>
     </footer>
-    <!-- LIGHTBOX -->
-    <div class="pd-lightbox" id="pdLightbox" role="dialog" aria-modal="true" aria-label="Screenshot lightbox">
-      <div class="pd-lightbox-inner">
-        <button class="pd-lightbox-close" id="pdLightboxClose" aria-label="Close lightbox">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <line x1="2" y1="2" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-            <line x1="12" y1="2" x2="2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-          </svg>
-        </button>
-        <img id="pdLightboxImg" src="" alt="Full screenshot" />
-        <p class="pd-lightbox-caption" id="pdLightboxCaption"></p>
-      </div>
-    </div>
-    <!-- SCRIPTS -->
+
     <script src="./assets/js/constants.js"></script>
     <script src="./assets/js/utils.js"></script>
     <script src="./assets/js/animations.js"></script>
@@ -1381,58 +868,5 @@
     <script src="./assets/js/interactions.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/projects-data.js"></script>
-    <script>
-      (function() {
-        'use strict';
-        const mainImg = document.getElementById('mainScreenshotImg');
-        const mainLabel = document.getElementById('mainScreenshotLabel');
-        const mainWrap = document.getElementById('mainScreenshot');
-        document.getElementById('pd-screenshot-strip').addEventListener('click', function(e) {
-          const thumb = e.target.closest('.pd-screenshot-thumb');
-          if (!thumb) return;
-          this.querySelectorAll('.pd-screenshot-thumb').forEach(t => t.classList.remove('active'));
-          thumb.classList.add('active');
-          mainImg.style.opacity = '0';
-          setTimeout(() => {
-            mainImg.src = thumb.dataset.src;
-            mainLabel.textContent = thumb.dataset.label;
-            mainImg.style.opacity = '1';
-          }, 200);
-        });
-        const lightbox = document.getElementById('pdLightbox');
-        const lightboxImg = document.getElementById('pdLightboxImg');
-        const lightboxCap = document.getElementById('pdLightboxCaption');
-        const lightboxClose = document.getElementById('pdLightboxClose');
-
-        function openLightbox(src, cap) {
-          lightboxImg.src = src;
-          lightboxCap.textContent = cap || '';
-          lightbox.classList.add('active');
-          document.body.style.overflow = 'hidden';
-          lightboxClose.focus();
-        }
-
-        function closeLightbox() {
-          lightbox.classList.remove('active');
-          document.body.style.overflow = '';
-        }
-        if (mainWrap) {
-          mainWrap.addEventListener('click', () => openLightbox(mainImg.src, mainLabel.textContent));
-          mainWrap.addEventListener('keydown', e => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              openLightbox(mainImg.src, mainLabel.textContent);
-            }
-          });
-        }
-        lightboxClose.addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', e => {
-          if (e.target === lightbox) closeLightbox();
-        });
-        document.addEventListener('keydown', e => {
-          if (e.key === 'Escape') closeLightbox();
-        });
-      })();
-    </script>
   </body>
 </html>
