@@ -233,6 +233,233 @@ window.Portfolio.CAROUSEL = (function() {
 		return swiper;
 	}
 
+	/* ---------------------------------------------------
+	   Project screenshots carousel + fullview lightbox
+	--------------------------------------------------- */
+
+	let lightboxRefs = null;
+	let lightboxSwiper = null;
+
+	function ensureLightbox() {
+		if (lightboxRefs) return lightboxRefs;
+
+		const overlay = document.createElement('div');
+		overlay.className = 'pd2-lightbox';
+		overlay.setAttribute('aria-hidden', 'true');
+		overlay.setAttribute('role', 'dialog');
+		overlay.setAttribute('aria-modal', 'true');
+		overlay.setAttribute('aria-label', 'Screenshot viewer');
+
+		overlay.innerHTML = `
+			<div class="pd2-lightbox-backdrop"></div>
+			<button type="button" class="pd2-lightbox-close" aria-label="Close viewer">
+				<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+					<line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/>
+				</svg>
+			</button>
+			<div class="pd2-lightbox-counter"><span class="pd2-lb-current">1</span> / <span class="pd2-lb-total">1</span></div>
+			<div class="swiper pd2-lightbox-swiper">
+				<div class="swiper-wrapper"></div>
+			</div>
+			<button type="button" class="pd2-lightbox-nav pd2-lightbox-prev" aria-label="Previous screenshot">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M11 14L6 9l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</button>
+			<button type="button" class="pd2-lightbox-nav pd2-lightbox-next" aria-label="Next screenshot">
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M7 4l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</button>
+		`;
+
+		document.body.appendChild(overlay);
+
+		lightboxRefs = {
+			overlay,
+			backdrop: overlay.querySelector('.pd2-lightbox-backdrop'),
+			closeBtn: overlay.querySelector('.pd2-lightbox-close'),
+			swiperEl: overlay.querySelector('.pd2-lightbox-swiper'),
+			wrapperEl: overlay.querySelector('.swiper-wrapper'),
+			prevEl: overlay.querySelector('.pd2-lightbox-prev'),
+			nextEl: overlay.querySelector('.pd2-lightbox-next'),
+			currentEl: overlay.querySelector('.pd2-lb-current'),
+			totalEl: overlay.querySelector('.pd2-lb-total'),
+		};
+
+		lightboxRefs.closeBtn.addEventListener('click', closeLightbox);
+		lightboxRefs.backdrop.addEventListener('click', closeLightbox);
+
+		document.addEventListener('keydown', (e) => {
+			if (!lightboxRefs.overlay.classList.contains('is-open')) return;
+			if (e.key === 'Escape') closeLightbox();
+		});
+
+		return lightboxRefs;
+	}
+
+	function openLightbox(images, startIndex) {
+		if (!images.length) return;
+		const refs = ensureLightbox();
+
+		refs.wrapperEl.innerHTML = images.map(img => `
+			<div class="swiper-slide pd2-lightbox-slide">
+				<img src="${img.src}" alt="${img.alt || 'Project screenshot'}" />
+			</div>`).join('');
+
+		refs.totalEl.textContent = images.length;
+		refs.currentEl.textContent = startIndex + 1;
+
+		refs.prevEl.style.display = images.length > 1 ? '' : 'none';
+		refs.nextEl.style.display = images.length > 1 ? '' : 'none';
+
+		document.documentElement.classList.add('pd2-lightbox-locked');
+		refs.overlay.classList.add('is-open');
+		refs.overlay.setAttribute('aria-hidden', 'false');
+
+		if (lightboxSwiper) {
+			lightboxSwiper.destroy(true, true);
+			lightboxSwiper = null;
+		}
+
+		lightboxSwiper = new Swiper(refs.swiperEl, {
+			speed: 500,
+			grabCursor: true,
+			loop: images.length > 1,
+			initialSlide: startIndex,
+			spaceBetween: 0,
+			keyboard: {
+				enabled: true,
+				onlyInViewport: false,
+			},
+			a11y: {
+				enabled: true,
+			},
+			navigation: {
+				prevEl: refs.prevEl,
+				nextEl: refs.nextEl,
+			},
+			on: {
+				slideChange() {
+					refs.currentEl.textContent = this.realIndex + 1;
+				},
+			},
+		});
+	}
+
+	function closeLightbox() {
+		if (!lightboxRefs) return;
+		lightboxRefs.overlay.classList.remove('is-open');
+		lightboxRefs.overlay.setAttribute('aria-hidden', 'true');
+		document.documentElement.classList.remove('pd2-lightbox-locked');
+
+		if (lightboxSwiper) {
+			lightboxSwiper.destroy(true, true);
+			lightboxSwiper = null;
+		}
+	}
+
+	function bindScreenshotLightbox(wrapperEl) {
+		if (!wrapperEl) return;
+
+		const slides = Array.from(wrapperEl.querySelectorAll('.swiper-slide'));
+		const images = slides.map(slide => {
+			const img = slide.querySelector('img');
+			return {
+				src: img ? img.src : '',
+				alt: img ? img.alt : ''
+			};
+		});
+
+		slides.forEach((slide, idx) => {
+			const thumb = slide.querySelector('.pd2-screenshot-thumb');
+			const img = slide.querySelector('img');
+			if (!img || !thumb) return;
+
+			if (!thumb.querySelector('.pd2-zoom-hint')) {
+				const hint = document.createElement('span');
+				hint.className = 'pd2-zoom-hint';
+				hint.setAttribute('aria-hidden', 'true');
+				hint.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>`;
+				thumb.appendChild(hint);
+			}
+
+			thumb.setAttribute('tabindex', '0');
+			thumb.setAttribute('role', 'button');
+			thumb.setAttribute('aria-label', 'Open screenshot ' + (idx + 1) + ' of ' + slides.length + ' in full view');
+
+			const open = (e) => {
+				e.preventDefault();
+				openLightbox(images, idx);
+			};
+
+			thumb.addEventListener('click', open);
+			thumb.addEventListener('keydown', (e) => {
+				if (e.key === 'Enter' || e.key === ' ') open(e);
+			});
+		});
+	}
+
+	function initScreenshotsCarousel() {
+		const grid = document.getElementById('pd2-screenshots-carousel');
+		if (!grid || !grid.querySelector('.pd2-screenshot-thumb')) return null;
+
+		const wrapped = wrapGridForSwiper(grid, 'pd2-screenshots-swiper');
+		if (!wrapped) return null;
+
+		const {
+			swiperEl,
+			wrapperEl,
+			paginationEl,
+			prevEl,
+			nextEl
+		} = wrapped;
+
+		const swiper = new Swiper(swiperEl, {
+			...SHARED_CONFIG,
+
+			slidesPerView: 1.05,
+			spaceBetween: 16,
+
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 18,
+				},
+				900: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 24,
+				},
+			},
+
+			pagination: {
+				el: paginationEl,
+				clickable: true,
+			},
+
+			navigation: {
+				prevEl,
+				nextEl,
+			},
+
+			on: {
+				init() {
+					updateNavVisibility(this, prevEl, nextEl);
+				},
+				slideChange() {
+					updateNavVisibility(this, prevEl, nextEl);
+				},
+				breakpoint() {
+					updateNavVisibility(this, prevEl, nextEl);
+				},
+			},
+		});
+
+		bindScreenshotLightbox(wrapperEl);
+
+		return swiper;
+	}
+
 	function init() {
 		if (typeof Swiper === 'undefined') {
 			console.warn('[Portfolio.CAROUSEL] Swiper.js not loaded. Add CDN links to <head>.');
@@ -241,12 +468,14 @@ window.Portfolio.CAROUSEL = (function() {
 
 		initProjectsCarousel();
 		initTestimonialsCarousel();
+		initScreenshotsCarousel();
 	}
 
 	return {
 		init,
 		initProjectsCarousel,
-		initTestimonialsCarousel
+		initTestimonialsCarousel,
+		initScreenshotsCarousel
 	};
 })();
 
