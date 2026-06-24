@@ -8,6 +8,7 @@ window.Portfolio = window.Portfolio || {};
 
 window.Portfolio.PROJECTS = {
 
+	
 	'al-tahaluf': {
 		id: 'al-tahaluf',
 		num: '01',
@@ -72,16 +73,20 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/al-tahaluf-.webp',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782289505/Al-Tahaluf-4_di0oon.png',
 				label: 'Admin Login Panel'
 			},
 			{
-				src: './assets/images/al-th.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782289506/Al-Tahaluf-3_xkhpgh.png',
 				label: 'Dashboard Overview'
 			},
 			{
-				src: './assets/images/Ns-al-th.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782289506/Al-Tahaluf-5_lxp7iu.png',
 				label: 'Data Management View'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782289505/Al-Tahaluf-1_suxlkf.png',
+				label: 'Module Overview'
 			},
 		],
 		overviewParagraphs: [
@@ -211,6 +216,7 @@ window.Portfolio.PROJECTS = {
 			cat: 'Educational Platform · WordPress'
 		},
 	},
+ 
 
 	'nsric': {
 		id: 'nsric',
@@ -276,15 +282,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/nsric-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/nsric-banner_ggseqj.png',
 				label: 'NSRIC Home Page'
 			},
 			{
-				src: './assets/images/banners/nsric-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/nsric-banner_ggseqj.png',
 				label: 'Course Listings'
 			},
 			{
-				src: './assets/images/banners/nsric-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/nsric-banner_ggseqj.png',
 				label: 'Student Portal'
 			},
 		],
@@ -484,15 +490,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/banner-sm.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/banner-sm_sn5z7g.png',
 				label: 'Dashboard Overview'
 			},
 			{
-				src: './assets/images/banners/banner-sm.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/banner-sm_sn5z7g.png',
 				label: 'Stock Entry Form'
 			},
 			{
-				src: './assets/images/banners/banner-sm.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/banner-sm_sn5z7g.png',
 				label: 'Reports Screen'
 			},
 		],
@@ -682,15 +688,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/qrmf-banner.png',
+				src: '.https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
 				label: 'QRMF Home Page'
 			},
 			{
-				src: './assets/images/banners/qrmf-banner.png',
+				src: '.https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
 				label: 'Admin Panel Dashboard'
 			},
 			{
-				src: './assets/images/banners/qrmf-banner.png',
+				src: '.https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
 				label: 'Patient Records'
 			},
 		],
@@ -880,15 +886,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/simplicity-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254092/simplicity-banner_warjhz.png',
 				label: 'Home Page Hero'
 			},
 			{
-				src: './assets/images/banners/simplicity-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254092/simplicity-banner_warjhz.png',
 				label: 'Membership Page'
 			},
 			{
-				src: './assets/images/banners/simplicity-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254092/simplicity-banner_warjhz.png',
 				label: 'Course Listing Page'
 			},
 		],
@@ -1078,15 +1084,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/traveler-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/traveler-banner_yk8ndo.png',
 				label: 'Home Page Hero'
 			},
 			{
-				src: './assets/images/banners/traveler-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/traveler-banner_yk8ndo.png',
 				label: 'Flight Search Results'
 			},
 			{
-				src: './assets/images/banners/traveler-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/traveler-banner_yk8ndo.png',
 				label: 'Hotel Listings'
 			},
 		],
@@ -1286,15 +1292,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/bnner-oqs.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
 				label: 'Quiz Dashboard'
 			},
 			{
-				src: './assets/images/banners/bnner-oqs.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
 				label: 'Quiz Taking View'
 			},
 			{
-				src: './assets/images/banners/bnner-oqs.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
 				label: 'Results Analytics'
 			},
 		],
@@ -1484,15 +1490,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/mila-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254089/mila-banner_p2wdvm.png',
 				label: 'Store Home Page'
 			},
 			{
-				src: './assets/images/banners/mila-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254089/mila-banner_p2wdvm.png',
 				label: 'Product Catalogue'
 			},
 			{
-				src: './assets/images/banners/mila-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254089/mila-banner_p2wdvm.png',
 				label: 'Cart & Checkout'
 			},
 		],
@@ -1682,15 +1688,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/kfm-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/kfm-banner_cbicqy.png',
 				label: 'KFM Home Page'
 			},
 			{
-				src: './assets/images/banners/kfm-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/kfm-banner_cbicqy.png',
 				label: 'Campaigns Section'
 			},
 			{
-				src: './assets/images/banners/kfm-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/kfm-banner_cbicqy.png',
 				label: 'News Feed'
 			},
 		],
@@ -1885,15 +1891,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: './assets/images/banners/jkjaac-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254079/jkjaac-banner_aa9qtd.png',
 				label: 'JKJAAC Home Page'
 			},
 			{
-				src: './assets/images/banners/jkjaac-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254079/jkjaac-banner_aa9qtd.png',
 				label: 'Campaigns & Demands'
 			},
 			{
-				src: './assets/images/banners/jkjaac-banner.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254079/jkjaac-banner_aa9qtd.png',
 				label: 'News & Press Releases'
 			},
 		],
