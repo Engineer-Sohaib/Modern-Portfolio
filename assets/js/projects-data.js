@@ -1697,16 +1697,20 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/kfm-banner_cbicqy.png',
-				label: 'KFM Home Page'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296891/kfm-3_eynhtd.png',
+				label: 'KFM Kashmir Histry'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/kfm-banner_cbicqy.png',
-				label: 'Campaigns Section'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296888/kfm-1_r3edha.png',
+				label: 'About Mabool Shaheed'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/kfm-banner_cbicqy.png',
-				label: 'News Feed'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296895/kfm-5_ku9k9z.png',
+				label: 'KFM Books'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296887/kfm-2_gczyog.png',
+				label: 'KFM Info'
 			},
 		],
 		overviewParagraphs: [
