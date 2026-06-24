@@ -407,7 +407,7 @@ window.Portfolio.PROJECTS = {
 				desc: '96 Lighthouse score achieved through object caching, critical CSS and optimised image delivery via CDN.'
 			},
 		],
-		template: 'v1',
+		template: 'v2',
 		prevProject: {
 			id: 'al-tahaluf',
 			name: "Al Tahaluf's Admin",
@@ -803,7 +803,7 @@ window.Portfolio.PROJECTS = {
 				desc: 'Full immutable audit log of every record access and change — meeting the organisation\'s internal compliance requirements.'
 			},
 		],
-		template: 'v1',
+		template: 'v2',
 		prevProject: {
 			id: 'stock-management',
 			name: 'Stock Management',
@@ -1209,7 +1209,7 @@ window.Portfolio.PROJECTS = {
 				desc: '99.9% uptime since deployment with JWT refresh token rotation and robust MongoDB Atlas failover configuration.'
 			},
 		],
-		template: 'v1',
+		template: 'v2',
 		prevProject: {
 			id: 'simplicity-trading',
 			name: 'Simplicity Trading',
@@ -1605,7 +1605,7 @@ window.Portfolio.PROJECTS = {
 				desc: '1.5s average page load on mobile networks — critical for the client\'s mobile-first customer base.'
 			},
 		],
-		template: 'v1',
+		template: 'v2',
 		prevProject: {
 			id: 'online-quiz',
 			name: 'Online Quiz System',
@@ -2016,7 +2016,7 @@ window.Portfolio.PROJECTS = {
 				desc: 'Achieved Lighthouse scores of 98 (Performance), 100 (SEO) and 96 (Accessibility) — significantly above the non-profit sector average.'
 			},
 		],
-		template: 'v1',
+		template: 'v2',
 		prevProject: {
 			id: 'kf-movement',
 			name: 'KF Movement',
