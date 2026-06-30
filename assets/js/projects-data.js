@@ -2042,7 +2042,11 @@ window.Portfolio.PROJECTS = {
 			name: 'KF Movement',
 			cat: 'Non-Profit · WordPress'
 		},
-		nextProject: null,
+		nextProject: {
+			id: 'win10-calculator',
+			name: 'Windows 10 Calculator',
+			cat: 'Web App · JavaScript'
+		},
 	},
 	'win10-calculator': {
 	id: 'win10-calculator',
@@ -3028,9 +3032,9 @@ window.Portfolio.PROJECTS = {
 		cat: 'Web App · PHP / API'
 	},
 	nextProject: {
-		id: 'stock-management',
-		name: 'Stock Management System',
-		cat: 'Desktop App · C# / WinForms'
+		id: 'library-management',
+		name: 'Library Management System',
+		cat: 'Web App · PHP / MySQL'
 	},
 },
 
@@ -3803,10 +3807,12 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 
 window.Portfolio.PROJECT_LINKS = (function() {
 
+	// Updated mapping with all project IDs
 	const NAME_TO_ID = {
 		"al tahaluf's":            'al-tahaluf',
 		'nsric online education':  'nsric',
 		'stock management system': 'stock-management',
+		'stock management':        'stock-management',
 		'qrmf':                    'qrmf',
 		'simplicity trading wp':   'simplicity-trading',
 		'traveler':                'traveler',
@@ -3814,6 +3820,13 @@ window.Portfolio.PROJECT_LINKS = (function() {
 		'mila lifestyle':          'mila-lifestyle',
 		'kf movement':             'kf-movement',
 		'jkjaac':                  'jkjaac',
+		'windows 10 calculator web': 'win10-calculator',
+		'win10-calculator':        'win10-calculator',
+		'ask whitny':              'ask-whitny',
+		'chat application':        'chat-app',
+		'espn cricinfo clone':     'espn-clone',
+		"manii's gossips":         'manii-gossips',
+		'library management system': 'library-management',
 	};
 
 	function init() {
@@ -3825,7 +3838,8 @@ window.Portfolio.PROJECT_LINKS = (function() {
 			const linkEl = card.querySelector('.pg-link');
 			if (!nameEl || !linkEl) return;
 
-			const id = NAME_TO_ID[nameEl.textContent.trim().toLowerCase()];
+			const name = nameEl.textContent.trim().toLowerCase();
+			const id = NAME_TO_ID[name];
 			if (id) {
 				linkEl.href = `${_templateUrl(id)}?id=${id}`;
 			}
