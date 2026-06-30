@@ -738,8 +738,8 @@ footer {
   overflow: hidden;
 }
 .hero-img-wrap.project-image-wrp {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 370px;
 }
 
 .hero-img-accent {
