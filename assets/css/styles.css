@@ -742,6 +742,50 @@ footer {
   height: 370px;
 }
 
+.hero-img-wrap.project-image-wrp {
+  position: relative;
+  display: inline-block;
+  /* The tilt angles */
+  transform: rotateY(-12deg) rotateX(4deg) rotateZ(-2deg);
+  /* Smooth hover animation if you want to add interaction later */
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Keeps the mockup from stretching weirdly */
+  transform-style: preserve-3d;
+}
+
+
+.hero-img-wrap.project-image-wrp::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  filter: blur(16px);
+  transform: translateZ(-20px) translateX(10px) translateY(10px);
+  z-index: -1;
+  border-radius: 12px;
+}
+
+.hero-img-wrap.project-image-wrp .hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 450px; /* Adjust this to match your design */
+  
+  /* === The Magic for the rounded corners === */
+  /* The image gets clipped to match your specific rounded shape */
+  clip-path: inset(0 round 24px); 
+  mask-image: radial-gradient(circle, black 100%, transparent 100%); /* Ensures smooth mask */
+  -webkit-mask-image: radial-gradient(circle, black 100%, transparent 100%);
+  
+  /* Smooth rendering */
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6);
+}
+
+/* Optional Hover Effect - Tilt further when hovering */
+.pdh-mockup:hover .hero-img-wrap.project-image-wrp {
+  transform: rotateY(-20deg) rotateX(6deg) rotateZ(-3deg) scale(1.02);
+}
+
 .hero-img-accent {
   position: absolute;
   bottom: -16px;
@@ -1822,6 +1866,11 @@ footer {
 /* ── Desktop mockup (right column) ── */
 .pdh-mockup {
   position: relative;
+}
+.pdh-mockup {
+  position: relative;
+  /* Creates the 3D space for the tilt */
+  perspective: 1200px; 
 }
 
 /* ════════════════════════════════════════════
