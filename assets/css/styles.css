@@ -775,8 +775,6 @@ footer {
 .pdh-mockup:hover .hero-img-wrap.project-image-wrp {
   transform: rotateY(-20deg) rotateX(6deg) rotateZ(-3deg) scale(1.02);
 }
-
-=======
 .hero-img-wrap.project-image-wrp {
   position: relative;
   display: inline-block;
