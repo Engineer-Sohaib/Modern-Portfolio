@@ -1280,6 +1280,18 @@ footer {
   .customize-panel {
     width: calc(100vw - 2rem);
   }
+    
+  .pdh-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .pd2-timeline-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-inner {
+    padding: 0 10px;
+}
 }
 @media (max-width: 480px) {
   .container {
