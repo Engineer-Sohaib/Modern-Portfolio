@@ -1280,6 +1280,34 @@ footer {
   .customize-panel {
     width: calc(100vw - 2rem);
   }
+
+  .pd2-timeline-track {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    right: auto;
+    height: 100%;
+    width: 2px;
+}
+
+  .jt-dot {
+    left: -1.575rem;
+}
+
+.pdh-meta-row {
+  gap: 1rem;
+}
+
+.pd2-tl-node{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pd2-tl-content {
+  max-width: 400px;
+  text-align: left;
+}
     
   .pdh-inner {
     grid-template-columns: 1fr;
