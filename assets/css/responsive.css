@@ -1297,6 +1297,15 @@ footer {
     left: -0;
     margin: 0;
 }
+.pd2-proj-nav-thumb{
+  display: none;
+}
+.pd2-proj-nav-title{
+  font-size: .6rem;;
+}
+.pd2-proj-nav-sub{
+  font-size: .5rem;
+}
 
 .pdh-meta-row {
   gap: 1rem;
