@@ -1291,7 +1291,19 @@ footer {
   }
   .footer-inner {
     padding: 0 10px;
-}
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .footer-social-list{
+    justify-content: center;
+  }
+  .freelance-note{
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
   .container {
