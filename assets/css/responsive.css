@@ -1289,9 +1289,10 @@ footer {
     height: 100%;
     width: 2px;
 }
-
+.pd2-timeline-wrap {padding: 0;}
   .pd2-tl-dot {
-    left: -25px;
+    left: -0;
+    margin: 0;
 }
 
 .pdh-meta-row {
@@ -1301,7 +1302,7 @@ footer {
 .pd2-tl-node{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
 }
 
 .pd2-tl-content {
