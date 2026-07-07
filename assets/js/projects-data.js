@@ -492,16 +492,21 @@ window.Portfolio.PROJECTS = {
 				label: 'Daily Users'
 			},
 		],
-		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/banner-sm_sn5z7g.png',
+		screenshots: [
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723634/STMS-Desktop-1_edcrnp.webp',
 				label: 'Dashboard Overview'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/banner-sm_sn5z7g.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723635/STMS-Desktop-2_nmz3qf.webp',
 				label: 'Stock Entry Form'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254080/banner-sm_sn5z7g.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723636/STMS-Desktop-3_muvnat.webp',
+				label: 'Inventory Management'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723634/STMS-Desktop-4_wdlt1x.webp',
 				label: 'Reports Screen'
 			},
 		],
@@ -691,16 +696,17 @@ window.Portfolio.PROJECTS = {
 				label: 'Client Satisfaction'
 			},
 		],
-		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
+		screenshots: [
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723756/qrmf-1_j3rmce.webp',
 				label: 'QRMF Home Page'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723775/qrmf-2_bs3on6.webp',
 				label: 'Admin Panel Dashboard'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/qrmf-banner_bzaa21.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723752/qrmf-3_bvutna.webp',
 				label: 'Patient Records'
 			},
 		],
@@ -890,17 +896,22 @@ window.Portfolio.PROJECTS = {
 				label: 'Client Satisfaction'
 			},
 		],
-		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254092/simplicity-banner_warjhz.png',
+		screenshots: [
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723898/simplicity-trading-1_nxt01e.webp',
 				label: 'Home Page Hero'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254092/simplicity-banner_warjhz.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723898/simplicity-trading-2_zzkmxi.webp',
 				label: 'Membership Page'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254092/simplicity-banner_warjhz.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723903/simplicity-trading-3_b7i5pj.webp',
 				label: 'Course Listing Page'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723897/simplicity-trading-4_y9rycp.webp',
+				label: 'FAQ & Pricing'
 			},
 		],
 		overviewParagraphs: [
@@ -1089,17 +1100,30 @@ window.Portfolio.PROJECTS = {
 				label: 'Avg Page Load'
 			},
 		],
-		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/traveler-banner_yk8ndo.png',
+		screenshots: [
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723992/traveler-1_xcsgdt.png',
 				label: 'Home Page Hero'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/traveler-banner_yk8ndo.png',
-				label: 'Flight Search Results'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782724038/traveler-2_wabeni.webp',
+				label: 'Flight Search'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254093/traveler-banner_yk8ndo.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782724039/traveler-3_j1oc09.webp',
+				label: 'Flight Results'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782724041/traveler-5_x7hx3m.png',
 				label: 'Hotel Listings'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782724048/traveler-7_lwtva0.png',
+				label: 'Booking Confirmation'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782724053/traveler-8_spxx5v.png',
+				label: 'User Dashboard'
 			},
 		],
 		overviewParagraphs: [
@@ -1298,7 +1322,8 @@ window.Portfolio.PROJECTS = {
 				label: 'Paper Test Reduction'
 			},
 		],
-		screenshots: [{
+		screenshots: [
+			{
 				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
 				label: 'Quiz Dashboard'
 			},
@@ -1696,21 +1721,22 @@ window.Portfolio.PROJECTS = {
 				label: 'Platform Uptime'
 			},
 		],
-		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296891/kfm-3_eynhtd.png',
-				label: 'KFM Kashmir Histry'
-			},
+		screenshots: [
 			{
 				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296888/kfm-1_r3edha.png',
 				label: 'About Mabool Shaheed'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296895/kfm-5_ku9k9z.png',
-				label: 'KFM Books'
-			},
-			{
 				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296887/kfm-2_gczyog.png',
 				label: 'KFM Info'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296891/kfm-3_eynhtd.png',
+				label: 'KFM Kashmir History'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782296895/kfm-5_ku9k9z.png',
+				label: 'KFM Books'
 			},
 		],
 		overviewParagraphs: [
@@ -2048,1190 +2074,1191 @@ window.Portfolio.PROJECTS = {
 			cat: 'Web App · JavaScript'
 		},
 	},
+
 	'win10-calculator': {
-	id: 'win10-calculator',
-	num: '11',
-	name: 'Windows 10 Calculator Web',
-	subtitle: 'Interactive Web Application.',
-	badgeType: 'Web Application',
-	badgeYear: '2023',
-	category: 'Interactive Web Application · JavaScript / HTML / CSS',
-	desc: 'A pixel-perfect replica of the Windows 10 Calculator built with vanilla JavaScript, HTML5, and CSS3. Features standard and scientific modes, keyboard support, history log, memory functions, and responsive design — all powered by JSON for data-driven operations.',
-	tags: ['JavaScript', 'HTML5', 'CSS3', 'JSON', 'Responsive'],
-	liveUrl: '#',
-	githubUrl: 'https://github.com/Sohaib-Ishaque/',
-	heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
-	meta: [{
-			label: 'Client',
-			value: 'Personal Project',
-			accent: false
-		},
-		{
-			label: 'Category',
-			value: 'Web Application',
-			accent: false
-		},
-		{
-			label: 'Status',
-			value: '✓ Live & Active',
-			accent: true
-		},
-		{
-			label: 'Timeline',
-			value: '3 Weeks',
-			accent: false
-		},
-		{
-			label: 'Role',
-			value: 'Frontend Developer',
-			accent: false
-		},
-		{
-			label: 'Tech Stack',
-			tags: ['JavaScript', 'HTML5', 'CSS3', 'JSON']
-		},
-	],
-	stats: [{
-			num: '3',
-			suffix: 'wk',
-			label: 'Delivery Time'
-		},
-		{
-			num: '2',
-			suffix: '',
-			label: 'Modes (Standard/Scientific)'
-		},
-		{
-			num: '100',
-			suffix: '%',
-			label: 'UI Accuracy'
-		},
-		{
-			num: '98',
-			suffix: '',
-			label: 'Perf Score'
-		},
-	],
-	screenshots: [{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
-			label: 'Calculator Interface'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
-			label: 'Scientific Mode'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
-			label: 'History Panel'
-		},
-	],
-	overviewParagraphs: [
-		'A faithful recreation of the Windows 10 Calculator app using pure web technologies. The goal was to match every visual detail and interaction behavior of the original — from button animations to keyboard shortcuts.',
-		'The app features standard and scientific modes, persistent calculation history, memory functions (M+, M-, MC, MR), keyboard input support, and a fully responsive design that adapts to any screen size.',
-		'All calculations and state management are driven by JSON data structures, making the logic clean, maintainable, and easily extensible for future features.',
-	],
-	features: [{
-			icon: 'grid',
-			title: 'Standard & Scientific Modes',
-			desc: 'Toggle between basic arithmetic and advanced scientific functions with trigonometric and logarithmic operations.'
-		},
-		{
-			icon: 'activity',
-			title: 'History Log',
-			desc: 'Tracks all calculations with timestamp and allows users to revisit or reuse previous results.'
-		},
-		{
-			icon: 'zap',
-			title: 'Keyboard Support',
-			desc: 'Full keyboard mapping allows users to type calculations using physical keyboard shortcuts.'
-		},
-		{
-			icon: 'database',
-			title: 'Memory Functions',
-			desc: 'Store, recall, add, and clear memory values — just like the original Windows calculator.'
-		},
-		{
-			icon: 'monitor',
-			title: 'Responsive Design',
-			desc: 'Adapts seamlessly from desktop to mobile with touch-optimized button sizing and layout.'
-		},
-		{
-			icon: 'code',
-			title: 'JSON-Powered Logic',
-			desc: 'All operations and state management driven by JSON for clean, maintainable code architecture.'
-		},
-	],
-	techStack: [{
-			abbr: 'JS',
-			name: 'JavaScript',
-			role: 'Core Logic'
-		},
-		{
-			abbr: 'HTML',
-			name: 'HTML5',
-			role: 'Structure'
-		},
-		{
-			abbr: 'CSS',
-			name: 'CSS3',
-			role: 'Styling'
-		},
-		{
-			abbr: 'JSON',
-			name: 'JSON',
-			role: 'Data & State'
-		},
-	],
-	timeline: [{
-			phase: 'Phase 01',
-			heading: 'UI Design & Layout',
-			text: 'Recreated the Windows 10 calculator UI pixel-perfect using HTML and CSS grid/flexbox layouts.'
-		},
-		{
-			phase: 'Phase 02',
-			heading: 'JavaScript Logic',
-			text: 'Implemented all arithmetic operations, memory functions, and mode switching with JavaScript.'
-		},
-		{
-			phase: 'Phase 03',
-			heading: 'Keyboard Integration',
-			text: 'Mapped physical keyboard keys to calculator functions for desktop power users.'
-		},
-		{
-			phase: 'Phase 04',
-			heading: 'Testing & Optimisation',
-			text: 'Cross-browser testing, performance optimisation, and responsive design refinement for mobile.'
-		},
-	],
-	outcomes: [{
-			icon: 'activity',
-			title: 'Challenge — UI Accuracy',
-			desc: 'Achieved 100% visual parity with Windows 10 calculator through meticulous CSS styling and exact sizing.'
-		},
-		{
-			icon: 'check-sq',
-			title: 'Outcome — Performance',
-			desc: '98 Lighthouse performance score achieved through vanilla JS and optimised CSS delivery.'
-		},
-		{
-			icon: 'users',
-			title: 'Outcome — User Experience',
-			desc: 'Seamless transition for Windows users with identical keyboard shortcuts and interaction patterns.'
-		},
-		{
-			icon: 'shield',
-			title: 'Outcome — Maintainability',
-			desc: 'JSON-driven architecture makes adding new functions or modes straightforward and bug-free.'
-		},
-	],
-	template: 'v2',
-	prevProject: {
-		id: 'jkjaac',
-		name: 'JKJAAC',
-		cat: 'Non-Profit · WordPress'
-	},
-	nextProject: {
-		id: 'ask-whitny',
-		name: 'Ask Whitny',
-		cat: 'WordPress · Custom Development'
-	},
-},
-
-'ask-whitny': {
-	id: 'ask-whitny',
-	num: '12',
-	name: 'Ask Whitny',
-	subtitle: 'Custom WordPress Platform.',
-	badgeType: 'WordPress Platform',
-	badgeYear: '2023',
-	category: 'Custom WordPress Platform · ACF / CPT / Page Builders',
-	desc: 'A fully customized WordPress solution built with page builders, custom post types, and Advanced Custom Fields. Features tailored user experiences, dynamic content management, custom templates, and seamless integration of third-party services for enhanced functionality.',
-	tags: ['WordPress', 'ACF', 'Custom Post Types', 'Page Builders', 'Custom Development'],
-	liveUrl: '#',
-	githubUrl: 'https://github.com/Sohaib-Ishaque/',
-	heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
-	meta: [{
-			label: 'Client',
-			value: 'Ask Whitny',
-			accent: false
-		},
-		{
-			label: 'Category',
-			value: 'Custom WordPress Development',
-			accent: false
-		},
-		{
-			label: 'Status',
-			value: '✓ Live & Active',
-			accent: true
-		},
-		{
-			label: 'Timeline',
-			value: '5 Weeks',
-			accent: false
-		},
-		{
-			label: 'Role',
-			value: 'WordPress Developer',
-			accent: false
-		},
-		{
-			label: 'Tech Stack',
-			tags: ['WordPress', 'ACF', 'CPT', 'Page Builders', 'PHP']
-		},
-	],
-	stats: [{
-			num: '5',
-			suffix: 'wk',
-			label: 'Delivery Time'
-		},
-		{
-			num: '15',
-			suffix: '+',
-			label: 'Custom Templates'
-		},
-		{
-			num: '100',
-			suffix: '%',
-			label: 'Client Satisfaction'
-		},
-		{
-			num: '97',
-			suffix: '',
-			label: 'Perf Score'
-		},
-	],
-	screenshots: [{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
-			label: 'Home Page'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
-			label: 'Custom Templates'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
-			label: 'Admin Panel'
-		},
-	],
-	overviewParagraphs: [
-		'Ask Whitny is a fully customized WordPress platform built to deliver a unique user experience with tailored content management capabilities. The project leveraged page builders, custom post types, and Advanced Custom Fields to create a flexible, content-rich website.',
-		'The platform features custom templates designed to match the brand identity, dynamic content management through ACF, and seamless integration with third-party services to enhance functionality and user engagement.',
-		'With a focus on maintainability and ease of use, the WordPress admin interface was streamlined to allow non-technical staff to manage all content independently, reducing ongoing developer dependency.',
-	],
-	features: [{
-			icon: 'grid',
-			title: 'Custom Post Types',
-			desc: 'Registered CPTs for all content types with custom taxonomies for organised content structure.'
-		},
-		{
-			icon: 'code',
-			title: 'Advanced Custom Fields',
-			desc: 'Comprehensive ACF field groups for flexible content management and custom data entry.'
-		},
-		{
-			icon: 'zap',
-			title: 'Page Builder Integration',
-			desc: 'Custom page builder layouts with reusable components and drag-and-drop editing.'
-		},
-		{
-			icon: 'activity',
-			title: 'Custom Templates',
-			desc: 'Bespoke WordPress templates with conditional logic and dynamic content display.'
-		},
-		{
-			icon: 'monitor',
-			title: 'Responsive Design',
-			desc: 'Fully responsive across all devices with mobile-first approach and touch optimisation.'
-		},
-		{
-			icon: 'users',
-			title: 'Third-Party Integrations',
-			desc: 'Seamless integration with third-party services for enhanced platform functionality.'
-		},
-	],
-	techStack: [{
-			abbr: 'WP',
-			name: 'WordPress 6',
-			role: 'CMS / Core'
-		},
-		{
-			abbr: 'PHP',
-			name: 'PHP 8',
-			role: 'Backend Logic'
-		},
-		{
-			abbr: 'ACF',
-			name: 'ACF Pro',
-			role: 'Content Fields'
-		},
-		{
-			abbr: 'CPT',
-			name: 'CPT UI',
-			role: 'Content Types'
-		},
-		{
-			abbr: 'JS',
-			name: 'JavaScript',
-			role: 'Interactivity'
-		},
-		{
-			abbr: 'CSS',
-			name: 'CSS3',
-			role: 'Styling'
-		},
-	],
-	timeline: [{
-			phase: 'Phase 01',
-			heading: 'Discovery & Planning',
-			text: 'Gathered requirements, mapped content architecture, and designed the WordPress data model with ACF field groups.'
-		},
-		{
-			phase: 'Phase 02',
-			heading: 'Theme Development',
-			text: 'Built custom WordPress templates with page builder integration and responsive design implementation.'
-		},
-		{
-			phase: 'Phase 03',
-			heading: 'Plugin & CPT Setup',
-			text: 'Registered custom post types, taxonomies, and developed custom functionality for enhanced user experience.'
-		},
-		{
-			phase: 'Phase 04',
-			heading: 'Testing & Launch',
-			text: 'UAT with client, performance optimisation, and seamless deployment with staff training.'
-		},
-	],
-	outcomes: [{
-			icon: 'activity',
-			title: 'Challenge — Content Flexibility',
-			desc: 'Required dynamic content types that non-technical staff could manage easily. Solved with ACF and custom meta boxes.'
-		},
-		{
-			icon: 'check-sq',
-			title: 'Outcome — Editorial Independence',
-			desc: 'Non-technical staff manage 100% of content updates independently — zero developer involvement needed.'
-		},
-		{
-			icon: 'users',
-			title: 'Outcome — User Engagement',
-			desc: 'Enhanced user experience through custom templates and third-party integrations increased engagement metrics.'
-		},
-		{
-			icon: 'shield',
-			title: 'Outcome — Performance',
-			desc: 'Achieved 97 Lighthouse performance score through caching, CDN delivery, and optimised asset loading.'
-		},
-	],
-	template: 'v2',
-	prevProject: {
 		id: 'win10-calculator',
-		name: 'Windows 10 Calculator',
-		cat: 'Web App · JavaScript'
+		num: '11',
+		name: 'Windows 10 Calculator Web',
+		subtitle: 'Interactive Web Application.',
+		badgeType: 'Web Application',
+		badgeYear: '2023',
+		category: 'Interactive Web Application · JavaScript / HTML / CSS',
+		desc: 'A pixel-perfect replica of the Windows 10 Calculator built with vanilla JavaScript, HTML5, and CSS3. Features standard and scientific modes, keyboard support, history log, memory functions, and responsive design — all powered by JSON for data-driven operations.',
+		tags: ['JavaScript', 'HTML5', 'CSS3', 'JSON', 'Responsive'],
+		liveUrl: '#',
+		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
+		meta: [{
+				label: 'Client',
+				value: 'Personal Project',
+				accent: false
+			},
+			{
+				label: 'Category',
+				value: 'Web Application',
+				accent: false
+			},
+			{
+				label: 'Status',
+				value: '✓ Live & Active',
+				accent: true
+			},
+			{
+				label: 'Timeline',
+				value: '3 Weeks',
+				accent: false
+			},
+			{
+				label: 'Role',
+				value: 'Frontend Developer',
+				accent: false
+			},
+			{
+				label: 'Tech Stack',
+				tags: ['JavaScript', 'HTML5', 'CSS3', 'JSON']
+			},
+		],
+		stats: [{
+				num: '3',
+				suffix: 'wk',
+				label: 'Delivery Time'
+			},
+			{
+				num: '2',
+				suffix: '',
+				label: 'Modes (Standard/Scientific)'
+			},
+			{
+				num: '100',
+				suffix: '%',
+				label: 'UI Accuracy'
+			},
+			{
+				num: '98',
+				suffix: '',
+				label: 'Perf Score'
+			},
+		],
+		screenshots: [{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
+				label: 'Calculator Interface'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
+				label: 'Scientific Mode'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
+				label: 'History Panel'
+			},
+		],
+		overviewParagraphs: [
+			'A faithful recreation of the Windows 10 Calculator app using pure web technologies. The goal was to match every visual detail and interaction behavior of the original — from button animations to keyboard shortcuts.',
+			'The app features standard and scientific modes, persistent calculation history, memory functions (M+, M-, MC, MR), keyboard input support, and a fully responsive design that adapts to any screen size.',
+			'All calculations and state management are driven by JSON data structures, making the logic clean, maintainable, and easily extensible for future features.',
+		],
+		features: [{
+				icon: 'grid',
+				title: 'Standard & Scientific Modes',
+				desc: 'Toggle between basic arithmetic and advanced scientific functions with trigonometric and logarithmic operations.'
+			},
+			{
+				icon: 'activity',
+				title: 'History Log',
+				desc: 'Tracks all calculations with timestamp and allows users to revisit or reuse previous results.'
+			},
+			{
+				icon: 'zap',
+				title: 'Keyboard Support',
+				desc: 'Full keyboard mapping allows users to type calculations using physical keyboard shortcuts.'
+			},
+			{
+				icon: 'database',
+				title: 'Memory Functions',
+				desc: 'Store, recall, add, and clear memory values — just like the original Windows calculator.'
+			},
+			{
+				icon: 'monitor',
+				title: 'Responsive Design',
+				desc: 'Adapts seamlessly from desktop to mobile with touch-optimized button sizing and layout.'
+			},
+			{
+				icon: 'code',
+				title: 'JSON-Powered Logic',
+				desc: 'All operations and state management driven by JSON for clean, maintainable code architecture.'
+			},
+		],
+		techStack: [{
+				abbr: 'JS',
+				name: 'JavaScript',
+				role: 'Core Logic'
+			},
+			{
+				abbr: 'HTML',
+				name: 'HTML5',
+				role: 'Structure'
+			},
+			{
+				abbr: 'CSS',
+				name: 'CSS3',
+				role: 'Styling'
+			},
+			{
+				abbr: 'JSON',
+				name: 'JSON',
+				role: 'Data & State'
+			},
+		],
+		timeline: [{
+				phase: 'Phase 01',
+				heading: 'UI Design & Layout',
+				text: 'Recreated the Windows 10 calculator UI pixel-perfect using HTML and CSS grid/flexbox layouts.'
+			},
+			{
+				phase: 'Phase 02',
+				heading: 'JavaScript Logic',
+				text: 'Implemented all arithmetic operations, memory functions, and mode switching with JavaScript.'
+			},
+			{
+				phase: 'Phase 03',
+				heading: 'Keyboard Integration',
+				text: 'Mapped physical keyboard keys to calculator functions for desktop power users.'
+			},
+			{
+				phase: 'Phase 04',
+				heading: 'Testing & Optimisation',
+				text: 'Cross-browser testing, performance optimisation, and responsive design refinement for mobile.'
+			},
+		],
+		outcomes: [{
+				icon: 'activity',
+				title: 'Challenge — UI Accuracy',
+				desc: 'Achieved 100% visual parity with Windows 10 calculator through meticulous CSS styling and exact sizing.'
+			},
+			{
+				icon: 'check-sq',
+				title: 'Outcome — Performance',
+				desc: '98 Lighthouse performance score achieved through vanilla JS and optimised CSS delivery.'
+			},
+			{
+				icon: 'users',
+				title: 'Outcome — User Experience',
+				desc: 'Seamless transition for Windows users with identical keyboard shortcuts and interaction patterns.'
+			},
+			{
+				icon: 'shield',
+				title: 'Outcome — Maintainability',
+				desc: 'JSON-driven architecture makes adding new functions or modes straightforward and bug-free.'
+			},
+		],
+		template: 'v2',
+		prevProject: {
+			id: 'jkjaac',
+			name: 'JKJAAC',
+			cat: 'Non-Profit · WordPress'
+		},
+		nextProject: {
+			id: 'ask-whitny',
+			name: 'Ask Whitny',
+			cat: 'WordPress · Custom Development'
+		},
 	},
-	nextProject: {
-		id: 'chat-app',
-		name: 'Chat Application',
-		cat: 'Web App · PHP / MySQL'
-	},
-},
 
-'chat-app': {
-	id: 'chat-app',
-	num: '13',
-	name: 'Chat Application',
-	subtitle: 'Real-time Messaging Platform.',
-	badgeType: 'Web Application',
-	badgeYear: '2023',
-	category: 'Real-time Messaging Platform · PHP / MySQL',
-	desc: 'A secure, real-time chat application built with PHP and MySQL featuring multi-user support, group chat functionality, and advanced security protocols. Utilizes JSON for data exchange, RESTful API architecture, and comprehensive user management with authentication and authorization layers.',
-	tags: ['PHP', 'MySQL', 'phpMyAdmin', 'JSON', 'REST API', 'Security'],
-	liveUrl: '#',
-	githubUrl: 'https://github.com/Sohaib-Ishaque/',
-	heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
-	meta: [{
-			label: 'Client',
-			value: 'Personal Project',
-			accent: false
-		},
-		{
-			label: 'Category',
-			value: 'Real-time Messaging',
-			accent: false
-		},
-		{
-			label: 'Status',
-			value: '✓ Live & Active',
-			accent: true
-		},
-		{
-			label: 'Timeline',
-			value: '6 Weeks',
-			accent: false
-		},
-		{
-			label: 'Role',
-			value: 'Full Stack Developer',
-			accent: false
-		},
-		{
-			label: 'Tech Stack',
-			tags: ['PHP', 'MySQL', 'phpMyAdmin', 'JSON', 'REST API']
-		},
-	],
-	stats: [{
-			num: '6',
-			suffix: 'wk',
-			label: 'Delivery Time'
-		},
-		{
-			num: '50',
-			suffix: '+',
-			label: 'Concurrent Users'
-		},
-		{
-			num: '100',
-			suffix: '%',
-			label: 'Encrypted Messages'
-		},
-		{
-			num: '99.9',
-			suffix: '%',
-			label: 'Uptime'
-		},
-	],
-	screenshots: [{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
-			label: 'Chat Interface'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
-			label: 'Group Chat'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
-			label: 'Admin Panel'
-		},
-	],
-	overviewParagraphs: [
-		'A secure, real-time chat platform built with PHP and MySQL, designed for multi-user communication with group chat capabilities. The application handles concurrent users with efficient database queries and AJAX polling for message delivery.',
-		'Advanced security features include encrypted message storage, session-based authentication, and input sanitization to prevent XSS and SQL injection attacks. User management includes role-based permissions for admin, moderators, and regular users.',
-		'JSON is used for data exchange between client and server, with a RESTful API architecture allowing extensibility for future mobile app integration. The system supports private messaging, group chats, and file sharing capabilities.',
-	],
-	features: [{
-			icon: 'shield',
-			title: 'Advanced Security',
-			desc: 'Encrypted messages, session-based auth, XSS protection, and SQL injection prevention.'
-		},
-		{
-			icon: 'users',
-			title: 'Multi-User & Groups',
-			desc: 'Support for multiple users, group chats, private messaging, and user role management.'
-		},
-		{
-			icon: 'code',
-			title: 'RESTful API',
-			desc: 'JSON-based REST API for data exchange with extensibility for mobile app integration.'
-		},
-		{
-			icon: 'database',
-			title: 'MySQL Database',
-			desc: 'Optimised database schema with indexing for fast message retrieval and concurrent user support.'
-		},
-		{
-			icon: 'zap',
-			title: 'Real-time Polling',
-			desc: 'Efficient AJAX polling and server-side event handling for near real-time message delivery.'
-		},
-		{
-			icon: 'monitor',
-			title: 'Responsive UI',
-			desc: 'Mobile-first chat interface with intuitive design for all screen sizes and devices.'
-		},
-	],
-	techStack: [{
-			abbr: 'PHP',
-			name: 'PHP 8',
-			role: 'Backend Logic'
-		},
-		{
-			abbr: 'SQL',
-			name: 'MySQL',
-			role: 'Database'
-		},
-		{
-			abbr: 'PMA',
-			name: 'phpMyAdmin',
-			role: 'DB Administration'
-		},
-		{
-			abbr: 'JSON',
-			name: 'JSON',
-			role: 'Data Exchange'
-		},
-		{
-			abbr: 'JS',
-			name: 'JavaScript',
-			role: 'Frontend Interactivity'
-		},
-		{
-			abbr: 'HTML',
-			name: 'HTML5',
-			role: 'Structure'
-		},
-		{
-			abbr: 'CSS',
-			name: 'CSS3',
-			role: 'Styling'
-		},
-	],
-	timeline: [{
-			phase: 'Phase 01',
-			heading: 'Architecture Design',
-			text: 'Designed the database schema, REST API endpoints, and real-time communication architecture.'
-		},
-		{
-			phase: 'Phase 02',
-			heading: 'Backend Development',
-			text: 'Built PHP backend with authentication, message processing, and group management features.'
-		},
-		{
-			phase: 'Phase 03',
-			heading: 'Frontend Interface',
-			text: 'Developed the chat interface with real-time message updates and responsive design.'
-		},
-		{
-			phase: 'Phase 04',
-			heading: 'Security & Testing',
-			text: 'Implemented encryption, XSS protection, and security auditing with load testing.'
-		},
-	],
-	outcomes: [{
-			icon: 'activity',
-			title: 'Challenge — Real-time Performance',
-			desc: 'Achieved near real-time message delivery through efficient AJAX polling and server optimisation.'
-		},
-		{
-			icon: 'check-sq',
-			title: 'Outcome — Security',
-			desc: 'Successfully implemented encrypted messaging with zero security incidents post-launch.'
-		},
-		{
-			icon: 'users',
-			title: 'Outcome — Scalability',
-			desc: 'Supports 50+ concurrent users with optimised database queries and caching strategies.'
-		},
-		{
-			icon: 'shield',
-			title: 'Outcome — Reliability',
-			desc: '99.9% uptime achieved with robust error handling and server-side validation.'
-		},
-	],
-	template: 'v2',
-	prevProject: {
+	'ask-whitny': {
 		id: 'ask-whitny',
+		num: '12',
 		name: 'Ask Whitny',
-		cat: 'WordPress · Custom Development'
+		subtitle: 'Custom WordPress Platform.',
+		badgeType: 'WordPress Platform',
+		badgeYear: '2023',
+		category: 'Custom WordPress Platform · ACF / CPT / Page Builders',
+		desc: 'A fully customized WordPress solution built with page builders, custom post types, and Advanced Custom Fields. Features tailored user experiences, dynamic content management, custom templates, and seamless integration of third-party services for enhanced functionality.',
+		tags: ['WordPress', 'ACF', 'Custom Post Types', 'Page Builders', 'Custom Development'],
+		liveUrl: '#',
+		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
+		meta: [{
+				label: 'Client',
+				value: 'Ask Whitny',
+				accent: false
+			},
+			{
+				label: 'Category',
+				value: 'Custom WordPress Development',
+				accent: false
+			},
+			{
+				label: 'Status',
+				value: '✓ Live & Active',
+				accent: true
+			},
+			{
+				label: 'Timeline',
+				value: '5 Weeks',
+				accent: false
+			},
+			{
+				label: 'Role',
+				value: 'WordPress Developer',
+				accent: false
+			},
+			{
+				label: 'Tech Stack',
+				tags: ['WordPress', 'ACF', 'CPT', 'Page Builders', 'PHP']
+			},
+		],
+		stats: [{
+				num: '5',
+				suffix: 'wk',
+				label: 'Delivery Time'
+			},
+			{
+				num: '15',
+				suffix: '+',
+				label: 'Custom Templates'
+			},
+			{
+				num: '100',
+				suffix: '%',
+				label: 'Client Satisfaction'
+			},
+			{
+				num: '97',
+				suffix: '',
+				label: 'Perf Score'
+			},
+		],
+		screenshots: [{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
+				label: 'Home Page'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
+				label: 'Custom Templates'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
+				label: 'Admin Panel'
+			},
+		],
+		overviewParagraphs: [
+			'Ask Whitny is a fully customized WordPress platform built to deliver a unique user experience with tailored content management capabilities. The project leveraged page builders, custom post types, and Advanced Custom Fields to create a flexible, content-rich website.',
+			'The platform features custom templates designed to match the brand identity, dynamic content management through ACF, and seamless integration with third-party services to enhance functionality and user engagement.',
+			'With a focus on maintainability and ease of use, the WordPress admin interface was streamlined to allow non-technical staff to manage all content independently, reducing ongoing developer dependency.',
+		],
+		features: [{
+				icon: 'grid',
+				title: 'Custom Post Types',
+				desc: 'Registered CPTs for all content types with custom taxonomies for organised content structure.'
+			},
+			{
+				icon: 'code',
+				title: 'Advanced Custom Fields',
+				desc: 'Comprehensive ACF field groups for flexible content management and custom data entry.'
+			},
+			{
+				icon: 'zap',
+				title: 'Page Builder Integration',
+				desc: 'Custom page builder layouts with reusable components and drag-and-drop editing.'
+			},
+			{
+				icon: 'activity',
+				title: 'Custom Templates',
+				desc: 'Bespoke WordPress templates with conditional logic and dynamic content display.'
+			},
+			{
+				icon: 'monitor',
+				title: 'Responsive Design',
+				desc: 'Fully responsive across all devices with mobile-first approach and touch optimisation.'
+			},
+			{
+				icon: 'users',
+				title: 'Third-Party Integrations',
+				desc: 'Seamless integration with third-party services for enhanced platform functionality.'
+			},
+		],
+		techStack: [{
+				abbr: 'WP',
+				name: 'WordPress 6',
+				role: 'CMS / Core'
+			},
+			{
+				abbr: 'PHP',
+				name: 'PHP 8',
+				role: 'Backend Logic'
+			},
+			{
+				abbr: 'ACF',
+				name: 'ACF Pro',
+				role: 'Content Fields'
+			},
+			{
+				abbr: 'CPT',
+				name: 'CPT UI',
+				role: 'Content Types'
+			},
+			{
+				abbr: 'JS',
+				name: 'JavaScript',
+				role: 'Interactivity'
+			},
+			{
+				abbr: 'CSS',
+				name: 'CSS3',
+				role: 'Styling'
+			},
+		],
+		timeline: [{
+				phase: 'Phase 01',
+				heading: 'Discovery & Planning',
+				text: 'Gathered requirements, mapped content architecture, and designed the WordPress data model with ACF field groups.'
+			},
+			{
+				phase: 'Phase 02',
+				heading: 'Theme Development',
+				text: 'Built custom WordPress templates with page builder integration and responsive design implementation.'
+			},
+			{
+				phase: 'Phase 03',
+				heading: 'Plugin & CPT Setup',
+				text: 'Registered custom post types, taxonomies, and developed custom functionality for enhanced user experience.'
+			},
+			{
+				phase: 'Phase 04',
+				heading: 'Testing & Launch',
+				text: 'UAT with client, performance optimisation, and seamless deployment with staff training.'
+			},
+		],
+		outcomes: [{
+				icon: 'activity',
+				title: 'Challenge — Content Flexibility',
+				desc: 'Required dynamic content types that non-technical staff could manage easily. Solved with ACF and custom meta boxes.'
+			},
+			{
+				icon: 'check-sq',
+				title: 'Outcome — Editorial Independence',
+				desc: 'Non-technical staff manage 100% of content updates independently — zero developer involvement needed.'
+			},
+			{
+				icon: 'users',
+				title: 'Outcome — User Engagement',
+				desc: 'Enhanced user experience through custom templates and third-party integrations increased engagement metrics.'
+			},
+			{
+				icon: 'shield',
+				title: 'Outcome — Performance',
+				desc: 'Achieved 97 Lighthouse performance score through caching, CDN delivery, and optimised asset loading.'
+			},
+		],
+		template: 'v2',
+		prevProject: {
+			id: 'win10-calculator',
+			name: 'Windows 10 Calculator',
+			cat: 'Web App · JavaScript'
+		},
+		nextProject: {
+			id: 'chat-app',
+			name: 'Chat Application',
+			cat: 'Web App · PHP / MySQL'
+		},
 	},
-	nextProject: {
-		id: 'espn-clone',
-		name: 'ESPN Cricinfo Clone',
-		cat: 'Web App · PHP / API'
-	},
-},
 
-'espn-clone': {
-	id: 'espn-clone',
-	num: '14',
-	name: 'ESPN Cricinfo Clone',
-	subtitle: 'Sports Data Aggregation Platform.',
-	badgeType: 'Web Application',
-	badgeYear: '2023',
-	category: 'Sports Data Aggregation · PHP / API / JavaScript',
-	desc: 'A comprehensive cricket news and score platform replicating ESPN Cricinfo\'s core features. Built with PHP and JavaScript, leveraging external APIs for live match data, player statistics, and news feeds. Features JSON data handling, dynamic content rendering, database-driven user preferences, and responsive design for seamless mobile and desktop experience.',
-	tags: ['PHP', 'JavaScript', 'HTML5', 'JSON', 'REST API', 'Database'],
-	liveUrl: '#',
-	githubUrl: 'https://github.com/Sohaib-Ishaque/',
-	heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
-	meta: [{
-			label: 'Client',
-			value: 'Personal Project',
-			accent: false
-		},
-		{
-			label: 'Category',
-			value: 'Sports Data Platform',
-			accent: false
-		},
-		{
-			label: 'Status',
-			value: '✓ Live & Active',
-			accent: true
-		},
-		{
-			label: 'Timeline',
-			value: '6 Weeks',
-			accent: false
-		},
-		{
-			label: 'Role',
-			value: 'Full Stack Developer',
-			accent: false
-		},
-		{
-			label: 'Tech Stack',
-			tags: ['PHP', 'JavaScript', 'REST API', 'JSON', 'MySQL']
-		},
-	],
-	stats: [{
-			num: '6',
-			suffix: 'wk',
-			label: 'Delivery Time'
-		},
-		{
-			num: '5',
-			suffix: '+',
-			label: 'API Integrations'
-		},
-		{
-			num: '1,000',
-			suffix: '+',
-			label: 'Data Points Fetched'
-		},
-		{
-			num: '95',
-			suffix: '',
-			label: 'Perf Score'
-		},
-	],
-	screenshots: [{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
-			label: 'Home Page'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
-			label: 'Live Match Scores'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
-			label: 'Player Statistics'
-		},
-	],
-	overviewParagraphs: [
-		'A comprehensive cricket platform that aggregates live scores, match data, player statistics, and news from multiple external APIs. The project replicates the core experience of ESPN Cricinfo, providing fans with a one-stop destination for cricket information.',
-		'The platform uses PHP for backend processing, JavaScript for dynamic frontend interactions, and JSON for data exchange between API integrations. All data is cached and stored in a MySQL database for fast retrieval and offline access to historical data.',
-		'User preferences are database-driven, allowing personalised content feeds, favourite teams/players, and custom notifications. The responsive design ensures a seamless experience across desktop, tablet, and mobile devices.',
-	],
-	features: [{
-			icon: 'activity',
-			title: 'Live Match Data',
-			desc: 'Real-time scores, ball-by-ball updates, and match summaries from external sports APIs.'
-		},
-		{
-			icon: 'users',
-			title: 'Player Statistics',
-			desc: 'Comprehensive player profiles with career stats, records, and performance metrics.'
-		},
-		{
-			icon: 'code',
-			title: 'API Integration',
-			desc: 'Multiple third-party API integrations for live data, news, and player statistics.'
-		},
-		{
-			icon: 'database',
-			title: 'Data Caching',
-			desc: 'JSON data caching and MySQL storage for fast retrieval and historical data access.'
-		},
-		{
-			icon: 'zap',
-			title: 'Dynamic Content',
-			desc: 'JavaScript-powered content rendering with real-time updates and interactive elements.'
-		},
-		{
-			icon: 'monitor',
-			title: 'Responsive Design',
-			desc: 'Mobile-first approach with adaptive layouts for all screen sizes and devices.'
-		},
-	],
-	techStack: [{
-			abbr: 'PHP',
-			name: 'PHP 8',
-			role: 'Backend Logic'
-		},
-		{
-			abbr: 'JS',
-			name: 'JavaScript',
-			role: 'Frontend Interactivity'
-		},
-		{
-			abbr: 'HTML',
-			name: 'HTML5',
-			role: 'Structure'
-		},
-		{
-			abbr: 'JSON',
-			name: 'JSON',
-			role: 'Data Exchange'
-		},
-		{
-			abbr: 'API',
-			name: 'REST APIs',
-			role: 'External Data'
-		},
-		{
-			abbr: 'SQL',
-			name: 'MySQL',
-			role: 'Database'
-		},
-	],
-	timeline: [{
-			phase: 'Phase 01',
-			heading: 'API Research & Selection',
-			text: 'Researched cricket APIs, evaluated data quality and rate limits, selected best-fit providers.'
-		},
-		{
-			phase: 'Phase 02',
-			heading: 'Backend & Data Layer',
-			text: 'Built PHP API integration layer, data caching, and MySQL database schema for storage.'
-		},
-		{
-			phase: 'Phase 03',
-			heading: 'Frontend Development',
-			text: 'Developed responsive interface with JavaScript for dynamic content and real-time updates.'
-		},
-		{
-			phase: 'Phase 04',
-			heading: 'Testing & Launch',
-			text: 'Cross-browser testing, performance optimisation, and deployment with CDN caching.'
-		},
-	],
-	outcomes: [{
-			icon: 'activity',
-			title: 'Challenge — API Rate Limits',
-			desc: 'Implemented intelligent caching strategies to minimise API calls while keeping data fresh.'
-		},
-		{
-			icon: 'check-sq',
-			title: 'Outcome — Data Aggregation',
-			desc: 'Successfully combined data from 5+ APIs into a unified, user-friendly cricket platform.'
-		},
-		{
-			icon: 'users',
-			title: 'Outcome — User Engagement',
-			desc: 'Personalisation features increased user engagement with custom content feeds and notifications.'
-		},
-		{
-			icon: 'shield',
-			title: 'Outcome — Performance',
-			desc: '95 Lighthouse performance score through efficient caching and optimised asset delivery.'
-		},
-	],
-	template: 'v2',
-	prevProject: {
+	'chat-app': {
 		id: 'chat-app',
+		num: '13',
 		name: 'Chat Application',
-		cat: 'Web App · PHP / MySQL'
+		subtitle: 'Real-time Messaging Platform.',
+		badgeType: 'Web Application',
+		badgeYear: '2023',
+		category: 'Real-time Messaging Platform · PHP / MySQL',
+		desc: 'A secure, real-time chat application built with PHP and MySQL featuring multi-user support, group chat functionality, and advanced security protocols. Utilizes JSON for data exchange, RESTful API architecture, and comprehensive user management with authentication and authorization layers.',
+		tags: ['PHP', 'MySQL', 'phpMyAdmin', 'JSON', 'REST API', 'Security'],
+		liveUrl: '#',
+		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
+		meta: [{
+				label: 'Client',
+				value: 'Personal Project',
+				accent: false
+			},
+			{
+				label: 'Category',
+				value: 'Real-time Messaging',
+				accent: false
+			},
+			{
+				label: 'Status',
+				value: '✓ Live & Active',
+				accent: true
+			},
+			{
+				label: 'Timeline',
+				value: '6 Weeks',
+				accent: false
+			},
+			{
+				label: 'Role',
+				value: 'Full Stack Developer',
+				accent: false
+			},
+			{
+				label: 'Tech Stack',
+				tags: ['PHP', 'MySQL', 'phpMyAdmin', 'JSON', 'REST API']
+			},
+		],
+		stats: [{
+				num: '6',
+				suffix: 'wk',
+				label: 'Delivery Time'
+			},
+			{
+				num: '50',
+				suffix: '+',
+				label: 'Concurrent Users'
+			},
+			{
+				num: '100',
+				suffix: '%',
+				label: 'Encrypted Messages'
+			},
+			{
+				num: '99.9',
+				suffix: '%',
+				label: 'Uptime'
+			},
+		],
+		screenshots: [{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
+				label: 'Chat Interface'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
+				label: 'Group Chat'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
+				label: 'Admin Panel'
+			},
+		],
+		overviewParagraphs: [
+			'A secure, real-time chat platform built with PHP and MySQL, designed for multi-user communication with group chat capabilities. The application handles concurrent users with efficient database queries and AJAX polling for message delivery.',
+			'Advanced security features include encrypted message storage, session-based authentication, and input sanitization to prevent XSS and SQL injection attacks. User management includes role-based permissions for admin, moderators, and regular users.',
+			'JSON is used for data exchange between client and server, with a RESTful API architecture allowing extensibility for future mobile app integration. The system supports private messaging, group chats, and file sharing capabilities.',
+		],
+		features: [{
+				icon: 'shield',
+				title: 'Advanced Security',
+				desc: 'Encrypted messages, session-based auth, XSS protection, and SQL injection prevention.'
+			},
+			{
+				icon: 'users',
+				title: 'Multi-User & Groups',
+				desc: 'Support for multiple users, group chats, private messaging, and user role management.'
+			},
+			{
+				icon: 'code',
+				title: 'RESTful API',
+				desc: 'JSON-based REST API for data exchange with extensibility for mobile app integration.'
+			},
+			{
+				icon: 'database',
+				title: 'MySQL Database',
+				desc: 'Optimised database schema with indexing for fast message retrieval and concurrent user support.'
+			},
+			{
+				icon: 'zap',
+				title: 'Real-time Polling',
+				desc: 'Efficient AJAX polling and server-side event handling for near real-time message delivery.'
+			},
+			{
+				icon: 'monitor',
+				title: 'Responsive UI',
+				desc: 'Mobile-first chat interface with intuitive design for all screen sizes and devices.'
+			},
+		],
+		techStack: [{
+				abbr: 'PHP',
+				name: 'PHP 8',
+				role: 'Backend Logic'
+			},
+			{
+				abbr: 'SQL',
+				name: 'MySQL',
+				role: 'Database'
+			},
+			{
+				abbr: 'PMA',
+				name: 'phpMyAdmin',
+				role: 'DB Administration'
+			},
+			{
+				abbr: 'JSON',
+				name: 'JSON',
+				role: 'Data Exchange'
+			},
+			{
+				abbr: 'JS',
+				name: 'JavaScript',
+				role: 'Frontend Interactivity'
+			},
+			{
+				abbr: 'HTML',
+				name: 'HTML5',
+				role: 'Structure'
+			},
+			{
+				abbr: 'CSS',
+				name: 'CSS3',
+				role: 'Styling'
+			},
+		],
+		timeline: [{
+				phase: 'Phase 01',
+				heading: 'Architecture Design',
+				text: 'Designed the database schema, REST API endpoints, and real-time communication architecture.'
+			},
+			{
+				phase: 'Phase 02',
+				heading: 'Backend Development',
+				text: 'Built PHP backend with authentication, message processing, and group management features.'
+			},
+			{
+				phase: 'Phase 03',
+				heading: 'Frontend Interface',
+				text: 'Developed the chat interface with real-time message updates and responsive design.'
+			},
+			{
+				phase: 'Phase 04',
+				heading: 'Security & Testing',
+				text: 'Implemented encryption, XSS protection, and security auditing with load testing.'
+			},
+		],
+		outcomes: [{
+				icon: 'activity',
+				title: 'Challenge — Real-time Performance',
+				desc: 'Achieved near real-time message delivery through efficient AJAX polling and server optimisation.'
+			},
+			{
+				icon: 'check-sq',
+				title: 'Outcome — Security',
+				desc: 'Successfully implemented encrypted messaging with zero security incidents post-launch.'
+			},
+			{
+				icon: 'users',
+				title: 'Outcome — Scalability',
+				desc: 'Supports 50+ concurrent users with optimised database queries and caching strategies.'
+			},
+			{
+				icon: 'shield',
+				title: 'Outcome — Reliability',
+				desc: '99.9% uptime achieved with robust error handling and server-side validation.'
+			},
+		],
+		template: 'v2',
+		prevProject: {
+			id: 'ask-whitny',
+			name: 'Ask Whitny',
+			cat: 'WordPress · Custom Development'
+		},
+		nextProject: {
+			id: 'espn-clone',
+			name: 'ESPN Cricinfo Clone',
+			cat: 'Web App · PHP / API'
+		},
 	},
-	nextProject: {
-		id: 'manii-gossips',
-		name: 'Manii\'s Gossips',
-		cat: 'Desktop App · C# / WinForms'
-	},
-},
 
-'manii-gossips': {
-	id: 'manii-gossips',
-	num: '15',
-	name: 'Manii\'s Gossips',
-	subtitle: 'Windows Forms Desktop Application.',
-	badgeType: 'Desktop Application',
-	badgeYear: '2021',
-	category: 'Desktop Application · C# / Windows Forms / .NET',
-	desc: 'A feature-rich desktop application built with C# and Windows Forms in Visual Studio .NET. Powered by SQL Server database with comprehensive data management, and integrated Crystal Reports for professional reporting and analytics. Includes user-friendly interface, data validation, and seamless CRUD operations for efficient workflow management.',
-	tags: ['C#', 'Windows Forms', '.NET', 'SQL Server', 'Crystal Reports', 'Visual Studio'],
-	liveUrl: '#',
-	githubUrl: 'https://github.com/Sohaib-Ishaque/',
-	heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
-	meta: [{
-			label: 'Client',
-			value: 'Internal / Business Client',
-			accent: false
-		},
-		{
-			label: 'Category',
-			value: 'Desktop Application',
-			accent: false
-		},
-		{
-			label: 'Status',
-			value: '✓ Deployed & In Use',
-			accent: true
-		},
-		{
-			label: 'Timeline',
-			value: '5 Weeks',
-			accent: false
-		},
-		{
-			label: 'Role',
-			value: 'Desktop Developer',
-			accent: false
-		},
-		{
-			label: 'Tech Stack',
-			tags: ['C#', 'WinForms', '.NET', 'SQL Server', 'Crystal Reports']
-		},
-	],
-	stats: [{
-			num: '5',
-			suffix: 'wk',
-			label: 'Delivery Time'
-		},
-		{
-			num: '50',
-			suffix: '%',
-			label: 'Time Saved on Tasks'
-		},
-		{
-			num: '15',
-			suffix: '+',
-			label: 'Daily Users'
-		},
-		{
-			num: '100',
-			suffix: '%',
-			label: 'Client Satisfaction'
-		},
-	],
-	screenshots: [{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
-			label: 'Dashboard Overview'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
-			label: 'Data Management'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
-			label: 'Crystal Reports'
-		},
-	],
-	overviewParagraphs: [
-		'Manii\'s Gossips is a desktop application built with C# and Windows Forms, designed to streamline information management and workflow efficiency. The application provides comprehensive CRUD operations, data validation, and professional reporting capabilities.',
-		'Powered by SQL Server, the application handles complex data relationships with optimised queries and stored procedures. Crystal Reports integration enables professional reporting and analytics for business decision-making.',
-		'The user-friendly interface was designed with end-users in mind, featuring intuitive navigation, data validation at every step, and real-time feedback for all operations. The application has been successfully deployed with 15+ daily users.',
-	],
-	features: [{
-			icon: 'shield',
-			title: 'User Authentication',
-			desc: 'Secure login with role-based access control and session management.'
-		},
-		{
-			icon: 'database',
-			title: 'SQL Server Integration',
-			desc: 'Robust database with optimised queries, stored procedures, and data integrity.'
-		},
-		{
-			icon: 'grid',
-			title: 'CRUD Operations',
-			desc: 'Complete create, read, update, delete functionality with data validation.'
-		},
-		{
-			icon: 'activity',
-			title: 'Crystal Reports',
-			desc: 'Professional reporting with custom report generation and export options.'
-		},
-		{
-			icon: 'zap',
-			title: 'User-Friendly Interface',
-			desc: 'Intuitive Windows Forms UI with data validation and real-time feedback.'
-		},
-		{
-			icon: 'users',
-			title: 'Multi-User Support',
-			desc: 'Supports 15+ concurrent users with data consistency and integrity.'
-		},
-	],
-	techStack: [{
-			abbr: 'C#',
-			name: 'C#',
-			role: 'Language'
-		},
-		{
-			abbr: 'WF',
-			name: 'Windows Forms',
-			role: 'UI Framework'
-		},
-		{
-			abbr: '.NET',
-			name: '.NET Framework 4.8',
-			role: 'Platform'
-		},
-		{
-			abbr: 'SQL',
-			name: 'SQL Server',
-			role: 'Database'
-		},
-		{
-			abbr: 'CR',
-			name: 'Crystal Reports',
-			role: 'Reporting'
-		},
-		{
-			abbr: 'VS',
-			name: 'Visual Studio',
-			role: 'IDE'
-		},
-	],
-	timeline: [{
-			phase: 'Phase 01',
-			heading: 'Requirements Gathering',
-			text: 'Identified user workflows, data requirements, and reporting needs through stakeholder interviews.'
-		},
-		{
-			phase: 'Phase 02',
-			heading: 'Database Design',
-			text: 'Designed SQL Server schema with normalised tables and stored procedures for data integrity.'
-		},
-		{
-			phase: 'Phase 03',
-			heading: 'Application Build',
-			text: 'Developed Windows Forms interface with complete CRUD functionality and data validation.'
-		},
-		{
-			phase: 'Phase 04',
-			heading: 'Reporting & Deployment',
-			text: 'Integrated Crystal Reports, conducted UAT, and deployed with staff training.'
-		},
-	],
-	outcomes: [{
-			icon: 'activity',
-			title: 'Challenge — Complex Reporting',
-			desc: 'Required professional reporting with custom formats. Solved with Crystal Reports integration.'
-		},
-		{
-			icon: 'check-sq',
-			title: 'Outcome — Efficiency',
-			desc: '50% time saved on daily tasks compared to previous manual/Excel-based workflows.'
-		},
-		{
-			icon: 'users',
-			title: 'Outcome — User Adoption',
-			desc: '15+ daily users fully trained and independent within the first week of deployment.'
-		},
-		{
-			icon: 'shield',
-			title: 'Outcome — Reliability',
-			desc: 'Zero downtime since deployment with robust error handling and data integrity checks.'
-		},
-	],
-	template: 'v2',
-	prevProject: {
+	'espn-clone': {
 		id: 'espn-clone',
+		num: '14',
 		name: 'ESPN Cricinfo Clone',
-		cat: 'Web App · PHP / API'
+		subtitle: 'Sports Data Aggregation Platform.',
+		badgeType: 'Web Application',
+		badgeYear: '2023',
+		category: 'Sports Data Aggregation · PHP / API / JavaScript',
+		desc: 'A comprehensive cricket news and score platform replicating ESPN Cricinfo\'s core features. Built with PHP and JavaScript, leveraging external APIs for live match data, player statistics, and news feeds. Features JSON data handling, dynamic content rendering, database-driven user preferences, and responsive design for seamless mobile and desktop experience.',
+		tags: ['PHP', 'JavaScript', 'HTML5', 'JSON', 'REST API', 'Database'],
+		liveUrl: '#',
+		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
+		meta: [{
+				label: 'Client',
+				value: 'Personal Project',
+				accent: false
+			},
+			{
+				label: 'Category',
+				value: 'Sports Data Platform',
+				accent: false
+			},
+			{
+				label: 'Status',
+				value: '✓ Live & Active',
+				accent: true
+			},
+			{
+				label: 'Timeline',
+				value: '6 Weeks',
+				accent: false
+			},
+			{
+				label: 'Role',
+				value: 'Full Stack Developer',
+				accent: false
+			},
+			{
+				label: 'Tech Stack',
+				tags: ['PHP', 'JavaScript', 'REST API', 'JSON', 'MySQL']
+			},
+		],
+		stats: [{
+				num: '6',
+				suffix: 'wk',
+				label: 'Delivery Time'
+			},
+			{
+				num: '5',
+				suffix: '+',
+				label: 'API Integrations'
+			},
+			{
+				num: '1,000',
+				suffix: '+',
+				label: 'Data Points Fetched'
+			},
+			{
+				num: '95',
+				suffix: '',
+				label: 'Perf Score'
+			},
+		],
+		screenshots: [{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
+				label: 'Home Page'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
+				label: 'Live Match Scores'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
+				label: 'Player Statistics'
+			},
+		],
+		overviewParagraphs: [
+			'A comprehensive cricket platform that aggregates live scores, match data, player statistics, and news from multiple external APIs. The project replicates the core experience of ESPN Cricinfo, providing fans with a one-stop destination for cricket information.',
+			'The platform uses PHP for backend processing, JavaScript for dynamic frontend interactions, and JSON for data exchange between API integrations. All data is cached and stored in a MySQL database for fast retrieval and offline access to historical data.',
+			'User preferences are database-driven, allowing personalised content feeds, favourite teams/players, and custom notifications. The responsive design ensures a seamless experience across desktop, tablet, and mobile devices.',
+		],
+		features: [{
+				icon: 'activity',
+				title: 'Live Match Data',
+				desc: 'Real-time scores, ball-by-ball updates, and match summaries from external sports APIs.'
+			},
+			{
+				icon: 'users',
+				title: 'Player Statistics',
+				desc: 'Comprehensive player profiles with career stats, records, and performance metrics.'
+			},
+			{
+				icon: 'code',
+				title: 'API Integration',
+				desc: 'Multiple third-party API integrations for live data, news, and player statistics.'
+			},
+			{
+				icon: 'database',
+				title: 'Data Caching',
+				desc: 'JSON data caching and MySQL storage for fast retrieval and historical data access.'
+			},
+			{
+				icon: 'zap',
+				title: 'Dynamic Content',
+				desc: 'JavaScript-powered content rendering with real-time updates and interactive elements.'
+			},
+			{
+				icon: 'monitor',
+				title: 'Responsive Design',
+				desc: 'Mobile-first approach with adaptive layouts for all screen sizes and devices.'
+			},
+		],
+		techStack: [{
+				abbr: 'PHP',
+				name: 'PHP 8',
+				role: 'Backend Logic'
+			},
+			{
+				abbr: 'JS',
+				name: 'JavaScript',
+				role: 'Frontend Interactivity'
+			},
+			{
+				abbr: 'HTML',
+				name: 'HTML5',
+				role: 'Structure'
+			},
+			{
+				abbr: 'JSON',
+				name: 'JSON',
+				role: 'Data Exchange'
+			},
+			{
+				abbr: 'API',
+				name: 'REST APIs',
+				role: 'External Data'
+			},
+			{
+				abbr: 'SQL',
+				name: 'MySQL',
+				role: 'Database'
+			},
+		],
+		timeline: [{
+				phase: 'Phase 01',
+				heading: 'API Research & Selection',
+				text: 'Researched cricket APIs, evaluated data quality and rate limits, selected best-fit providers.'
+			},
+			{
+				phase: 'Phase 02',
+				heading: 'Backend & Data Layer',
+				text: 'Built PHP API integration layer, data caching, and MySQL database schema for storage.'
+			},
+			{
+				phase: 'Phase 03',
+				heading: 'Frontend Development',
+				text: 'Developed responsive interface with JavaScript for dynamic content and real-time updates.'
+			},
+			{
+				phase: 'Phase 04',
+				heading: 'Testing & Launch',
+				text: 'Cross-browser testing, performance optimisation, and deployment with CDN caching.'
+			},
+		],
+		outcomes: [{
+				icon: 'activity',
+				title: 'Challenge — API Rate Limits',
+				desc: 'Implemented intelligent caching strategies to minimise API calls while keeping data fresh.'
+			},
+			{
+				icon: 'check-sq',
+				title: 'Outcome — Data Aggregation',
+				desc: 'Successfully combined data from 5+ APIs into a unified, user-friendly cricket platform.'
+			},
+			{
+				icon: 'users',
+				title: 'Outcome — User Engagement',
+				desc: 'Personalisation features increased user engagement with custom content feeds and notifications.'
+			},
+			{
+				icon: 'shield',
+				title: 'Outcome — Performance',
+				desc: '95 Lighthouse performance score through efficient caching and optimised asset delivery.'
+			},
+		],
+		template: 'v2',
+		prevProject: {
+			id: 'chat-app',
+			name: 'Chat Application',
+			cat: 'Web App · PHP / MySQL'
+		},
+		nextProject: {
+			id: 'manii-gossips',
+			name: 'Manii\'s Gossips',
+			cat: 'Desktop App · C# / WinForms'
+		},
 	},
-	nextProject: {
-		id: 'library-management',
-		name: 'Library Management System',
-		cat: 'Web App · PHP / MySQL'
-	},
-},
 
-'library-management': {
-	id: 'library-management',
-	num: '16',
-	name: 'Library Management System',
-	subtitle: 'Web-Based Library Management Platform.',
-	badgeType: 'Web Application',
-	badgeYear: '2022',
-	category: 'Library Management · PHP / MySQL / REST API',
-	desc: 'A complete library management solution built with PHP and MySQL database. Features include book cataloging, member management, issue/return tracking, fine calculation, and advanced search functionality. Utilizes phpMyAdmin for database administration, RESTful APIs for data operations, automated reporting system, and advanced transaction control for seamless library operations.',
-	tags: ['PHP', 'MySQL', 'phpMyAdmin', 'REST API', 'Reports', 'Transaction Control'],
-	liveUrl: '#',
-	githubUrl: 'https://github.com/Sohaib-Ishaque/',
-	heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
-	meta: [{
-			label: 'Client',
-			value: 'Educational Institution',
-			accent: false
-		},
-		{
-			label: 'Category',
-			value: 'Library Management System',
-			accent: false
-		},
-		{
-			label: 'Status',
-			value: '✓ Live & Active',
-			accent: true
-		},
-		{
-			label: 'Timeline',
-			value: '6 Weeks',
-			accent: false
-		},
-		{
-			label: 'Role',
-			value: 'Full Stack Developer',
-			accent: false
-		},
-		{
-			label: 'Tech Stack',
-			tags: ['PHP', 'MySQL', 'phpMyAdmin', 'REST API', 'Reports']
-		},
-	],
-	stats: [{
-			num: '6',
-			suffix: 'wk',
-			label: 'Delivery Time'
-		},
-		{
-			num: '5K',
-			suffix: '+',
-			label: 'Books Catalogued'
-		},
-		{
-			num: '1K',
-			suffix: '+',
-			label: 'Active Members'
-		},
-		{
-			num: '95',
-			suffix: '%',
-			label: 'Process Automation'
-		},
-	],
-	screenshots: [{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
-			label: 'Dashboard Overview'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
-			label: 'Book Catalog'
-		},
-		{
-			src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
-			label: 'Reports & Analytics'
-		},
-	],
-	overviewParagraphs: [
-		'A comprehensive library management system built with PHP and MySQL, designed to automate all aspects of library operations — from book cataloging to member management and transaction tracking.',
-		'The system features advanced search capabilities, automated fine calculation for overdue books, and a complete transaction history for all library activities. phpMyAdmin provides easy database administration for staff.',
-		'RESTful APIs power the data operations layer, enabling seamless integration with future modules. Automated reporting generates insights on circulation, popular books, member activity, and more.',
-	],
-	features: [{
-			icon: 'grid',
-			title: 'Book Cataloging',
-			desc: 'Complete book management with author, publisher, ISBN, category, and multiple copies tracking.'
-		},
-		{
-			icon: 'users',
-			title: 'Member Management',
-			desc: 'Student/staff registration, membership types, borrowing limits, and history tracking.'
-		},
-		{
-			icon: 'activity',
-			title: 'Issue/Return Tracking',
-			desc: 'Complete transaction management with due dates, reminders, and automated fine calculation.'
-		},
-		{
-			icon: 'database',
-			title: 'MySQL Database',
-			desc: 'Optimised relational schema with indexing for fast search and transaction processing.'
-		},
-		{
-			icon: 'code',
-			title: 'RESTful APIs',
-			desc: 'JSON-based APIs for data operations with extensibility for mobile/desktop clients.'
-		},
-		{
-			icon: 'grid',
-			title: 'Automated Reports',
-			desc: 'Circulation reports, popular books, member activity, and inventory status reports.'
-		},
-	],
-	techStack: [{
-			abbr: 'PHP',
-			name: 'PHP 8',
-			role: 'Backend Logic'
-		},
-		{
-			abbr: 'SQL',
-			name: 'MySQL',
-			role: 'Database'
-		},
-		{
-			abbr: 'PMA',
-			name: 'phpMyAdmin',
-			role: 'DB Administration'
-		},
-		{
-			abbr: 'API',
-			name: 'REST API',
-			role: 'Data Operations'
-		},
-		{
-			abbr: 'JS',
-			name: 'JavaScript',
-			role: 'Interactivity'
-		},
-		{
-			abbr: 'HTML',
-			name: 'HTML5 / CSS3',
-			role: 'UI / Styling'
-		},
-	],
-	timeline: [{
-			phase: 'Phase 01',
-			heading: 'Requirements & Schema',
-			text: 'Mapped library workflows, designed database schema, and defined API endpoints for data operations.'
-		},
-		{
-			phase: 'Phase 02',
-			heading: 'Backend Development',
-			text: 'Built PHP backend with CRUD operations for books, members, transactions, and fine calculation.'
-		},
-		{
-			phase: 'Phase 03',
-			heading: 'Frontend Interface',
-			text: 'Developed responsive web interface with search, catalog browsing, and member dashboard.'
-		},
-		{
-			phase: 'Phase 04',
-			heading: 'Reporting & Launch',
-			text: 'Implemented automated reports, conducted UAT with library staff, and deployed with training.'
-		},
-	],
-	outcomes: [{
-			icon: 'activity',
-			title: 'Challenge — Fine Calculation',
-			desc: 'Complex fine rules and exemptions. Solved with configurable fine settings and automated calculation logic.'
-		},
-		{
-			icon: 'check-sq',
-			title: 'Outcome — Automation',
-			desc: '95% of library processes automated, reducing staff workload from manual tracking to digital management.'
-		},
-		{
-			icon: 'users',
-			title: 'Outcome — Adoption',
-			desc: '1,000+ active members and 5,000+ books catalogued within the first 3 months of deployment.'
-		},
-		{
-			icon: 'shield',
-			title: 'Outcome — Accuracy',
-			desc: 'Eliminated manual errors in book tracking and fine calculation with automated validation rules.'
-		},
-	],
-	template: 'v2',
-	prevProject: {
+	'manii-gossips': {
 		id: 'manii-gossips',
+		num: '15',
 		name: 'Manii\'s Gossips',
-		cat: 'Desktop App · C# / WinForms'
+		subtitle: 'Windows Forms Desktop Application.',
+		badgeType: 'Desktop Application',
+		badgeYear: '2021',
+		category: 'Desktop Application · C# / Windows Forms / .NET',
+		desc: 'A feature-rich desktop application built with C# and Windows Forms in Visual Studio .NET. Powered by SQL Server database with comprehensive data management, and integrated Crystal Reports for professional reporting and analytics. Includes user-friendly interface, data validation, and seamless CRUD operations for efficient workflow management.',
+		tags: ['C#', 'Windows Forms', '.NET', 'SQL Server', 'Crystal Reports', 'Visual Studio'],
+		liveUrl: '#',
+		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
+		meta: [{
+				label: 'Client',
+				value: 'Internal / Business Client',
+				accent: false
+			},
+			{
+				label: 'Category',
+				value: 'Desktop Application',
+				accent: false
+			},
+			{
+				label: 'Status',
+				value: '✓ Deployed & In Use',
+				accent: true
+			},
+			{
+				label: 'Timeline',
+				value: '5 Weeks',
+				accent: false
+			},
+			{
+				label: 'Role',
+				value: 'Desktop Developer',
+				accent: false
+			},
+			{
+				label: 'Tech Stack',
+				tags: ['C#', 'WinForms', '.NET', 'SQL Server', 'Crystal Reports']
+			},
+		],
+		stats: [{
+				num: '5',
+				suffix: 'wk',
+				label: 'Delivery Time'
+			},
+			{
+				num: '50',
+				suffix: '%',
+				label: 'Time Saved on Tasks'
+			},
+			{
+				num: '15',
+				suffix: '+',
+				label: 'Daily Users'
+			},
+			{
+				num: '100',
+				suffix: '%',
+				label: 'Client Satisfaction'
+			},
+		],
+		screenshots: [{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
+				label: 'Dashboard Overview'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
+				label: 'Data Management'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
+				label: 'Crystal Reports'
+			},
+		],
+		overviewParagraphs: [
+			'Manii\'s Gossips is a desktop application built with C# and Windows Forms, designed to streamline information management and workflow efficiency. The application provides comprehensive CRUD operations, data validation, and professional reporting capabilities.',
+			'Powered by SQL Server, the application handles complex data relationships with optimised queries and stored procedures. Crystal Reports integration enables professional reporting and analytics for business decision-making.',
+			'The user-friendly interface was designed with end-users in mind, featuring intuitive navigation, data validation at every step, and real-time feedback for all operations. The application has been successfully deployed with 15+ daily users.',
+		],
+		features: [{
+				icon: 'shield',
+				title: 'User Authentication',
+				desc: 'Secure login with role-based access control and session management.'
+			},
+			{
+				icon: 'database',
+				title: 'SQL Server Integration',
+				desc: 'Robust database with optimised queries, stored procedures, and data integrity.'
+			},
+			{
+				icon: 'grid',
+				title: 'CRUD Operations',
+				desc: 'Complete create, read, update, delete functionality with data validation.'
+			},
+			{
+				icon: 'activity',
+				title: 'Crystal Reports',
+				desc: 'Professional reporting with custom report generation and export options.'
+			},
+			{
+				icon: 'zap',
+				title: 'User-Friendly Interface',
+				desc: 'Intuitive Windows Forms UI with data validation and real-time feedback.'
+			},
+			{
+				icon: 'users',
+				title: 'Multi-User Support',
+				desc: 'Supports 15+ concurrent users with data consistency and integrity.'
+			},
+		],
+		techStack: [{
+				abbr: 'C#',
+				name: 'C#',
+				role: 'Language'
+			},
+			{
+				abbr: 'WF',
+				name: 'Windows Forms',
+				role: 'UI Framework'
+			},
+			{
+				abbr: '.NET',
+				name: '.NET Framework 4.8',
+				role: 'Platform'
+			},
+			{
+				abbr: 'SQL',
+				name: 'SQL Server',
+				role: 'Database'
+			},
+			{
+				abbr: 'CR',
+				name: 'Crystal Reports',
+				role: 'Reporting'
+			},
+			{
+				abbr: 'VS',
+				name: 'Visual Studio',
+				role: 'IDE'
+			},
+		],
+		timeline: [{
+				phase: 'Phase 01',
+				heading: 'Requirements Gathering',
+				text: 'Identified user workflows, data requirements, and reporting needs through stakeholder interviews.'
+			},
+			{
+				phase: 'Phase 02',
+				heading: 'Database Design',
+				text: 'Designed SQL Server schema with normalised tables and stored procedures for data integrity.'
+			},
+			{
+				phase: 'Phase 03',
+				heading: 'Application Build',
+				text: 'Developed Windows Forms interface with complete CRUD functionality and data validation.'
+			},
+			{
+				phase: 'Phase 04',
+				heading: 'Reporting & Deployment',
+				text: 'Integrated Crystal Reports, conducted UAT, and deployed with staff training.'
+			},
+		],
+		outcomes: [{
+				icon: 'activity',
+				title: 'Challenge — Complex Reporting',
+				desc: 'Required professional reporting with custom formats. Solved with Crystal Reports integration.'
+			},
+			{
+				icon: 'check-sq',
+				title: 'Outcome — Efficiency',
+				desc: '50% time saved on daily tasks compared to previous manual/Excel-based workflows.'
+			},
+			{
+				icon: 'users',
+				title: 'Outcome — User Adoption',
+				desc: '15+ daily users fully trained and independent within the first week of deployment.'
+			},
+			{
+				icon: 'shield',
+				title: 'Outcome — Reliability',
+				desc: 'Zero downtime since deployment with robust error handling and data integrity checks.'
+			},
+		],
+		template: 'v2',
+		prevProject: {
+			id: 'espn-clone',
+			name: 'ESPN Cricinfo Clone',
+			cat: 'Web App · PHP / API'
+		},
+		nextProject: {
+			id: 'library-management',
+			name: 'Library Management System',
+			cat: 'Web App · PHP / MySQL'
+		},
 	},
-	nextProject: null,
-},
+
+	'library-management': {
+		id: 'library-management',
+		num: '16',
+		name: 'Library Management System',
+		subtitle: 'Web-Based Library Management Platform.',
+		badgeType: 'Web Application',
+		badgeYear: '2022',
+		category: 'Library Management · PHP / MySQL / REST API',
+		desc: 'A complete library management solution built with PHP and MySQL database. Features include book cataloging, member management, issue/return tracking, fine calculation, and advanced search functionality. Utilizes phpMyAdmin for database administration, RESTful APIs for data operations, automated reporting system, and advanced transaction control for seamless library operations.',
+		tags: ['PHP', 'MySQL', 'phpMyAdmin', 'REST API', 'Reports', 'Transaction Control'],
+		liveUrl: '#',
+		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
+		meta: [{
+				label: 'Client',
+				value: 'Educational Institution',
+				accent: false
+			},
+			{
+				label: 'Category',
+				value: 'Library Management System',
+				accent: false
+			},
+			{
+				label: 'Status',
+				value: '✓ Live & Active',
+				accent: true
+			},
+			{
+				label: 'Timeline',
+				value: '6 Weeks',
+				accent: false
+			},
+			{
+				label: 'Role',
+				value: 'Full Stack Developer',
+				accent: false
+			},
+			{
+				label: 'Tech Stack',
+				tags: ['PHP', 'MySQL', 'phpMyAdmin', 'REST API', 'Reports']
+			},
+		],
+		stats: [{
+				num: '6',
+				suffix: 'wk',
+				label: 'Delivery Time'
+			},
+			{
+				num: '5K',
+				suffix: '+',
+				label: 'Books Catalogued'
+			},
+			{
+				num: '1K',
+				suffix: '+',
+				label: 'Active Members'
+			},
+			{
+				num: '95',
+				suffix: '%',
+				label: 'Process Automation'
+			},
+		],
+		screenshots: [{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
+				label: 'Dashboard Overview'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
+				label: 'Book Catalog'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
+				label: 'Reports & Analytics'
+			},
+		],
+		overviewParagraphs: [
+			'A comprehensive library management system built with PHP and MySQL, designed to automate all aspects of library operations — from book cataloging to member management and transaction tracking.',
+			'The system features advanced search capabilities, automated fine calculation for overdue books, and a complete transaction history for all library activities. phpMyAdmin provides easy database administration for staff.',
+			'RESTful APIs power the data operations layer, enabling seamless integration with future modules. Automated reporting generates insights on circulation, popular books, member activity, and more.',
+		],
+		features: [{
+				icon: 'grid',
+				title: 'Book Cataloging',
+				desc: 'Complete book management with author, publisher, ISBN, category, and multiple copies tracking.'
+			},
+			{
+				icon: 'users',
+				title: 'Member Management',
+				desc: 'Student/staff registration, membership types, borrowing limits, and history tracking.'
+			},
+			{
+				icon: 'activity',
+				title: 'Issue/Return Tracking',
+				desc: 'Complete transaction management with due dates, reminders, and automated fine calculation.'
+			},
+			{
+				icon: 'database',
+				title: 'MySQL Database',
+				desc: 'Optimised relational schema with indexing for fast search and transaction processing.'
+			},
+			{
+				icon: 'code',
+				title: 'RESTful APIs',
+				desc: 'JSON-based APIs for data operations with extensibility for mobile/desktop clients.'
+			},
+			{
+				icon: 'grid',
+				title: 'Automated Reports',
+				desc: 'Circulation reports, popular books, member activity, and inventory status reports.'
+			},
+		],
+		techStack: [{
+				abbr: 'PHP',
+				name: 'PHP 8',
+				role: 'Backend Logic'
+			},
+			{
+				abbr: 'SQL',
+				name: 'MySQL',
+				role: 'Database'
+			},
+			{
+				abbr: 'PMA',
+				name: 'phpMyAdmin',
+				role: 'DB Administration'
+			},
+			{
+				abbr: 'API',
+				name: 'REST API',
+				role: 'Data Operations'
+			},
+			{
+				abbr: 'JS',
+				name: 'JavaScript',
+				role: 'Interactivity'
+			},
+			{
+				abbr: 'HTML',
+				name: 'HTML5 / CSS3',
+				role: 'UI / Styling'
+			},
+		],
+		timeline: [{
+				phase: 'Phase 01',
+				heading: 'Requirements & Schema',
+				text: 'Mapped library workflows, designed database schema, and defined API endpoints for data operations.'
+			},
+			{
+				phase: 'Phase 02',
+				heading: 'Backend Development',
+				text: 'Built PHP backend with CRUD operations for books, members, transactions, and fine calculation.'
+			},
+			{
+				phase: 'Phase 03',
+				heading: 'Frontend Interface',
+				text: 'Developed responsive web interface with search, catalog browsing, and member dashboard.'
+			},
+			{
+				phase: 'Phase 04',
+				heading: 'Reporting & Launch',
+				text: 'Implemented automated reports, conducted UAT with library staff, and deployed with training.'
+			},
+		],
+		outcomes: [{
+				icon: 'activity',
+				title: 'Challenge — Fine Calculation',
+				desc: 'Complex fine rules and exemptions. Solved with configurable fine settings and automated calculation logic.'
+			},
+			{
+				icon: 'check-sq',
+				title: 'Outcome — Automation',
+				desc: '95% of library processes automated, reducing staff workload from manual tracking to digital management.'
+			},
+			{
+				icon: 'users',
+				title: 'Outcome — Adoption',
+				desc: '1,000+ active members and 5,000+ books catalogued within the first 3 months of deployment.'
+			},
+			{
+				icon: 'shield',
+				title: 'Outcome — Accuracy',
+				desc: 'Eliminated manual errors in book tracking and fine calculation with automated validation rules.'
+			},
+		],
+		template: 'v2',
+		prevProject: {
+			id: 'manii-gossips',
+			name: 'Manii\'s Gossips',
+			cat: 'Desktop App · C# / WinForms'
+		},
+		nextProject: null,
+	},
 
 };
 
