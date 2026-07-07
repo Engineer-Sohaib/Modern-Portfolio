@@ -1297,6 +1297,11 @@ footer {
     margin-bottom: 15px;
   }
 
+  .footer-cta-card {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
   .footer-bottom {
     display: flex;
     align-items: center;
