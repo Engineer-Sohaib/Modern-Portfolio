@@ -4155,12 +4155,15 @@ window.Portfolio.PROJECT_DETAILS_V2 = (function() {
 
 window.Portfolio.PROJECT_LINKS = (function() {
 
-	// Updated mapping with all project IDs
 	const NAME_TO_ID = {
 		"al tahaluf's":            'al-tahaluf',
 		'nsric online education':  'nsric',
 		'stock management system': 'stock-management',
 		'stock management':        'stock-management',
+		'point of sale (pos) system': 'point-of-sale',
+		'point of sale system':    'point-of-sale',
+		'point of sale':           'point-of-sale',
+		'point-of-sale':           'point-of-sale',
 		'qrmf':                    'qrmf',
 		'simplicity trading wp':   'simplicity-trading',
 		'traveler':                'traveler',
@@ -4174,8 +4177,6 @@ window.Portfolio.PROJECT_LINKS = (function() {
 		'chat application':        'chat-app',
 		'espn cricinfo clone':     'espn-clone',
 		"manii's gossips":         'manii-gossips',
-		'point of sale': 'point-of-sale',
-		'point-of-sale':        'point-of-sale',
 		'library management system': 'library-management',
 	};
 
