@@ -3367,14 +3367,14 @@ window.Portfolio.PROJECTS = {
 		],
 		template: 'v2',
 		prevProject: {
-			id: 'nsric',
-			name: 'NSRIC Education',
-			cat: 'Educational Platform · WordPress'
+			id: 'manii-gossips',
+			name: 'Manii\'s Gossips',
+			cat: 'Windows Forms Desktop Application'
 		},
 		nextProject: {
-			id: 'qrmf',
-			name: 'QRMF',
-			cat: 'Medical System · PHP / MySQL'
+			id: 'library-management',
+			name: 'Library Management System',
+			cat: 'Library Management · PHP / MySQL / REST API'
 		},
 	},
 
