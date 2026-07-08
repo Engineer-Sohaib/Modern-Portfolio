@@ -1324,16 +1324,28 @@ window.Portfolio.PROJECTS = {
 		],
 		screenshots: [
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
-				label: 'Quiz Dashboard'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723698/oqs-desktop-6_qufha7.webp',
+				label: 'Online Quiz System Login'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
-				label: 'Quiz Taking View'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723688/oqs-desktop-1_xieo67.webp',
+				label: 'Online Quiz System Dashboard'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254075/bnner-oqs_itk88l.png',
-				label: 'Results Analytics'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723694/oqs-desktop-4_eu6tws.webp',
+				label: 'Online Quiz System Manage Quizes'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723697/oqs-desktop-5_glt2xq.webp',
+				label: 'Online Quiz System Assign Quizes'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723694/oqs-desktop-4_eu6tws.webp',
+				label: 'Online Quiz System Add Quizes'
+			},,
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723688/oqs-desktop-7_aop6ra.webp',
+				label: 'Online Quiz System Student Dashboard'
 			},
 		],
 		overviewParagraphs: [
@@ -1523,15 +1535,15 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254089/mila-banner_p2wdvm.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723673/mila-estore-3_aqrjvl.webp',
 				label: 'Store Home Page'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254089/mila-banner_p2wdvm.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723662/mila-estore-2_jgj021.webp',
 				label: 'Product Catalogue'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254089/mila-banner_p2wdvm.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723661/mila-estore-1_adwekq.webp',
 				label: 'Cart & Checkout'
 			},
 		],
@@ -1931,16 +1943,20 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254079/jkjaac-banner_aa9qtd.png',
-				label: 'JKJAAC Home Page'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783524594/JKJAAC-About_oyizzt.png',
+				label: 'JKJAAC About Page'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254079/jkjaac-banner_aa9qtd.png',
-				label: 'Campaigns & Demands'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783524595/JKJAAC-Timeline_pyvlme.png',
+				label: 'JKJAAC Timeline'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254079/jkjaac-banner_aa9qtd.png',
-				label: 'News & Press Releases'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783524593/JKJAAC-Tracker_mfprnd.png',
+				label: 'Demands Progress Tracker'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783524594/JKJAAC-Proccess_fzmddn.png',
+				label: 'JKJAAC Process Tracker'
 			},
 		],
 		overviewParagraphs: [
@@ -2140,16 +2156,32 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
-				label: 'Calculator Interface'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525212/windows-10-calc-dark_oklcsk.png',
+				label: 'Calculator Dark Interface'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
-				label: 'Scientific Mode'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525212/windows-10-calc-light_zoiyqs.png',
+				label: 'Calculator Light Interface'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254094/win-10-calculator-banner_ecjera.png',
-				label: 'History Panel'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525212/windows-10-calc-vol_uvcptw.png',
+				label: 'Volume Calculator'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525213/windows-10-calc-sci_mcbmu4.png',
+				label: 'Scientific Calculator'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525213/windows-10-calc-pro_soqrxi.png',
+				label: 'Programmers Calculator'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525212/windows-10-calc-temp_m7qyqs.png',
+				label: 'Temperature Calculator'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525212/windows-10-calc-settings_fzqpmi.png',
+				label: 'Calculator Settings Panel'
 			},
 		],
 		overviewParagraphs: [
@@ -2329,16 +2361,20 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
-				label: 'Home Page'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525987/ask-whietny-blog_pdrjsg.png',
+				label: 'Home Blogs List'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
-				label: 'Custom Templates'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525986/ask-whietny-fashion_cz2lf5.png',
+				label: 'Ask Whietny Fashions'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254070/ask-whitny-banner_limbby.png',
-				label: 'Admin Panel'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525983/ask-whietny-pulic_wojpas.png',
+				label: 'Ask Whietny pulic'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783525983/ask-whietny-foods_fkvv3s.png',
+				label: 'Ask Whietny Foods'
 			},
 		],
 		overviewParagraphs: [
@@ -2528,16 +2564,24 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
-				label: 'Chat Interface'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723725/php-chat-app-1_wpqcm2.webp',
+				label: 'Chat App Login Interface'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
-				label: 'Group Chat'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723725/php-chat-app-5_kxmplp.webp',
+				label: 'Chat App SignUp Interface'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254076/chat-app-banner_ejysiu.png',
-				label: 'Admin Panel'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723726/php-chat-app-2_kv4knx.webp',
+				label: 'Chat App Group Interface'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723732/php-chat-app-4_wlpann.webp',
+				label: 'Chat App Chat Interface'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723731/php-chat-app-3_rbppyv.webp',
+				label: 'Chat App Profile Interface'
 			},
 		],
 		overviewParagraphs: [
@@ -2732,16 +2776,36 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528231/ESPN-Clone-home_ynkrnw.png',
 				label: 'Home Page'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528226/ESPN-Clone-lives_zjeaxv.png',
 				label: 'Live Match Scores'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/espn-clone-banner_arpquf.png',
-				label: 'Player Statistics'
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528232/ESPN-Clone-stats_ye9tvj.png',
+				label: 'Teams'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528226/ESPN-Clone-this-day_orjumc.png',
+				label: 'On This Day'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528239/ESPN-Clone-match-inf0_z5aqn4.png',
+				label: 'Match Results'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528230/ESPN-Clone-m-stats_gtvhsd.png',
+				label: 'Match Stats'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528230/ESPN-Clone-scorecard_yprlmf.png',
+				label: 'Match Scorecard'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1783528228/ESPN-Clone-m-overs_aeqxjh.png',
+				label: 'Match Overs'
 			},
 		],
 		overviewParagraphs: [
@@ -2931,15 +2995,19 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723411/manii-gossips-3_et0hou.webp',
 				label: 'Dashboard Overview'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723411/manii-gossips-1_z70van.webp',
 				label: 'Data Management'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254084/banner-qoc_vwrmke.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723411/manii-gossips-2_ki8hgq.webp',
+				label: 'Crystal Reports'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723410/manii-gossips-4_op4wl4.webp',
 				label: 'Crystal Reports'
 			},
 		],
@@ -3130,15 +3198,23 @@ window.Portfolio.PROJECTS = {
 			},
 		],
 		screenshots: [{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723336/7_jyrish.webp',
 				label: 'Dashboard Overview'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723330/2_1_uldnid.webp',
 				label: 'Book Catalog'
 			},
 			{
-				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782253974/my-library-banner_wznzbc.png',
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723331/3_1_hkltpg.webp',
+				label: 'Reports & Analytics'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723336/8_nyn2c0.webp',
+				label: 'Reports & Analytics'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723319/0_mxmdsu.webp',
 				label: 'Reports & Analytics'
 			},
 		],
