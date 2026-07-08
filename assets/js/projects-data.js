@@ -3127,14 +3127,14 @@ window.Portfolio.PROJECTS = {
 			cat: 'Web App · PHP / API'
 		},
 		nextProject: {
-			id: 'library-management',
-			name: 'Library Management System',
-			cat: 'Web App · PHP / MySQL'
+			id: 'point-of-sale',
+			name: 'Point Of Sale',
+			cat: 'Desktop Application · .NET WinForms / C#',
 		},
 	},
 	'point-of-sale': {
 		id: 'point-of-sale',
-		num: '03',
+		num: '16',
 		name: 'Point Of Sale',
 		subtitle: 'Desktop Application with Barcode Scanner Integration',
 		badgeType: 'Desktop Application',
@@ -3377,10 +3377,9 @@ window.Portfolio.PROJECTS = {
 			cat: 'Library Management · PHP / MySQL / REST API'
 		},
 	},
-
 	'library-management': {
 		id: 'library-management',
-		num: '16',
+		num: '17',
 		name: 'Library Management System',
 		subtitle: 'Web-Based Library Management Platform.',
 		badgeType: 'Web Application',
