@@ -3132,6 +3132,251 @@ window.Portfolio.PROJECTS = {
 			cat: 'Web App · PHP / MySQL'
 		},
 	},
+	'point-of-sale': {
+		id: 'point-of-sale',
+		num: '03',
+		name: 'Point Of Sale',
+		subtitle: 'Desktop Application with Barcode Scanner Integration',
+		badgeType: 'Desktop Application',
+		badgeYear: '2021',
+		category: 'Desktop Application · .NET WinForms / C#',
+		desc: 'Windows desktop POS system for inventory and sales management — secure authentication, barcode scanning, real-time stock tracking, category management, low-stock alerts, printable Crystal Reports, and SQL Server data persistence. Built as a semester project for engineering students.',
+		tags: ['.NET', 'WinForms', 'SQL Server', 'C#', 'Crystal Reports', 'Barcode Scanner'],
+		liveUrl: '#',
+		githubUrl: 'https://github.com/Sohaib-Ishaque/',
+		heroImage: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782254083/banner-stockm_jgv4p2.png',
+		meta: [{
+				label: 'Client',
+				value: 'Academic Semester Project',
+				accent: false
+			},
+			{
+				label: 'Category',
+				value: 'POS & Inventory System',
+				accent: false
+			},
+			{
+				label: 'Status',
+				value: '✓ Completed & Submitted',
+				accent: true
+			},
+			{
+				label: 'Timeline',
+				value: '6 Weeks',
+				accent: false
+			},
+			{
+				label: 'Role',
+				value: 'Lead Developer (Student Project)',
+				accent: false
+			},
+			{
+				label: 'Tech Stack',
+				tags: ['.NET 4.8', 'C#', 'WinForms', 'SQL Server', 'ADO.NET', 'Crystal Reports', 'Barcode SDK']
+			},
+		],
+		stats: [{
+				num: '6',
+				suffix: 'wk',
+				label: 'Development Time'
+			},
+			{
+				num: '70',
+				suffix: '%',
+				label: 'Faster Checkout'
+			},
+			{
+				num: '95',
+				suffix: '%',
+				label: 'Scanning Accuracy'
+			},
+			{
+				num: '15',
+				suffix: '+',
+				label: 'Database Tables'
+			},
+		],
+		screenshots: [
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723116/ASMS-Desktop-1_fxstoc.webp',
+				label: 'Login & Authentication Screen'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723116/ASMS-Desktop-2_ludkcs.webp',
+				label: 'Dashboard Overview with Stock Summary'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723116/ASMS-Desktop-3_zhlcub.webp',
+				label: 'Barcode Scanning & Sales Entry'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723117/ASMS-Desktop-4_wftglo.webp',
+				label: 'Inventory Management with Categories'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723117/ASMS-Desktop-5_rwgmbr.webp',
+				label: 'Product Management & Stock Adjustments'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723117/ASMS-Desktop-6_r6otvb.webp',
+				label: 'Low-Stock Alerts & Notifications'
+			},
+			{
+				src: 'https://res.cloudinary.com/dpx3gst4q/image/upload/v1782723118/ASMS-Desktop-7_ycno1k.webp',
+				label: 'Crystal Reports & Print Preview'
+			},
+		],
+		overviewParagraphs: [
+			'This Point of Sale desktop application was developed as a semester project for engineering students to demonstrate practical implementation of .NET technologies. The system simulates a real-world retail environment where inventory is managed through barcode scanning and automated stock tracking.',
+			'The application features a complete POS workflow — products are added via barcode scanner input, sales transactions are processed instantly, and inventory levels update automatically. Built with .NET WinForms and C#, the system uses SQL Server for data persistence with a normalized schema supporting products, categories, suppliers, transactions, and user management.',
+			'Crystal Reports integration generates professional printable reports including daily sales summaries, inventory status, low-stock alerts, and transaction histories. The scanner integration uses a USB barcode scanner that inputs directly into text fields, making product lookup and checkout operations seamless and efficient.',
+		],
+		features: [{
+				icon: 'scan',
+				title: 'Barcode Scanner Integration',
+				desc: 'USB barcode scanner support for instant product lookup, adding items to cart, and quick checkout processing.'
+			},
+			{
+				icon: 'shield',
+				title: 'Secure Authentication',
+				desc: 'Multi-user login with SHA-256 password hashing, role-based access (Admin/Cashier), and session management.'
+			},
+			{
+				icon: 'shopping-cart',
+				title: 'POS Checkout',
+				desc: 'Complete sales workflow — add items, apply discounts, calculate totals, process payments, and generate receipts.'
+			},
+			{
+				icon: 'database',
+				title: 'SQL Server Backend',
+				desc: 'Relational database with 15+ tables, stored procedures, triggers, and transaction logging for complete audit trail.'
+			},
+			{
+				icon: 'bell',
+				title: 'Low-Stock Alerts',
+				desc: 'Real-time notification system that alerts when stock falls below configurable thresholds, with visual indicators.'
+			},
+			{
+				icon: 'file-text',
+				title: 'Crystal Reports',
+				desc: 'Printable inventory reports, sales summaries, product lists, and low-stock reports with export to PDF/Excel.'
+			},
+			{
+				icon: 'users',
+				title: 'Multi-User Management',
+				desc: 'Admin and cashier roles with permission-controlled access to reports, inventory management, and system settings.'
+			},
+			{
+				icon: 'refresh-cw',
+				title: 'Real-Time Inventory',
+				desc: 'Automatic stock updates on each sale, with manual adjustment capabilities for stock takes and corrections.'
+			},
+		],
+		techStack: [{
+				abbr: '.NET',
+				name: '.NET Framework 4.8',
+				role: 'Application Platform'
+			},
+			{
+				abbr: 'C#',
+				name: 'C#',
+				role: 'Programming Language'
+			},
+			{
+				abbr: 'WF',
+				name: 'Windows Forms',
+				role: 'UI Framework'
+			},
+			{
+				abbr: 'SQL',
+				name: 'SQL Server 2019',
+				role: 'Database Engine'
+			},
+			{
+				abbr: 'ADO',
+				name: 'ADO.NET',
+				role: 'Data Access Layer'
+			},
+			{
+				abbr: 'CR',
+				name: 'Crystal Reports',
+				role: 'Reporting Engine'
+			},
+			{
+				abbr: 'SCAN',
+				name: 'Barcode Scanner SDK',
+				role: 'Hardware Integration'
+			},
+		],
+		timeline: [{
+				phase: 'Phase 01',
+				heading: 'Project Planning',
+				text: 'Defined project scope, created UML diagrams, designed database schema, and set up development environment with Git version control.'
+			},
+			{
+				phase: 'Phase 02',
+				heading: 'Database Implementation',
+				text: 'Created SQL Server database with normalized tables, wrote stored procedures for CRUD operations, and implemented data validation triggers.'
+			},
+			{
+				phase: 'Phase 03',
+				heading: 'Application Development',
+				text: 'Built WinForms UI with responsive layouts, implemented barcode scanner integration, developed POS logic, and created data layer with ADO.NET.'
+			},
+			{
+				phase: 'Phase 04',
+				heading: 'Reporting & Testing',
+				text: 'Designed Crystal Reports templates, conducted unit testing, performed user acceptance testing, and fixed bugs identified during testing phase.'
+			},
+			{
+				phase: 'Phase 05',
+				heading: 'Documentation & Submission',
+				text: 'Created technical documentation, user manual, recorded demo video, and prepared final project submission with all deliverables.'
+			},
+		],
+		outcomes: [{
+				icon: 'check-circle',
+				title: 'Achievement — Project Completion',
+				desc: 'Successfully delivered all project requirements within the 6-week timeline, earning excellent grades and faculty recognition.'
+			},
+			{
+				icon: 'zap',
+				title: 'Performance — Scanning Speed',
+				desc: 'Barcode scanning reduced product lookup time from ~20 seconds manual entry to under 2 seconds, improving checkout efficiency by 70%.'
+			},
+			{
+				icon: 'database',
+				title: 'Data Integrity — Reliable System',
+				desc: 'Database transactions with ACID properties and trigger-based validations eliminated duplicate entries and maintained referential integrity.'
+			},
+			{
+				icon: 'file-text',
+				title: 'Reporting — Crystal Reports',
+				desc: 'Automated report generation saved manual effort, with PDF/Excel export enabling easy sharing of inventory and sales data.'
+			},
+			{
+				icon: 'users',
+				title: 'Learning — Team Collaboration',
+				desc: 'Applied Agile methodology, conducted code reviews, used Git for version control, and collaborated effectively as a team of 3 students.'
+			},
+			{
+				icon: 'award',
+				title: 'Recognition — Outstanding Project',
+				desc: 'Selected as one of the top semester projects, with the solution being considered for use by the department\'s inventory management.'
+			},
+		],
+		template: 'v2',
+		prevProject: {
+			id: 'nsric',
+			name: 'NSRIC Education',
+			cat: 'Educational Platform · WordPress'
+		},
+		nextProject: {
+			id: 'qrmf',
+			name: 'QRMF',
+			cat: 'Medical System · PHP / MySQL'
+		},
+	},
 
 	'library-management': {
 		id: 'library-management',
@@ -3929,6 +4174,8 @@ window.Portfolio.PROJECT_LINKS = (function() {
 		'chat application':        'chat-app',
 		'espn cricinfo clone':     'espn-clone',
 		"manii's gossips":         'manii-gossips',
+		'point of sale': 'point-of-sale',
+		'point-of-sale':        'point-of-sale',
 		'library management system': 'library-management',
 	};
 
