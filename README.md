@@ -2,7 +2,7 @@
 
 A sleek, modern, and fully responsive developer portfolio built to showcase projects, skills, experience, and professional achievements with stunning UI animations and engaging user interactions.
 
-![Portfolio Preview](./preview.png)
+![Portfolio Preview](https://res.cloudinary.com/dpx3gst4q/image/upload/v1783954349/Portfolio-Preview_a4dux4.png)
 
 ## ✨ Features
 
