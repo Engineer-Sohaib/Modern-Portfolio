@@ -100,8 +100,8 @@ Or use VS Code Live Server for the best development experience.
 Add your portfolio screenshots here.
 
 ```md
-![Home Page](./screenshots/home.png)
-![Projects Section](./screenshots/projects.png)
+![Home Page]([./screenshots/home.png](https://res.cloudinary.com/dpx3gst4q/image/upload/v1783954349/Portfolio-Preview_a4dux4.png))
+![Projects Section]([./screenshots/projects.png](https://res.cloudinary.com/dpx3gst4q/image/upload/v1783954557/Portfolio-Projects_y2tawn.png))
 ```
 
 ---
@@ -113,7 +113,7 @@ Add your portfolio screenshots here.
 Replace with your deployed URL:
 
 ```text
-https://your-portfolio-link.com
+[https://your-portfolio-link.com](https://sohaibishaque.vercel.app)
 ```
 
 ---
